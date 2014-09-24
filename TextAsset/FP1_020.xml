@@ -37,7 +37,7 @@
   <Tag name="EnchantmentBirthVisual" enumID="330" type="EnchantmentVisualType" value="0" />
   <Tag name="EnchantmentIdleVisual" enumID="331" type="EnchantmentVisualType" value="0" />
   <Tag name="FlavorText" enumID="351" type="String">
-    <enUS>Several paladins have joined together to deliver justice under the name "Justice Force".  Their lawyer talked them out of calling themselves the Justice League.</enUS>
+    <enUS>Several paladins have joined together to deliver justice under the name "Justice Force."  Their lawyer talked them out of calling themselves the Justice League.</enUS>
     <zhTW>有一群聖騎士組成了一團「正義之師」。他們的律師說服了他們不要取「正義聯盟」這個名稱。</zhTW>
     <zhCN>有几个身怀绝技的圣骑士想要组成一个团体来声张正义，并自称“复仇者联盟”。不久，他们受到了某家电影公司的起诉。</zhCN>
     <ruRU>Однажды несколько паладинов решили создать комитет по справедливому воздаянию. Они хотели назвать свою организацию «Лига справедливости», но юристы их отговорили.</ruRU>

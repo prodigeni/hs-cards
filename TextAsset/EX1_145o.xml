@@ -20,15 +20,15 @@
   <Tag name="CardTextInHand" enumID="184" type="String">
     <enUS>The next spell you cast this turn costs (3) less.</enUS>
     <zhTW>你在本回合內施放的下一個法術消耗減少(3)點</zhTW>
-    <zhCN>在本回合中，你的下一个法术牌的法力值消耗减少（3）点。</zhCN>
-    <ruRU>Следующее заклинание, которое вы разыграете в этот ход, стоит на (3) маны меньше.</ruRU>
+    <zhCN>在本回合中，你所施放的下一个法术的法力值消耗减少（3）点。</zhCN>
+    <ruRU>Следующее заклинание, которое вы разыграете на этом ходу, стоит на (3) маны меньше.</ruRU>
     <ptBR>O próximo feitiço que você lançar custará (3) a menos.</ptBR>
     <plPL>Następne zaklęcie, jakie rzucisz w tej turze, kosztuje (3) mniej.</plPL>
     <koKR>이번 턴에 내가 시전하는 다음 주문의 비용이 (3) 감소합니다.</koKR>
     <itIT>La prossima Magia che lanci in questo turno costa (3) Mana in meno.</itIT>
-    <frFR>Le prochain sort que vous lancez coûte (3) cristaux de moins.</frFR>
+    <frFR>Le prochain sort que vous lancez pendant ce tour coûte (3) cristaux de moins.</frFR>
     <esMX>El próximo hechizo que juegues en este turno cuesta (3) menos.</esMX>
-    <esES>El próximo hechizo que lances este turno costará (3) cristales menos.</esES>
+    <esES>El siguiente hechizo que lances este turno costará (3) cristales menos.</esES>
     <deDE>Der nächste Zauber, den Ihr in diesem Zug wirkt, kostet (3) weniger.</deDE>
   </Tag>
   <Tag name="EnchantmentBirthVisual" enumID="330" type="EnchantmentVisualType" value="0" />

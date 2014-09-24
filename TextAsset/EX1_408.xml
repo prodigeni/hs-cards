@@ -32,7 +32,7 @@
     <koKR>피해를 $4 줍니다. 내 생명력이 12 이하라면 피해를 $6 줍니다.</koKR>
     <itIT>Infligge $4 danni. Se il tuo eroe ha Salute pari a 12 o inferiore, infligge $6 danni.</itIT>
     <esMX>Inflige $4 de daño. Si tienes 12 de Salud o menos, inflige $6 de daño.</esMX>
-    <esES>Inflige $4 p. de daño. Si tienes 12 p. de salud o menos, infliges $6 p. de daño.</esES>
+    <esES>Inflige $4 p. de daño. Si tienes 12 p. de salud o menos, inflige $6 p. de daño.</esES>
     <deDE>Verursacht $4 Schaden. Verursacht stattdessen $6 Schaden, wenn Euer Held max. 12 Leben hat.</deDE>
   </Tag>
   <Tag name="Cost" enumID="48" type="Number" value="4" />

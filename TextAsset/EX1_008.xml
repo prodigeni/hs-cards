@@ -54,7 +54,7 @@
     <frFR>« Je jure solennellement de faire respecter la Lumière, de purger le monde de ses ténèbres et de manger au moins 5 fruits et légumes par jour. » - Serment de l’Aube d’argent</frFR>
     <esMX>"Juro solemnemente proteger la Luz, purgar la oscuridad del mundo y solo comer burritos" —Juramento de El Alba Argenta</esMX>
     <esES>"El alba se avecina, ahora empieza mi guardia". - El juramento del Alba Argenta</esES>
-    <deDE>„Ich schwöre feierlich, für das Licht zu streiten, die Welt von der Dunkelheit zu befreien und mich ausschließlich von Süßigkeiten zu ernähren.“ – Schwur der Argentumdämmerung</deDE>
+    <deDE>„Ich schwöre feierlich, für das Licht zu streiten, die Welt von der Dunkelheit zu befreien und mich ausschließlich von Süßigkeiten zu ernähren.“\n– Schwur der Argentumdämmerung</deDE>
   </Tag>
   <Tag name="Divine Shield" enumID="194" type="Bool" value="1" />
   <Power definition="90252eac-30fb-408f-a812-70e185ae3fa7" />

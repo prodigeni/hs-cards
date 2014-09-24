@@ -20,7 +20,7 @@
   <Tag name="Cost" enumID="48" type="Number" value="0" />
   <Tag name="CardTextInHand" enumID="184" type="String">
     <enUS>&lt;b&gt;Hero Power&lt;/b&gt;\nDeal 2 damage to all enemies. If any die, summon a slime.</enUS>
-    <zhTW>&lt;b&gt;英雄能力&lt;/b&gt;\n對全部敵方手下造成2點傷害。任何造成的死亡都會召喚一個泥漿怪</zhTW>
+    <zhTW>　&lt;b&gt;英雄能力&lt;/b&gt;\n對全部敵人造成2點傷害。若有手下死亡，召喚一個泥漿怪</zhTW>
     <zhCN>&lt;b&gt;英雄技能&lt;/b&gt;\n对所有敌方角色造成2点伤害。每造成一个随从死亡，便召唤一个泥浆怪。</zhCN>
     <ruRU>&lt;b&gt;Сила героя&lt;/b&gt;\n Наносит 2 ед. урона всем персонажам противника. Если какое-либо существо умирает, призывается слизь.</ruRU>
     <ptBR>&lt;b&gt;Último Suspiro:&lt;/b&gt;\nCause 2 de dano a todos os inimigos. Se algum morrer, evoque um visgo.</ptBR>

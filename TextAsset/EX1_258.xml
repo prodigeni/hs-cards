@@ -55,7 +55,7 @@
     <frFR>Moi je dirais plutôt qu’il se délite !</frFR>
     <esMX>A diferencia de los elementales esclavos, a los desatados les encanta salir a pasear por la ciudad.</esMX>
     <esES>A los elementales desatados les va la marcha.</esES>
-    <deDE>Anders als gefesselte Elementare gehen ungefesselte Elementare auch öfter mal aus.</deDE>
+    <deDE>Anders als gefesselte Elementare gehen entfesselte Elementare auch öfter mal aus.</deDE>
   </Tag>
   <Tag name="TriggerVisual" enumID="32" type="Bool" value="1" />
   <ReferencedTag name="Recall" enumID="215" type="Number" value="1" />

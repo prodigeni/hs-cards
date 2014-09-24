@@ -52,7 +52,7 @@
     <frFR>« Seuil de surchauffe dépassé. Plantage système. Bourrage céréale en tuyère deux. Extinction. »</frFR>
     <esMX>"Umbral de recalentamiento excedido, falla del sistema, obstrucción de trigo en puerto 2, apagándose.".</esMX>
     <esES>"Tu gólem ha dejado de funcionar. ¿Deseas enviar información a Gnomeregan para solucionar el problema?"</esES>
-    <deDE>„Grenzwert für Hitzeresistenz überschritten. Systemausfall. Weizen verstopft Luke B. Schalte ab.“</deDE>
+    <deDE>„Grenzwert für Hitzeresistenz überschritten. Systemausfall. Weizen verstopft Luke B. Fahre herunter.“</deDE>
   </Tag>
   <Tag name="EnchantmentBirthVisual" enumID="330" type="EnchantmentVisualType" value="0" />
   <Tag name="EnchantmentIdleVisual" enumID="331" type="EnchantmentVisualType" value="0" />

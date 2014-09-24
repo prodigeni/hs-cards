@@ -18,7 +18,7 @@
   <Tag name="CardType" enumID="202" type="CardType" value="4" />
   <Tag name="Faction" enumID="201" type="Faction" value="2" />
   <Tag name="Rarity" enumID="203" type="Rarity" value="5" />
-  <Tag name="Cost" enumID="48" type="Number" value="4" />
+  <Tag name="Cost" enumID="48" type="Number" value="5" />
   <Tag name="Atk" enumID="47" type="Number" value="6" />
   <Tag name="Health" enumID="45" type="Number" value="2" />
   <Tag name="AttackVisualType" enumID="251" type="AttackVisualType" value="6" />
@@ -29,7 +29,7 @@
     <zhCN>&lt;b&gt;冲锋&lt;/b&gt;，&lt;b&gt;战吼：&lt;/b&gt;为你的对手召唤2只1/1的雏龙。</zhCN>
     <ruRU>&lt;b&gt;Рывок&lt;/b&gt;. &lt;b&gt;Боевой клич:&lt;/b&gt; призывает на сторону вашего противника двух дракончиков 1/1.</ruRU>
     <ptBR>&lt;b&gt;Investida&lt;/b&gt;. &lt;b&gt;Grito de Guerra:&lt;/b&gt; Evoque dois Dragonetes 1/1 para o seu oponente.</ptBR>
-    <plPL>&lt;b&gt;Szarża&lt;/b&gt;. &lt;b&gt;Okrzyk bojowy:&lt;/b&gt; Przyzwij dwa Pisklęta 1/1 twojemu przeciwnikowi.</plPL>
+    <plPL>&lt;b&gt;Szarża&lt;/b&gt;. &lt;b&gt;Okrzyk bojowy:&lt;/b&gt; Przyzwij dwa Pisklęta 1/1 swojemu przeciwnikowi.</plPL>
     <koKR>&lt;b&gt;돌진&lt;/b&gt;. &lt;b&gt;전투의 함성:&lt;/b&gt; 상대편에게 1/1 새끼용을 둘 소환해 줍니다.</koKR>
     <itIT>&lt;b&gt;Carica&lt;/b&gt;. &lt;b&gt;Grido di Battaglia:&lt;/b&gt; evoca due Draghetti 1/1 sotto il controllo dell'avversario.</itIT>
     <esMX>&lt;b&gt;Carga&lt;/b&gt;. &lt;b&gt;Grito de batalla:&lt;/b&gt; invoca dos Crías 1/1 para tu adversario.</esMX>

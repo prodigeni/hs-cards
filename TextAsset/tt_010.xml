@@ -23,7 +23,7 @@
   <Tag name="Class" enumID="199" type="Class" value="4" />
   <Tag name="CardTextInHand" enumID="184" type="String">
     <enUS>&lt;b&gt;Secret:&lt;/b&gt; When an enemy casts a spell on a minion, summon a 1/3 as the new target.</enUS>
-    <frFR>&lt;b&gt;Secret :&lt;/b&gt; quand un serviteur est touché par un sort adverse, invoque un 1/3 qui devient la nouvelle cible.</frFR>
+    <frFR>&lt;b&gt;Secret :&lt;/b&gt; quand un adversaire lance un sort sur un serviteur, invoque un 1/3 qui devient la nouvelle cible.</frFR>
     <zhTW>&lt;b&gt;秘密:&lt;/b&gt;當敵人對一個手下施放法術，召喚一個1/3手下成為新目標</zhTW>
     <zhCN>&lt;b&gt;奥秘：&lt;/b&gt;当一个敌方法术以一个随从为目标时，召唤一个1/3的随从并使其成为新的目标。</zhCN>
     <ruRU>&lt;b&gt;Секрет:&lt;/b&gt; когда противник выбирает целью заклинания существо, призывает существо 1/3, которое становится новой целью.</ruRU>

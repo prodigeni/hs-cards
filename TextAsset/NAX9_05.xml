@@ -21,7 +21,7 @@
   <Tag name="Durability" enumID="187" type="Number" value="3" />
   <Tag name="CardTextInHand" enumID="184" type="String">
     <enUS>Has +3 Attack if the other Horsemen are dead.</enUS>
-    <zhTW>若其他騎士死亡則獲得+3攻擊力</zhTW>
+    <zhTW>若其他騎士全部死亡則獲得+3攻擊力</zhTW>
     <zhCN>如果其他天启骑士死亡，获得+3攻击力。</zhCN>
     <ruRU>Если остальные всадники мертвы, получает +3 к атаке.</ruRU>
     <ptBR>Tem +3 de Ataque se os outros Cavaleiros estiverem mortos.</ptBR>

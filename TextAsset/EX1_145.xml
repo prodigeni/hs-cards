@@ -27,7 +27,7 @@
     <frFR>Le prochain sort que vous lancez pendant ce tour coûte (3) cristaux de moins.</frFR>
     <zhTW>你在本回合內施放的下一個法術消耗減少(3)點</zhTW>
     <zhCN>在本回合中，你所施放的下一个法术的法力值消耗减少（3）点。</zhCN>
-    <ruRU>Следующее заклинание, которое вы разыграете в этот ход, стоит на (3) маны меньше.</ruRU>
+    <ruRU>Следующее заклинание, которое вы разыграете на этом ходу, стоит на (3) маны меньше.</ruRU>
     <ptBR>O próximo feitiço que você lançar custará (3) a menos.</ptBR>
     <plPL>Następne zaklęcie, jakie rzucisz w tej turze, kosztuje (3) mniej.</plPL>
     <koKR>이번 턴에 내가 시전하는 다음 주문의 비용이 (3) 감소합니다.</koKR>
@@ -54,5 +54,7 @@
     <esES>"¡Siempre preparados!" - Lema de los pícaros</esES>
     <deDE>Manchmal ist Vorbereitung das halbe Leben ... im wahrsten Sinne des Wortes.</deDE>
   </Tag>
+  <Tag name="EnchantmentBirthVisual" enumID="330" type="EnchantmentVisualType" value="0" />
+  <Tag name="EnchantmentIdleVisual" enumID="331" type="EnchantmentVisualType" value="0" />
   <Power definition="0cc6ff8b-fd76-4877-8348-578aef4059a9" />
 </Entity>

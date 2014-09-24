@@ -1,0 +1,4 @@
+# converter binaries
+*.exe
+# folder for format conversion
+output
