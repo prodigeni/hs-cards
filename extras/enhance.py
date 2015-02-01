@@ -25,6 +25,14 @@ def guess_spellpower(card):
 	print("%s: Setting Spell Power to %i" % (card.name, dmg))
 
 
+def guess_overload(card):
+	sre = re.search(r"Overload[^(]+\((\d+)\)", card.description)
+	amount = int(sre.groups()[0])
+	e = card._findTag(GameTag.RECALL)[0]
+	e.attrib["value"] = str(amount)
+	print("%s: Setting Overload to %i" % (card.name, amount))
+
+
 def main():
 	db = cardxml.load("../TextAsset/enUS.txt")
 	for id, card in db.items():
@@ -33,6 +41,9 @@ def main():
 
 		if card.tags.get(GameTag.SPELLPOWER):
 			guess_spellpower(card)
+
+		if card.tags.get(GameTag.RECALL):
+			guess_overload(card)
 
 
 
