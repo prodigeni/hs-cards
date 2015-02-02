@@ -17,6 +17,15 @@ def add_chooseone_tags(card, ids):
 	print("%s: Adding Choose One cards: %r" % (card.name, ids))
 
 
+def add_cant_attack_tag(card):
+	e = ElementTree.Element("Tag")
+	e.attrib["value"] = "1"
+	e.attrib["Type"] = "Bool"
+	e.attrib["enumID"] = str(int(GameTag.CANT_ATTACK))
+	card.xml.append(e)
+	print("%s: Setting GameTag.CANT_ATTACK" % (card.name))
+
+
 def guess_spellpower(card):
 	sre = re.search(r"Spell Damage \+(\d+)", card.description)
 	dmg = int(sre.groups()[0])
@@ -44,6 +53,9 @@ def main():
 
 		if card.tags.get(GameTag.RECALL):
 			guess_overload(card)
+
+		if "Can't Attack." in card.description:
+			add_cant_attack_tag(card)
 
 
 
