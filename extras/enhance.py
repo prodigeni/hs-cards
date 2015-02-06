@@ -2,6 +2,7 @@
 
 import re
 import sys; sys.path.append("../..")
+from xml.dom import minidom
 from xml.etree import ElementTree
 
 from fireplace.cards import cardxml
@@ -43,7 +44,7 @@ def guess_overload(card):
 
 
 def main():
-	db = cardxml.load("../TextAsset/enUS.txt")
+	db, xml = cardxml.load("../TextAsset/enUS.txt")
 	for id, card in db.items():
 		if hasattr(chooseone, id):
 			add_chooseone_tags(card, getattr(chooseone, id))
@@ -57,6 +58,21 @@ def main():
 		if "Can't Attack." in card.description:
 			add_cant_attack_tag(card)
 
+	# xml = db[next(db.__iter__())].xml
+	with open("../enUS.xml", "w") as f:
+		root = ElementTree.Element("CardDefs")
+		for e in xml.findall("Entity"):
+			# We want to retain the order so we can't just use db.keys()
+			id = e.attrib["CardID"]
+			card = db[id]
+			root.append(card.xml)
+
+		outstr = ElementTree.tostring(root)
+		# Reparse for clean indentation
+		outstr = minidom.parseString(outstr).toprettyxml(indent="\t")
+		outstr = "\n".join(line for line in outstr.split("\n") if line.strip())
+		f.write(outstr)
+		print("Written to", f.name)
 
 
 if __name__ == "__main__":
