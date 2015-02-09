@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 
+import os
 import re
-import sys; sys.path.append("../..")
+FIREPLACE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../..")
+import sys; sys.path.append(FIREPLACE_DIR)
 from xml.dom import minidom
 from xml.etree import ElementTree
 
@@ -44,7 +46,7 @@ def guess_overload(card):
 
 
 def main():
-	db, xml = cardxml.load("../TextAsset/enUS.txt")
+	db, xml = cardxml.load(os.path.join(FIREPLACE_DIR, "data", "TextAsset", "enUS.txt"))
 	for id, card in db.items():
 		if hasattr(chooseone, id):
 			add_chooseone_tags(card, getattr(chooseone, id))
@@ -59,7 +61,7 @@ def main():
 			add_cant_attack_tag(card)
 
 	# xml = db[next(db.__iter__())].xml
-	with open("../enUS.xml", "w") as f:
+	with open(os.path.join(FIREPLACE_DIR, "data", "enUS.xml"), "w") as f:
 		root = ElementTree.Element("CardDefs")
 		for e in xml.findall("Entity"):
 			# We want to retain the order so we can't just use db.keys()
