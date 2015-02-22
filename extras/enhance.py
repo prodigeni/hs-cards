@@ -2,12 +2,10 @@
 
 import os
 import re
-FIREPLACE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../..")
-import sys; sys.path.append(FIREPLACE_DIR)
+import sys; sys.path.append(os.path.join(os.path.dirname(__file__), "../.."))
+print(sys.path)
 from xml.dom import minidom
 from xml.etree import ElementTree
-
-from fireplace.cards import cardxml
 from fireplace.enums import GameTag
 import chooseone
 
@@ -46,7 +44,9 @@ def guess_overload(card):
 
 
 def main():
-	db, xml = cardxml.load(os.path.join(FIREPLACE_DIR, "data", "TextAsset", "enUS.txt"))
+	from fireplace.cardxml import load
+
+	db, xml = load(sys.argv[1])
 	for id, card in db.items():
 		if hasattr(chooseone, id):
 			add_chooseone_tags(card, getattr(chooseone, id))
@@ -61,7 +61,7 @@ def main():
 			add_cant_attack_tag(card)
 
 	# xml = db[next(db.__iter__())].xml
-	with open(os.path.join(FIREPLACE_DIR, "data", "enUS.xml"), "w") as f:
+	with open(sys.argv[2], "w") as f:
 		root = ElementTree.Element("CardDefs")
 		for e in xml.findall("Entity"):
 			# We want to retain the order so we can't just use db.keys()
