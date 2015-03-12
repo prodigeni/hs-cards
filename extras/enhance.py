@@ -18,15 +18,6 @@ def add_chooseone_tags(card, ids):
 	print("%s: Adding Choose One cards: %r" % (card.name, ids))
 
 
-def add_cant_attack_tag(card):
-	e = ElementTree.Element("Tag")
-	e.attrib["value"] = "1"
-	e.attrib["Type"] = "Bool"
-	e.attrib["enumID"] = str(int(GameTag.CANT_ATTACK))
-	card.xml.append(e)
-	print("%s: Setting GameTag.CANT_ATTACK" % (card.name))
-
-
 def guess_spellpower(card):
 	sre = re.search(r"Spell Damage \+(\d+)", card.description)
 	dmg = int(sre.groups()[0])
@@ -41,6 +32,16 @@ def guess_overload(card):
 	e = card._findTag(GameTag.RECALL)[0]
 	e.attrib["value"] = str(amount)
 	print("%s: Setting Overload to %i" % (card.name, amount))
+
+
+def set_tag(card, tag, value):
+	e = ElementTree.Element("Tag")
+	if isinstance(value, bool):
+		e.attrib["value"] = "1" if value else "0"
+		e.attrib["Type"] = "Bool"
+	e.attrib["enumID"] = str(int(tag))
+	card.xml.append(e)
+	print("%s: Setting %r = %r" % (card.name, tag, value))
 
 
 def remove_tag(card, tag):
@@ -64,7 +65,10 @@ def main():
 			guess_overload(card)
 
 		if "Can't Attack." in card.description:
-			add_cant_attack_tag(card)
+			set_tag(card, GameTag.CANT_ATTACK, True)
+
+		if "Can't be targeted by spells or Hero Powers." in card.description:
+			set_tag(card, GameTag.CANT_BE_TARGETED_BY_ABILITIES, True)
 
 		if id == "EX1_283":
 			# Remove Freeze from Frost Elemental
