@@ -43,6 +43,12 @@ def guess_overload(card):
 	print("%s: Setting Overload to %i" % (card.name, amount))
 
 
+def remove_tag(card, tag):
+	e = card._findTag(tag)[0]
+	card.xml.remove(e)
+	print("%s: Removing %r tag" % (card.name, tag))
+
+
 def main():
 	from fireplace.cardxml import load
 
@@ -59,6 +65,10 @@ def main():
 
 		if "Can't Attack." in card.description:
 			add_cant_attack_tag(card)
+
+		if id == "EX1_283":
+			# Remove Freeze from Frost Elemental
+			remove_tag(card, GameTag.FREEZE)
 
 	# xml = db[next(db.__iter__())].xml
 	with open(sys.argv[2], "w") as f:
