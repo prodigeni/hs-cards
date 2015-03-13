@@ -7,6 +7,7 @@ print(sys.path)
 from xml.dom import minidom
 from xml.etree import ElementTree
 from fireplace.enums import GameTag
+import buffs
 import chooseone
 
 
@@ -39,6 +40,11 @@ def set_tag(card, tag, value):
 	if isinstance(value, bool):
 		e.attrib["value"] = "1" if value else "0"
 		e.attrib["Type"] = "Bool"
+	elif isinstance(value, int):
+		e.attrib["value"] = str(value)
+		e.attrib["Type"] = "Int"
+	else:
+		raise NotImplementedError
 	e.attrib["enumID"] = str(int(tag))
 	card.xml.append(e)
 	print("%s: Setting %r = %r" % (card.name, tag, value))
@@ -55,6 +61,10 @@ def main():
 
 	db, xml = load(sys.argv[1])
 	for id, card in db.items():
+		if hasattr(buffs, id):
+			for tag, value in getattr(buffs, id).items():
+				set_tag(card, tag, value)
+
 		if hasattr(chooseone, id):
 			add_chooseone_tags(card, getattr(chooseone, id))
 
