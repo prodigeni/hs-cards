@@ -10,16 +10,16 @@ from fireplace.enums import GameTag
 import auras
 import buffs
 import chooseone
+import enrage
 
 
 def add_aura_id(card, id):
-	print(card,card.name)
 	aura = card._findTag(GameTag.AURA)
 	if not aura:
-		e = set_tag(card, GameTag.AURA, True)
+		e = set_tag(card, GameTag.AURA, id)
 	else:
 		e = aura[0]
-	e.attrib["cardID"] = id
+		e.attrib["cardID"] = id
 	print("%s: Setting aura card ID to %r" % (card.name, id))
 
 
@@ -29,6 +29,14 @@ def add_chooseone_tags(card, ids):
 		e.attrib["cardID"] = id
 		card.xml.append(e)
 	print("%s: Adding Choose One cards: %r" % (card.name, ids))
+
+
+def add_enrage_definition(card, tags):
+	definition = ElementTree.Element("EnrageDefinition")
+	for tag, value in tags.items():
+		e = _create_tag(tag, value)
+		definition.append(e)
+	card.xml.append(definition)
 
 
 def guess_spellpower(card):
@@ -47,9 +55,14 @@ def guess_overload(card):
 	print("%s: Setting Overload to %i" % (card.name, amount))
 
 
-def set_tag(card, tag, value):
+def _create_tag(tag, value):
 	e = ElementTree.Element("Tag")
-	if isinstance(value, bool):
+	if tag == GameTag.AURA:
+		e.attrib["value"] = "1" if value else "0"
+		e.attrib["Type"] = "Bool"
+		if value:
+			e.attrib["cardID"] = value
+	elif isinstance(value, bool):
 		e.attrib["value"] = "1" if value else "0"
 		e.attrib["Type"] = "Bool"
 	elif isinstance(value, int):
@@ -58,6 +71,11 @@ def set_tag(card, tag, value):
 	else:
 		raise NotImplementedError
 	e.attrib["enumID"] = str(int(tag))
+	return e
+
+
+def set_tag(card, tag, value):
+	e = _create_tag(tag, value)
 	card.xml.append(e)
 	print("%s: Setting %r = %r" % (card.name, tag, value))
 	return e
@@ -83,6 +101,9 @@ def main():
 
 		if hasattr(auras, id):
 			add_aura_id(card, getattr(auras, id))
+
+		if hasattr(enrage, id):
+			add_enrage_definition(card, getattr(enrage, id))
 
 		if card.tags.get(GameTag.SPELLPOWER):
 			guess_spellpower(card)
