@@ -7,8 +7,20 @@ print(sys.path)
 from xml.dom import minidom
 from xml.etree import ElementTree
 from fireplace.enums import GameTag
+import auras
 import buffs
 import chooseone
+
+
+def add_aura_id(card, id):
+	print(card,card.name)
+	aura = card._findTag(GameTag.AURA)
+	if not aura:
+		e = set_tag(card, GameTag.AURA, True)
+	else:
+		e = aura[0]
+	e.attrib["cardID"] = id
+	print("%s: Setting aura card ID to %r" % (card.name, id))
 
 
 def add_chooseone_tags(card, ids):
@@ -48,6 +60,7 @@ def set_tag(card, tag, value):
 	e.attrib["enumID"] = str(int(tag))
 	card.xml.append(e)
 	print("%s: Setting %r = %r" % (card.name, tag, value))
+	return e
 
 
 def remove_tag(card, tag):
@@ -67,6 +80,9 @@ def main():
 
 		if hasattr(chooseone, id):
 			add_chooseone_tags(card, getattr(chooseone, id))
+
+		if hasattr(auras, id):
+			add_aura_id(card, getattr(auras, id))
 
 		if card.tags.get(GameTag.SPELLPOWER):
 			guess_spellpower(card)
