@@ -19,7 +19,8 @@ def add_aura_id(card, id):
 		e = set_tag(card, GameTag.AURA, id)
 	else:
 		e = aura[0]
-		e.attrib["cardID"] = id
+		e.attrib["value"] = id
+		e.attrib["type"] = "Card"
 	print("%s: Setting aura card ID to %r" % (card.name, id))
 
 
@@ -57,17 +58,15 @@ def guess_overload(card):
 
 def _create_tag(tag, value):
 	e = ElementTree.Element("Tag")
-	if tag == GameTag.AURA:
+	if isinstance(value, bool):
 		e.attrib["value"] = "1" if value else "0"
-		e.attrib["Type"] = "Bool"
-		if value:
-			e.attrib["cardID"] = value
-	elif isinstance(value, bool):
-		e.attrib["value"] = "1" if value else "0"
-		e.attrib["Type"] = "Bool"
+		e.attrib["type"] = "Bool"
 	elif isinstance(value, int):
 		e.attrib["value"] = str(value)
-		e.attrib["Type"] = "Int"
+		e.attrib["type"] = "Int"
+	elif tag == GameTag.AURA:
+		e.attrib["value"] = value
+		e.attrib["type"] = "Card"
 	else:
 		raise NotImplementedError
 	e.attrib["enumID"] = str(int(tag))
