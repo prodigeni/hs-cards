@@ -334,6 +334,9 @@ NEW1_024o = {
 # Growth (Gruul)
 NEW1_038o = buff(+1, +1)
 
+# Emboldened! (Emboldener 3000)
+Mekka3e = buff(+1, +1)
+
 
 ##
 # Curse of Naxxramas set
