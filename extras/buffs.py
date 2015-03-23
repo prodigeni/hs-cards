@@ -81,6 +81,13 @@ DS1_178e = {
 # Well Fed (Scavenging Hyena)
 EX1_531e = buff(+2, +1)
 
+# Bestial Wrath
+
+EX1_549o = {
+	GameTag.ATK: 2,
+	GameTag.CANT_BE_DAMAGED: True,
+}
+
 # Trapped (Freezing Trap)
 EX1_611e = {
 	GameTag.COST: 2,
