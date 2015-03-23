@@ -11,6 +11,7 @@ import auras
 import buffs
 import chooseone
 import enrage
+import missing_cards
 
 
 def add_aura_id(card, id):
@@ -55,6 +56,13 @@ def guess_overload(card):
 	e.attrib["value"] = str(amount)
 	print("%s: Setting Overload to %i" % (card.name, amount))
 
+
+def create_card(id, card):
+	e = ElementTree.Element("Entity")
+	e.attrib["CardID"] = id
+	for tag, value in card.items():
+		e.append(_create_tag(tag, value))
+	return e
 
 def _create_tag(tag, value):
 	e = ElementTree.Element("Tag")
@@ -131,6 +139,10 @@ def main():
 			id = e.attrib["CardID"]
 			card = db[id]
 			root.append(card.xml)
+
+		for id in missing_cards.__all__:
+			e = create_card(id, getattr(missing_cards, id))
+			root.append(e)
 
 		outstr = ElementTree.tostring(root)
 		# Reparse for clean indentation
