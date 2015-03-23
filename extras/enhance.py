@@ -67,6 +67,9 @@ def _create_tag(tag, value):
 	elif tag == GameTag.AURA:
 		e.attrib["value"] = value
 		e.attrib["type"] = "Card"
+	elif isinstance(value, str):
+		e.text = value
+		e.attrib["type"] = "String"
 	else:
 		raise NotImplementedError
 	e.attrib["enumID"] = str(int(tag))
