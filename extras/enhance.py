@@ -70,7 +70,7 @@ def _create_tag(tag, value):
 		e.attrib["value"] = "1" if value else "0"
 		e.attrib["type"] = "Bool"
 	elif isinstance(value, int):
-		e.attrib["value"] = str(value)
+		e.attrib["value"] = str(int(value))
 		e.attrib["type"] = "Int"
 	elif tag == GameTag.AURA:
 		e.attrib["value"] = value
