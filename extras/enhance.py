@@ -12,6 +12,7 @@ import buffs
 import chooseone
 import enrage
 import missing_cards
+import powerups
 
 
 def add_aura_id(card, id):
@@ -39,6 +40,14 @@ def add_enrage_definition(card, tags):
 		e = _create_tag(tag, value)
 		definition.append(e)
 	card.xml.append(definition)
+
+
+def add_powerup_requirements(card, race):
+	req = ElementTree.Element("PowerUpRequirement")
+	req.attrib["reqID"] = "1"
+	req.attrib["param"] = str(int(race))
+	card.xml.append(req)
+	print("%s: Adding POWERED_UP definition of %r" % (card.name, race))
 
 
 def guess_spellpower(card):
@@ -114,6 +123,9 @@ def main():
 
 		if hasattr(enrage, id):
 			add_enrage_definition(card, getattr(enrage, id))
+
+		if hasattr(powerups, id):
+			add_powerup_requirements(card, getattr(powerups, id))
 
 		if card.tags.get(GameTag.SPELLPOWER):
 			guess_spellpower(card)
