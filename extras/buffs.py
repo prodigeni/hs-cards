@@ -381,6 +381,20 @@ GVG_063a = buff(atk=1)
 
 
 ##
+# Priest
+
+# Velen's Chosen
+GVG_010b = {
+	GameTag.ATK: 2,
+	GameTag.HEALTH: 4,
+	GameTag.SPELLPOWER: 1,
+}
+
+# Shrink Ray (Shrinkmeister)
+GVG_011a = buff(atk=-2)
+
+
+##
 # Neutral common
 
 # Metabolized Magic (Stonesplinter Trogg)
