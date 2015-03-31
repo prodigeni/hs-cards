@@ -874,6 +874,8 @@ Invoca un tótem aleatorio.</Tag>
     <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
 Roba una carta y recibe 2 de daño.</Tag>
     <Tag enumID="268" type="" value="2" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
     <Power definition="78d0b174-c5ca-4a4b-b9d4-b7edfe8bf029" />
   </Entity>
   <Entity version="2" CardID="CS2_057">
@@ -1464,6 +1466,8 @@ Invoca un Recluta de la Mano de Plata 1/1.</Tag>
     <Tag enumID="251" type="" value="1" />
     <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
 Obtiene 2 de Armadura.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
     <Power definition="99f9e182-b386-40b7-93f2-a56a1d3d85b3" />
   </Entity>
   <Entity version="2" CardID="CS2_103">
@@ -2455,6 +2459,7 @@ Inflige 2 de daño al héroe enemigo.</Tag>
       <PlayRequirement reqID="2" param="" />
       <PlayRequirement reqID="10" param="20" />
     </Power>
+    <Power definition="a6a516fb-8e50-4d7e-a06b-4bea89a12f26" />
   </Entity>
   <Entity version="2" CardID="DS1_070o">
     <Tag enumID="185" type="String">Presencia de maestro</Tag>
@@ -2910,7 +2915,7 @@ Roba una carta.</Tag>
     <Tag enumID="203" type="" value="2" />
     <Tag enumID="48" type="" value="1" />
     <Tag enumID="251" type="" value="1" />
-    <Tag enumID="184" type="String">Inflige $3 de daño dividido aleatoriamente entre los personajes enemigos.</Tag>
+    <Tag enumID="184" type="String">Inflige $3 de daño dividido aleatoriamente entre todos los enemigos.</Tag>
     <Tag enumID="268" type="" value="2" />
     <Tag enumID="321" type="" value="1" />
     <Tag enumID="330" type="" value="0" />
@@ -4051,15 +4056,6 @@ Roba una carta.</Tag>
     <Tag enumID="351" type="String">Parece que los piratas se sumaron a la moda del "Planking".</Tag>
     <ReferencedTag name="Charge" enumID="197" type="Bool" value="1" />
     <Power definition="a2f8d180-d11b-4b7d-86c9-475f00867d58" />
-  </Entity>
-  <Entity version="2" CardID="CS2_146o">
-    <Tag enumID="185" type="String">Afilado</Tag>
-    <Tag enumID="183" type="" value="3" />
-    <Tag enumID="202" type="" value="6" />
-    <Tag enumID="184" type="String">+1 de Durabilidad.</Tag>
-    <Tag enumID="330" type="" value="1" />
-    <Tag enumID="331" type="" value="1" />
-    <Power definition="eaffeed6-b1a5-4d36-98e7-80a3ccbca4cf" />
   </Entity>
   <Entity version="2" CardID="CS2_151">
     <MasterPower>d2b09caf-89d5-4309-88ae-4953a236eb78</MasterPower>
@@ -6115,19 +6111,6 @@ Roba una carta.</Tag>
       <PlayRequirement reqID="1" param="" />
     </Power>
   </Entity>
-  <Entity version="2" CardID="EX1_161o">
-    <Tag enumID="185" type="String">Rugido desmoralizador</Tag>
-    <Tag enumID="183" type="" value="3" />
-    <Tag enumID="202" type="" value="6" />
-    <Tag enumID="199" type="" value="2" />
-    <Tag enumID="184" type="String">Este esbirro tiene -3 de Ataque en este turno.</Tag>
-    <Tag enumID="330" type="" value="2" />
-    <Tag enumID="331" type="" value="2" />
-    <Tag enumID="338" type="" value="1" />
-    <Power definition="83b3bfe2-8601-42df-b94f-0e6f1d884ae1" />
-    <Power definition="0657f370-9ff2-4a69-a900-9f4b14bd6462" />
-    <Power definition="5167e662-d66c-438e-975d-0cd8b3fa1732" />
-  </Entity>
   <Entity version="2" CardID="EX1_162">
     <Tag enumID="185" type="String">Lobo alfa temible</Tag>
     <Tag enumID="183" type="" value="3" />
@@ -6935,6 +6918,7 @@ Roba una carta.</Tag>
     <Power definition="36bfefdd-48f7-43dd-88bb-36c3b71f6c45">
       <PlayRequirement reqID="11" param="" />
       <PlayRequirement reqID="2" param="" />
+      <PlayRequirement reqID="1" param="" />
     </Power>
   </Entity>
   <Entity version="2" CardID="EX1_304">
@@ -7181,12 +7165,12 @@ Roba una carta.</Tag>
     <Power definition="745cbe07-c1e8-46ed-93a7-131722f6abbc">
       <PlayRequirement reqID="11" param="" />
     </Power>
-    <EntourageCard cardID="EX1_306" />
-    <EntourageCard cardID="CS2_065" />
-    <EntourageCard cardID="EX1_319" />
-    <EntourageCard cardID="EX1_301" />
-    <EntourageCard cardID="CS2_059" />
-    <EntourageCard cardID="CS2_064" />
+    <EntourageCard cardID="00000011-80a9-494c-8516-617d31cc37a2" />
+    <EntourageCard cardID="00000011-0aa5-4e9b-939a-42e05fa9d1a4" />
+    <EntourageCard cardID="00000011-e959-48db-83b5-1d43475f0625" />
+    <EntourageCard cardID="00000011-70e2-4599-a940-86769208ece8" />
+    <EntourageCard cardID="00000011-65cc-472a-9e59-b6231bc0053b" />
+    <EntourageCard cardID="00000011-db78-4a17-8719-a0931e674d61" />
   </Entity>
   <Entity version="2" CardID="EX1_323">
     <Tag enumID="185" type="String">Lord Jaraxxus</Tag>
@@ -7283,7 +7267,7 @@ Roba una carta.</Tag>
     </Power>
   </Entity>
   <Entity version="2" CardID="EX1_334e">
-    <Tag enumID="185" type="String">Orden oscura</Tag>
+    <Tag enumID="185" type="String">Locura sombría</Tag>
     <Tag enumID="183" type="" value="3" />
     <Tag enumID="202" type="" value="6" />
     <Tag enumID="199" type="" value="6" />
@@ -7703,7 +7687,7 @@ Roba una carta.</Tag>
   <Entity version="2" CardID="EX1_384">
     <MasterPower>6b2a252b-6666-4520-a960-fbe88a54aafd</MasterPower>
     <Tag enumID="185" type="String">Cólera vengativa</Tag>
-    <Tag enumID="184" type="String">Inflige $8 de daño dividido aleatoriamente entre los personajes enemigos.</Tag>
+    <Tag enumID="184" type="String">Inflige $8 de daño dividido aleatoriamente entre todos los enemigos.</Tag>
     <Tag enumID="183" type="" value="3" />
     <Tag enumID="203" type="" value="4" />
     <Tag enumID="202" type="" value="5" />
@@ -8729,7 +8713,7 @@ Roba una carta.</Tag>
     <Tag enumID="45" type="" value="12" />
     <Tag enumID="201" type="" value="3" />
     <Tag enumID="251" type="" value="7" />
-    <Tag enumID="184" type="String">Al final de tu turno, roba una carta de Sueño.</Tag>
+    <Tag enumID="184" type="String">Al final de tu turno, agrega una carta onírica a tu mano.</Tag>
     <Tag enumID="114" type="" value="1" />
     <Tag enumID="321" type="" value="1" />
     <Tag enumID="330" type="" value="0" />
@@ -8740,11 +8724,11 @@ Roba una carta.</Tag>
     <Tag enumID="32" type="" value="1" />
     <Power definition="e32c5ce1-f12d-4712-ae6f-784876be5a03" />
     <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
-    <EntourageCard cardID="DREAM_01" />
-    <EntourageCard cardID="DREAM_02" />
-    <EntourageCard cardID="DREAM_03" />
-    <EntourageCard cardID="DREAM_04" />
-    <EntourageCard cardID="DREAM_05" />
+    <EntourageCard cardID="00000011-4b89-45f9-bcf3-b706e032180b" />
+    <EntourageCard cardID="00000011-43ca-4198-bce4-501d714e9892" />
+    <EntourageCard cardID="00000011-6b60-42f2-b16e-8b2854af762a" />
+    <EntourageCard cardID="00000011-b1c6-4042-97e7-bf86cebb7f11" />
+    <EntourageCard cardID="00000011-2ea4-4f6e-8412-885598891fd5" />
   </Entity>
   <Entity version="2" CardID="EX1_573">
     <Tag enumID="185" type="String">Cenarius</Tag>
@@ -11247,6 +11231,8 @@ Invoca dos esbirros 2/1.</Tag>
     <Tag enumID="202" type="" value="6" />
     <Tag enumID="184" type="String">
     </Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
   </Entity>
   <Entity version="2" CardID="XXX_010">
     <MasterPower>9db28764-1f95-4ba4-ad5d-fa8d7e08397d</MasterPower>
@@ -11793,8 +11779,8 @@ Invoca dos esbirros 2/1.</Tag>
     </Tag>
     <Tag enumID="183" type="" value="8" />
     <Tag enumID="202" type="" value="6" />
-    <Tag enumID="330" type="" value="0" />
-    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="330" type="" value="1" />
+    <Tag enumID="331" type="" value="1" />
     <Power definition="27085ef3-52d3-4f10-ae59-8dd81f0b57a7" />
   </Entity>
   <Entity version="2" CardID="XXX_055">
@@ -11849,6 +11835,75 @@ Invoca dos esbirros 2/1.</Tag>
       <PlayRequirement reqID="11" param="" />
       <PlayRequirement reqID="17" param="" />
     </Power>
+  </Entity>
+  <Entity version="2" CardID="XXX_058">
+    <MasterPower>44e67c97-2ec3-4988-a1c9-20d5486aa641</MasterPower>
+    <Tag enumID="185" type="String">
+    </Tag>
+    <Tag enumID="183" type="" value="8" />
+    <Tag enumID="203" type="" value="1" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="48" type="" value="0" />
+    <Tag enumID="184" type="String">
+    </Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="44e67c97-2ec3-4988-a1c9-20d5486aa641" />
+  </Entity>
+  <Entity version="2" CardID="XXX_058e">
+    <Tag enumID="185" type="String">
+    </Tag>
+    <Tag enumID="183" type="" value="8" />
+    <Tag enumID="202" type="" value="6" />
+    <Tag enumID="184" type="String">
+    </Tag>
+    <Tag enumID="330" type="" value="2" />
+    <Tag enumID="331" type="" value="2" />
+  </Entity>
+  <Entity version="2" CardID="XXX_059">
+    <MasterPower>4830196d-506f-47b3-9e73-4a066a3cf4b4</MasterPower>
+    <Tag enumID="185" type="String">
+    </Tag>
+    <Tag enumID="183" type="" value="8" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="48" type="" value="0" />
+    <Tag enumID="184" type="String">
+    </Tag>
+    <Power definition="4830196d-506f-47b3-9e73-4a066a3cf4b4">
+      <PlayRequirement reqID="11" param="" />
+      <PlayRequirement reqID="17" param="" />
+    </Power>
+  </Entity>
+  <Entity version="2" CardID="XXX_060">
+    <MasterPower>b0ac8fa5-2222-4224-9c0b-56da77df626c</MasterPower>
+    <Tag enumID="185" type="String">
+    </Tag>
+    <Tag enumID="183" type="" value="8" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="48" type="" value="0" />
+    <Tag enumID="184" type="String">
+    </Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="349" type="" value="1" />
+    <Power definition="b0ac8fa5-2222-4224-9c0b-56da77df626c">
+      <PlayRequirement reqID="11" param="" />
+    </Power>
+  </Entity>
+  <Entity version="2" CardID="XXX_094">
+    <Tag enumID="185" type="String">
+    </Tag>
+    <Tag enumID="183" type="" value="8" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="47" type="" value="1" />
+    <Tag enumID="45" type="" value="1" />
+    <Tag enumID="184" type="String">
+    </Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="68d273c4-6157-45c9-940e-d53fba4055b7" />
   </Entity>
   <Entity version="2" CardID="XXX_095">
     <Tag enumID="185" type="String">
@@ -12226,6 +12281,7 @@ Invoca dos esbirros 2/1.</Tag>
     <Tag enumID="364" type="String">Desbloqueada por derrotar a Grobbulus en el Arrabal de los Ensamblajes.</Tag>
     <Tag enumID="365" type="String">Se puede crear luego de derrotar a Grobbulus en el Arrabal de los Ensamblajes.</Tag>
     <Tag enumID="217" type="" value="1" />
+    <ReferencedTag name="Secret" enumID="219" type="Bool" value="1" />
     <Power definition="4477c163-64c1-4cef-baea-923f8914bb2e" />
     <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
   </Entity>
@@ -12438,7 +12494,7 @@ Estertor:&lt;/b&gt; invoca una Babosa 1/2 con &lt;b&gt;Provocación&lt;/b&gt;.</
     <Tag enumID="184" type="String">Al final de cada turno, invoca a todos los esbirros aliados que murieron en este turno.</Tag>
     <Tag enumID="330" type="" value="0" />
     <Tag enumID="331" type="" value="0" />
-    <Tag enumID="351" type="String">Kel'Thuzad no pudo resistirse al llamado del Rey Exánime. Y eso que era solo un mensaje grabado.</Tag>
+    <Tag enumID="351" type="String">Kel'Thuzad no pudo resistirse al llamado del Rey Exánime. Y eso que era un simple mensaje grabado.</Tag>
     <Tag enumID="342" type="String">Chris Robinson</Tag>
     <Tag enumID="364" type="String">¡Desbloqueada por derrotar a todos los jefes de Naxxramas!</Tag>
     <Tag enumID="365" type="String">Se puede crear luego de derrotar a todos los jefes de Naxxramas.</Tag>
@@ -12537,6 +12593,7 @@ Estertor:&lt;/b&gt; invoca una Babosa 1/2 con &lt;b&gt;Provocación&lt;/b&gt;.</
     <Tag enumID="364" type="String">Desbloqueada por derrotar a la Gran Viuda Faerlina en el Arrabal Arácnido.</Tag>
     <Tag enumID="365" type="String">Se puede crear luego de derrotar a la Gran Viuda Faerlina en el Arrabal Arácnido.</Tag>
     <Tag enumID="362" type="" value="1" />
+    <ReferencedTag name="Battlecry" enumID="218" type="Bool" value="1" />
     <Power definition="b139ccf3-9770-40a6-bab4-0b862631e639" />
   </Entity>
   <Entity version="2" CardID="FP1_018">
@@ -12783,7 +12840,7 @@ Estertor:&lt;/b&gt; invoca una Babosa 1/2 con &lt;b&gt;Provocación&lt;/b&gt;.</
     <Tag enumID="48" type="" value="1" />
     <Tag enumID="47" type="" value="1" />
     <Tag enumID="45" type="" value="2" />
-    <Tag enumID="184" type="String">Cada vez que invocas un esbirro con &lt;b&gt;Estertor&lt;/b&gt;, obtiene +1/+1.</Tag>
+    <Tag enumID="184" type="String">Cada vez que invocas un esbirro con &lt;b&gt;Estertor&lt;/b&gt;, obtiene +1 de Ataque.</Tag>
     <Tag enumID="330" type="" value="0" />
     <Tag enumID="331" type="" value="0" />
     <Tag enumID="351" type="String">En un mundo en el que puedes recurrir a un Ángel de la Resurrección para volver a la vida, el negocio de los Enterradores está muerto.</Tag>
@@ -12802,7 +12859,7 @@ Estertor:&lt;/b&gt; invoca una Babosa 1/2 con &lt;b&gt;Provocación&lt;/b&gt;.</
     <Tag enumID="184" type="String">Estadísticas aumentadas.</Tag>
     <Tag enumID="330" type="" value="0" />
     <Tag enumID="331" type="" value="0" />
-    <Power definition="ceb8ba82-d764-4151-9c27-7ac44c35eb0c" />
+    <Power definition="798787ab-ddbb-4a01-8893-feca0dcdccbc" />
   </Entity>
   <Entity version="2" CardID="FP1_029">
     <Tag enumID="185" type="String">Espadas bailarinas</Tag>
@@ -13026,6 +13083,7 @@ Inflige 2 de daño a todos los enemigos. Si alguno muere, invoca una babosa.</Ta
     <Tag enumID="184" type="String">Otorga +4/+4 y &lt;b&gt;Provocación&lt;/b&gt; a un esbirro.</Tag>
     <Tag enumID="330" type="" value="0" />
     <Tag enumID="331" type="" value="0" />
+    <ReferencedTag name="Taunt" enumID="190" type="Bool" value="1" />
     <Power definition="6a693488-f69b-421c-af4d-1897ec1613c8">
       <PlayRequirement reqID="11" param="" />
       <PlayRequirement reqID="1" param="" />
@@ -13038,6 +13096,7 @@ Inflige 2 de daño a todos los enemigos. Si alguno muere, invoca una babosa.</Ta
     <Tag enumID="184" type="String">+4/+4 y &lt;b&gt;Provocación&lt;/b&gt;.</Tag>
     <Tag enumID="330" type="" value="0" />
     <Tag enumID="331" type="" value="0" />
+    <ReferencedTag name="Taunt" enumID="190" type="Bool" value="1" />
     <Power definition="8da6dcf8-854f-4aff-81e8-5969f606ba0c" />
   </Entity>
   <Entity version="2" CardID="NAX12_01">
@@ -14426,7 +14485,6 @@ Roba 2 cartas.</Tag>
     <Tag enumID="351" type="String">Si no tienes una bomba a mano, lanza cualquier invento goblin. No notarás la diferencia.</Tag>
     <Tag enumID="218" type="" value="1" />
     <Power definition="323790bb-9083-4c9f-9c11-3a5c2c6b94d3" />
-    <Power definition="d4d7eec4-ef9d-4bcb-a1ac-06538a7c17d4" />
   </Entity>
   <Entity version="2" CardID="GVG_005">
     <MasterPower>4ad1f03a-5383-45c0-8cf5-d77cc52d5f23</MasterPower>
@@ -15018,8 +15076,7 @@ Tu héroe es &lt;b&gt;Inmune&lt;/b&gt;.</Tag>
     <Tag enumID="199" type="" value="2" />
     <Tag enumID="47" type="" value="2" />
     <Tag enumID="45" type="" value="2" />
-    <Tag enumID="184" type="String">&lt;b&gt;Provocación&lt;/b&gt;
-&lt;b&gt;Elige una opción:&lt;/b&gt;
+    <Tag enumID="184" type="String">&lt;b&gt;Provocación&lt;/b&gt;. &lt;b&gt;Elige una opción:&lt;/b&gt;
 +1 de Ataque o +1 de Salud.</Tag>
     <Tag enumID="200" type="" value="17" />
     <Tag enumID="330" type="" value="0" />
@@ -15185,7 +15242,7 @@ Tu héroe es &lt;b&gt;Inmune&lt;/b&gt;.</Tag>
     <Tag enumID="114" type="" value="1" />
     <Tag enumID="47" type="" value="9" />
     <Tag enumID="45" type="" value="7" />
-    <Tag enumID="184" type="String">&lt;b&gt;Estertor:&lt;/b&gt; coloca este esbirro en tu mano.</Tag>
+    <Tag enumID="184" type="String">&lt;b&gt;Estertor:&lt;/b&gt; coloca este esbirro en tu mazo.</Tag>
     <Tag enumID="330" type="" value="0" />
     <Tag enumID="331" type="" value="0" />
     <Tag enumID="342" type="String">Oliver Chipping</Tag>
@@ -15253,7 +15310,7 @@ Tu héroe es &lt;b&gt;Inmune&lt;/b&gt;.</Tag>
     <Tag enumID="202" type="" value="5" />
     <Tag enumID="48" type="" value="2" />
     <Tag enumID="199" type="" value="8" />
-    <Tag enumID="184" type="String">Inflige $3-$6 de daño. &lt;b&gt;Sobrecarga: (1)&lt;/b&gt;</Tag>
+    <Tag enumID="184" type="String">Inflige $3-$6 de daño. &lt;b&gt;Sobrecarga:&lt;/b&gt; (1)</Tag>
     <Tag enumID="330" type="" value="0" />
     <Tag enumID="331" type="" value="0" />
     <Tag enumID="342" type="String">Warren Mahy</Tag>
@@ -15372,7 +15429,7 @@ Tu héroe es &lt;b&gt;Inmune&lt;/b&gt;.</Tag>
     <Tag enumID="331" type="" value="0" />
     <Tag enumID="47" type="" value="7" />
     <Tag enumID="45" type="" value="7" />
-    <Tag enumID="184" type="String">&lt;b&gt;Grito de batalla:&lt;/b&gt; agrega 4 Múrlocs aleatorios a tu mano. &lt;b&gt;Sobrecarga: (3)&lt;/b&gt;</Tag>
+    <Tag enumID="184" type="String">&lt;b&gt;Grito de batalla:&lt;/b&gt; agrega 4 Múrlocs aleatorios a tu mano. &lt;b&gt;Sobrecarga:&lt;/b&gt; (3)</Tag>
     <Tag enumID="342" type="String">Ruan Jia</Tag>
     <Tag enumID="351" type="String">Neptulon es "El Cazamareas" y uno de los cuatro señores elementales. Cuando sale de juerga con Ragnaros, todas las fiestas tienen un sauna.</Tag>
     <Tag enumID="218" type="" value="1" />
@@ -15554,6 +15611,7 @@ Tu héroe es &lt;b&gt;Inmune&lt;/b&gt;.</Tag>
     <Tag enumID="342" type="String">Raymond Swanland</Tag>
     <Tag enumID="32" type="" value="1" />
     <Power definition="2374968a-0979-41e7-bc24-abbdfc1b3b85" />
+    <Power definition="4171c690-2fc8-4406-ad59-49041bb3f4a0" />
     <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
   </Entity>
   <Entity version="2" CardID="GVG_049e">
@@ -15680,13 +15738,14 @@ Tu héroe es &lt;b&gt;Inmune&lt;/b&gt;.</Tag>
     <Tag enumID="331" type="" value="0" />
     <Tag enumID="325" type="String">Otorga +2/+2.</Tag>
     <Tag enumID="351" type="String">Si se rompe, solo dale un par de patadas y grita: "¡Pedazo de chatarra!".</Tag>
-    <Tag enumID="342" type="String">Jesper Esjing</Tag>
+    <Tag enumID="342" type="String">Jesper Ejsing</Tag>
     <Tag enumID="218" type="" value="1" />
     <Power definition="b669b9b7-bae3-4aef-adba-bef8856caa36">
       <PlayRequirement reqID="22" param="" />
       <PlayRequirement reqID="2" param="" />
       <PlayRequirement reqID="10" param="17" />
     </Power>
+    <Power definition="0f4ed97f-6a36-4b8c-bc1d-c752db84b6e3" />
   </Entity>
   <Entity version="2" CardID="GVG_055e">
     <Tag enumID="185" type="String">Repuestos de lata</Tag>
@@ -15799,7 +15858,7 @@ Tu héroe es &lt;b&gt;Inmune&lt;/b&gt;.</Tag>
     <Tag enumID="331" type="" value="0" />
     <Tag enumID="187" type="" value="3" />
     <Tag enumID="351" type="String">Veamos: ¿tomaste esto de una máquina, le grabaste algunas runas, le clavaste una empuñadura, y ahora dices que es un arma con un gran poder divino...? Parece auténtico.</Tag>
-    <Tag enumID="342" type="String">Danny Orizio</Tag>
+    <Tag enumID="342" type="String">Dany Orizio</Tag>
     <Tag enumID="218" type="" value="1" />
     <ReferencedTag name="Divine Shield" enumID="194" type="Bool" value="1" />
     <ReferencedTag name="Taunt" enumID="190" type="Bool" value="1" />
@@ -16027,7 +16086,7 @@ Tu héroe es &lt;b&gt;Inmune&lt;/b&gt;.</Tag>
     <Tag enumID="45" type="" value="3" />
     <Tag enumID="184" type="String">&lt;b&gt;Grito de batalla:&lt;/b&gt; restaura 8 de Salud a tu héroe.</Tag>
     <Tag enumID="200" type="" value="17" />
-    <Tag enumID="342" type="String">Jesper Esjing</Tag>
+    <Tag enumID="342" type="String">Jesper Ejsing</Tag>
     <Tag enumID="351" type="String">¡Ya no los hacen como antes! (Principalmente, por las explosiones).</Tag>
     <Tag enumID="218" type="" value="1" />
     <Power definition="58b990b9-1e8a-46cd-8796-2793e18cf680" />
@@ -16137,7 +16196,7 @@ Tu héroe es &lt;b&gt;Inmune&lt;/b&gt;.</Tag>
     <Tag enumID="203" type="" value="1" />
     <Tag enumID="47" type="" value="2" />
     <Tag enumID="45" type="" value="3" />
-    <Tag enumID="184" type="String">Cada vez que invocas un Pirata, inflige 2 de daño a un esbirro enemigo.</Tag>
+    <Tag enumID="184" type="String">Cada vez que invocas un Pirata, inflige 2 de daño a un enemigo aleatorio.</Tag>
     <Tag enumID="330" type="" value="0" />
     <Tag enumID="331" type="" value="0" />
     <Tag enumID="351" type="String">Según dicen, este fue el primer cañón que Kenny le vendió a Guybrush después de dejar el negocio de las limonadas.</Tag>
@@ -16257,6 +16316,7 @@ Tu héroe es &lt;b&gt;Inmune&lt;/b&gt;.</Tag>
     <Tag enumID="351" type="String">Los Druidas del Colmillo viven en las Cuevas de los Lamentos. Usan ropa con dibujos de serpientes, cuentan chistes de serpientes, y se pasan el día diciendo "viejo".</Tag>
     <Tag enumID="218" type="" value="1" />
     <Power definition="2366e87b-5605-4d66-b47f-d37ea6fe23a4" />
+    <Power definition="8dcc5dab-7b75-4760-9f65-5159d94643c3" />
   </Entity>
   <Entity version="2" CardID="GVG_080t">
     <Tag enumID="185" type="String">Druida del Colmillo</Tag>
@@ -16521,7 +16581,7 @@ No puede ser objetivo de Hechizos ni Poderes de héroe.</Tag>
     <Tag enumID="330" type="" value="0" />
     <Tag enumID="331" type="" value="0" />
     <Tag enumID="351" type="String">Es increíble que aún se sorprenda cada vez que él mismo termina transformado en pollo.</Tag>
-    <Tag enumID="342" type="String">Jesper Esjing</Tag>
+    <Tag enumID="342" type="String">Jesper Ejsing</Tag>
     <Tag enumID="218" type="" value="1" />
     <Power definition="ff89f0a5-1195-4e2c-8638-58febaca06e6" />
   </Entity>
@@ -16584,7 +16644,7 @@ No puede ser objetivo de Hechizos ni Poderes de héroe.</Tag>
     <Tag enumID="45" type="" value="4" />
     <Tag enumID="184" type="String">Tiene +4 de Ataque mientras tu adversario tiene 6 o más cartas en la mano.</Tag>
     <Tag enumID="351" type="String">Sus noches de pasarla bomba ya quedaron atrás. Ahora prefiere un buen libro y una taza de té.</Tag>
-    <Tag enumID="342" type="String">Jesper Esjing</Tag>
+    <Tag enumID="342" type="String">Jesper Ejsing</Tag>
     <Tag enumID="362" type="" value="1" />
     <Power definition="1f9f000d-8ce6-4bc6-9278-8738f61441a0" />
   </Entity>
@@ -17193,7 +17253,7 @@ No puede ser objetivo de Hechizos ni Poderes de héroe.</Tag>
     <Tag enumID="48" type="" value="12" />
     <Tag enumID="47" type="" value="8" />
     <Tag enumID="45" type="" value="8" />
-    <Tag enumID="184" type="String">Cuesta (1) menos por cada una de las otras cartas que hay en la mano de tu adversario.</Tag>
+    <Tag enumID="184" type="String">Cuesta (1) menos por cada carta en la mano de tu adversario.</Tag>
     <Tag enumID="330" type="" value="0" />
     <Tag enumID="331" type="" value="0" />
     <Tag enumID="200" type="" value="17" />
@@ -17397,6 +17457,3126 @@ No puede ser objetivo de Hechizos ni Poderes de héroe.</Tag>
     <Tag enumID="202" type="" value="6" />
     <Tag enumID="184" type="String">+1 de Ataque.</Tag>
     <Power definition="6171e7c5-e02e-4e30-86ad-a4213947dd77" />
+  </Entity>
+  <Entity version="2" CardID="BRMA01_1">
+    <MasterPower>6971342d-b99e-44b8-acaa-5aaf4c833aaa</MasterPower>
+    <Tag enumID="185" type="String">Coren Cerveza Temible</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2314" />
+    <Tag enumID="367" type="" value="1" />
+    <Power definition="6971342d-b99e-44b8-acaa-5aaf4c833aaa" />
+    <Power definition="99a668e6-a529-408e-8140-22c14dbfc072" />
+    <Power definition="2472ca17-602d-47fa-81fe-579ca455f53c" />
+    <Power definition="75f83afe-5ad4-4804-a6c1-bd9d0d0e6040" />
+    <Power definition="33243006-a315-4fe6-addc-75ca01e1b91d" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="1" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="2" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="3" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA01_1H">
+    <MasterPower>e1279ebf-5a94-4546-81d5-5cb2305de1ed</MasterPower>
+    <Tag enumID="185" type="String">Coren Cerveza Temible</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2439" />
+    <Tag enumID="367" type="" value="1" />
+    <Power definition="e1279ebf-5a94-4546-81d5-5cb2305de1ed" />
+    <Power definition="fdf24e4c-bb00-4f18-bd82-3f3123a16dd1" />
+    <Power definition="5ea72d92-0a34-41c2-94cb-07a34c1e899f" />
+    <Power definition="0673c3d2-5eda-4385-8d61-37e37d5ff786" />
+    <Power definition="3f4df068-f8b0-46f4-9d6f-15201db13a76" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="1" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="2" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="3" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA01_2">
+    <MasterPower>d6f94668-adec-48b5-be4a-86961df44bed</MasterPower>
+    <Tag enumID="185" type="String">¡Fiestón!</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="0" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Coloca un esbirro de cada mazo en el campo de batalla.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="367" type="" value="1" />
+    <Power definition="d6f94668-adec-48b5-be4a-86961df44bed" />
+  </Entity>
+  <Entity version="2" CardID="BRMA01_2H">
+    <MasterPower>79960d14-67a6-480a-b0bc-b21258f1ba3a</MasterPower>
+    <Tag enumID="185" type="String">¡Fiestón!</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="0" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Coloca dos esbirros de tu mazo y uno del de tu adversario en el campo de batalla.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="367" type="" value="1" />
+    <Power definition="79960d14-67a6-480a-b0bc-b21258f1ba3a" />
+  </Entity>
+  <Entity version="2" CardID="BRMA01_3">
+    <Tag enumID="185" type="String">Gorila Hierro Negro</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="6" />
+    <Tag enumID="47" type="" value="4" />
+    <Tag enumID="45" type="" value="8" />
+    <Tag enumID="184" type="String">Gana todas las grescas.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+  </Entity>
+  <Entity version="2" CardID="BRMA01_4">
+    <MasterPower>0e9adb3a-a5be-48d0-90da-acee111b693f</MasterPower>
+    <Tag enumID="185" type="String">¡A ellos!</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="48" type="" value="3" />
+    <Tag enumID="184" type="String">Invoca cuatro enanos 1/1 con &lt;b&gt;Provocación&lt;/b&gt;.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="0e9adb3a-a5be-48d0-90da-acee111b693f" />
+  </Entity>
+  <Entity version="2" CardID="BRMA01_4t">
+    <Tag enumID="185" type="String">Voraz</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="47" type="" value="1" />
+    <Tag enumID="45" type="" value="1" />
+    <Tag enumID="184" type="String">&lt;b&gt;Provocación&lt;/b&gt;.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="190" type="" value="1" />
+    <Power definition="e8b60393-9a87-467b-90cd-945d91243c6a" />
+  </Entity>
+  <Entity version="2" CardID="BRMA02_1">
+    <MasterPower>9554f3c1-4a03-4ddb-bc2e-cb26d371b477</MasterPower>
+    <Tag enumID="185" type="String">Alto justiciero Pedrasiniestra</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2317" />
+    <Power definition="9554f3c1-4a03-4ddb-bc2e-cb26d371b477" />
+  </Entity>
+  <Entity version="2" CardID="BRMA02_1H">
+    <MasterPower>f7205807-e735-47e6-9beb-ddd4651e335a</MasterPower>
+    <Tag enumID="185" type="String">Alto justiciero Pedrasiniestra</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2588" />
+    <Power definition="f7205807-e735-47e6-9beb-ddd4651e335a" />
+    <Power definition="b292a941-58a0-479d-b90b-e7b4e1811f9d" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA02_2">
+    <MasterPower>f9463f87-85b8-4352-bd35-29a4a24fb895</MasterPower>
+    <Tag enumID="185" type="String">Público difícil</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Invoca un Observador 1/1 con &lt;b&gt;Provocación&lt;/b&gt;.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="f9463f87-85b8-4352-bd35-29a4a24fb895">
+      <PlayRequirement reqID="12" param="1" />
+    </Power>
+  </Entity>
+  <Entity version="2" CardID="BRMA02_2H">
+    <MasterPower>e0dc4e9c-6d71-495b-9b59-fae2ab46585e</MasterPower>
+    <Tag enumID="185" type="String">Público difícil</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="0" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Invoca un Observador 1/1 con &lt;b&gt;Provocación&lt;/b&gt;.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="e0dc4e9c-6d71-495b-9b59-fae2ab46585e" />
+  </Entity>
+  <Entity version="2" CardID="BRMA02_2t">
+    <Tag enumID="185" type="String">Observador Hierro Negro</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="47" type="" value="1" />
+    <Tag enumID="45" type="" value="1" />
+    <Tag enumID="184" type="String">&lt;b&gt;Provocación&lt;/b&gt;.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="190" type="" value="1" />
+    <Power definition="2a8b7e8c-326f-4ae9-aa55-bf00669f0330" />
+  </Entity>
+  <Entity version="2" CardID="BRMA03_1">
+    <MasterPower>d260b101-0507-4b53-9a19-d5347745062c</MasterPower>
+    <Tag enumID="185" type="String">Emperador Thaurissan</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2321" />
+    <Power definition="d260b101-0507-4b53-9a19-d5347745062c" />
+    <Power definition="ab8f3328-5854-4076-97bf-450519e760ce" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA03_1H">
+    <MasterPower>b5f06f9b-25ae-48ce-ba79-9d3340b9574f</MasterPower>
+    <Tag enumID="185" type="String">Emperador Thaurissan</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2321" />
+    <Power definition="b5f06f9b-25ae-48ce-ba79-9d3340b9574f" />
+    <Power definition="860f04ec-2b1d-4cba-953f-016757ec9163" />
+    <Power definition="dd37d3f4-2260-4c74-b08f-22beee611a9a" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="1" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA03_2">
+    <MasterPower>ef0c07a3-acfe-4115-8737-f1eb27b53707</MasterPower>
+    <Tag enumID="185" type="String">Poder del Señor del Fuego</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Inflige 30 de daño.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="48" type="" value="2" />
+    <Power definition="ef0c07a3-acfe-4115-8737-f1eb27b53707">
+      <PlayRequirement reqID="11" param="" />
+    </Power>
+  </Entity>
+  <Entity version="2" CardID="BRMA03_3">
+    <Tag enumID="185" type="String">Moira Barbabronce</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="2" />
+    <Tag enumID="47" type="" value="1" />
+    <Tag enumID="45" type="" value="3" />
+    <Tag enumID="184" type="String">Solo ataca a los esbirros con &lt;b&gt;Provocación&lt;/b&gt;.
+Evita que Thaurissan use su poder de héroe.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="362" type="" value="1" />
+    <Tag enumID="335" type="" value="1" />
+    <Power definition="b93ce736-b7a6-48c9-8136-d306d1a91b94" />
+    <Power definition="a1a7a9b9-b33c-40be-a617-6af6c302d429" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA03_3H">
+    <Tag enumID="185" type="String">Moira Barbabronce</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="2" />
+    <Tag enumID="47" type="" value="3" />
+    <Tag enumID="45" type="" value="1" />
+    <Tag enumID="184" type="String">Solo ataca a los esbirros con &lt;b&gt;Provocación&lt;/b&gt;.
+Evita que Thaurissan use su poder de héroe.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="362" type="" value="1" />
+    <Tag enumID="335" type="" value="1" />
+    <Power definition="18dbd295-9c09-48ad-9ecf-1b1c693b927c" />
+    <Power definition="2ff03f55-47ad-41e4-9d5a-91e4e7b67240" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA04_1">
+    <MasterPower>54c67bc3-dc92-43a7-a9af-53b3f39d49cf</MasterPower>
+    <Tag enumID="185" type="String">Garr</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2325" />
+    <Power definition="54c67bc3-dc92-43a7-a9af-53b3f39d49cf" />
+  </Entity>
+  <Entity version="2" CardID="BRMA04_1H">
+    <MasterPower>5c9c74e6-6e20-4a63-9fcb-5665c2a7f8ce</MasterPower>
+    <Tag enumID="185" type="String">Garr</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="45" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2325" />
+    <Power definition="5c9c74e6-6e20-4a63-9fcb-5665c2a7f8ce" />
+  </Entity>
+  <Entity version="2" CardID="BRMA04_2">
+    <MasterPower>070fc57a-fe9d-4754-bc3c-d8195a5ff653</MasterPower>
+    <Tag enumID="185" type="String">Pulso magmático</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Inflige 1 de daño a todos los esbirros.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="367" type="" value="1" />
+    <Power definition="070fc57a-fe9d-4754-bc3c-d8195a5ff653" />
+  </Entity>
+  <Entity version="2" CardID="BRMA04_3">
+    <Tag enumID="185" type="String">Jurafuegos</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="0" />
+    <Tag enumID="47" type="" value="0" />
+    <Tag enumID="45" type="" value="5" />
+    <Tag enumID="184" type="String">&lt;b&gt;Estertor:&lt;/b&gt; inflige 1 de daño al héroe enemigo por cada Jurafuegos que haya muerto este turno.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="217" type="" value="1" />
+    <Power definition="bc00fe28-ec72-4f9a-9548-3c3cc8480584" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="True" />
+  </Entity>
+  <Entity version="2" CardID="BRMA04_3H">
+    <Tag enumID="185" type="String">Jurafuegos</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="45" type="" value="5" />
+    <Tag enumID="184" type="String">&lt;b&gt;Estertor:&lt;/b&gt; inflige 3 de daño al héroe enemigo por cada Jurafuegos que haya muerto este turno.</Tag>
+    <Tag enumID="48" type="" value="0" />
+    <Tag enumID="47" type="" value="0" />
+    <Tag enumID="217" type="" value="1" />
+    <Power definition="db88fd13-4203-4c79-ae67-2862dbc3ff01" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA04_4">
+    <MasterPower>ee40147a-e1ec-4df3-a31e-edb45ed94592</MasterPower>
+    <Tag enumID="185" type="String">A rodar</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="48" type="" value="3" />
+    <Tag enumID="184" type="String">Invoca 3 Jurafuegos. &lt;b&gt;Sobrecarga:&lt;/b&gt; (2)</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="ee40147a-e1ec-4df3-a31e-edb45ed94592" />
+  </Entity>
+  <Entity version="2" CardID="BRMA04_4H">
+    <MasterPower>40dddfb0-2ca2-41b9-9fcb-6cc1a42ccc36</MasterPower>
+    <Tag enumID="185" type="String">A rodar</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="184" type="String">Invoca 3 Jurafuegos. &lt;b&gt;Sobrecarga:&lt;/b&gt; (2)</Tag>
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="48" type="" value="3" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="40dddfb0-2ca2-41b9-9fcb-6cc1a42ccc36" />
+  </Entity>
+  <Entity version="2" CardID="BRMA05_1">
+    <MasterPower>95bc33a7-ff61-4b5a-9e57-a462f392d097</MasterPower>
+    <Tag enumID="185" type="String">Barón Geddon</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2329" />
+    <Power definition="95bc33a7-ff61-4b5a-9e57-a462f392d097" />
+  </Entity>
+  <Entity version="2" CardID="BRMA05_1H">
+    <MasterPower>a3c536c2-92fa-4d8c-86ab-5c55fb7c0efa</MasterPower>
+    <Tag enumID="185" type="String">Barón Geddon</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="50" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2445" />
+    <Power definition="a3c536c2-92fa-4d8c-86ab-5c55fb7c0efa" />
+    <Power definition="2a754c7a-a21d-4dbe-a38a-028001314a17" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA05_2">
+    <MasterPower>ffa8845e-dc93-48e6-8af1-5faa67c29e49</MasterPower>
+    <Tag enumID="185" type="String">Ignición de maná</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="0" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Inflige 5 de daño al héroe enemigo si tiene cristales de maná sin usar.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="ffa8845e-dc93-48e6-8af1-5faa67c29e49" />
+    <Power definition="98bd317a-980f-4b8c-8925-c824c7b946d5" />
+  </Entity>
+  <Entity version="2" CardID="BRMA05_2H">
+    <MasterPower>2a8c8aa0-80bd-47fb-b192-2b290d883894</MasterPower>
+    <Tag enumID="185" type="String">Ignición de maná</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="0" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Inflige 10 de daño al héroe enemigo si tiene cristales de maná sin usar.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="2a8c8aa0-80bd-47fb-b192-2b290d883894" />
+    <Power definition="5db6799e-4fa9-460e-a958-d3405114682f" />
+  </Entity>
+  <Entity version="2" CardID="BRMA05_3">
+    <MasterPower>80c76d4a-3e10-4683-9b4e-bd84b879da73</MasterPower>
+    <Tag enumID="185" type="String">Bomba viviente</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="48" type="" value="4" />
+    <Tag enumID="184" type="String">Elige un esbirro enemigo. Si en tu próximo turno sigue vivo, inflige $5 de daño a todos los enemigos.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="80c76d4a-3e10-4683-9b4e-bd84b879da73">
+      <PlayRequirement reqID="11" param="" />
+      <PlayRequirement reqID="3" param="" />
+      <PlayRequirement reqID="1" param="" />
+    </Power>
+  </Entity>
+  <Entity version="2" CardID="BRMA05_3e">
+    <Tag enumID="185" type="String">Bomba viviente</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="6" />
+    <Tag enumID="184" type="String">En el turno de Geddon, inflige 5 de daño a todo lo que tengas.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="492d39d5-9168-4043-9256-33c7b9ca69ca" />
+    <Power definition="c861b2cb-381b-4695-9c5d-a84684d7e1a8" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA05_3H">
+    <MasterPower>b2bb76b0-f428-4223-9f11-d16a7f4f6bd9</MasterPower>
+    <Tag enumID="185" type="String">Bomba viviente</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="48" type="" value="3" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="184" type="String">Elige un esbirro enemigo. Si en tu próximo turno sigue vivo, inflige $10 de daño a todos los enemigos.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="b2bb76b0-f428-4223-9f11-d16a7f4f6bd9">
+      <PlayRequirement reqID="11" param="" />
+      <PlayRequirement reqID="3" param="" />
+      <PlayRequirement reqID="1" param="" />
+    </Power>
+  </Entity>
+  <Entity version="2" CardID="BRMA05_3He">
+    <Tag enumID="185" type="String">Bomba viviente</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="6" />
+    <Tag enumID="184" type="String">En el turno de Geddon, inflige 10 de daño a todo lo que tengas.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="096736ce-75c4-4cbd-bc40-008ff0c6d3d9" />
+    <Power definition="19a2f76a-5e91-494f-8ff0-3645cf35a021" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA06_1">
+    <MasterPower>2ee5dfdf-c312-46d9-9cf5-85bdd4c39ff7</MasterPower>
+    <Tag enumID="185" type="String">Mayordomo Executus</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2335" />
+    <Power definition="2ee5dfdf-c312-46d9-9cf5-85bdd4c39ff7" />
+    <Power definition="910afe0d-ad6a-4300-b65f-48bf2b386f3a" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA06_1H">
+    <MasterPower>874ed53e-6890-48e9-95e9-0ea0adae0308</MasterPower>
+    <Tag enumID="185" type="String">Mayordomo Executus</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2479" />
+    <Power definition="874ed53e-6890-48e9-95e9-0ea0adae0308" />
+    <Power definition="c0b97397-0763-4164-85a1-1e7e9f3a3c68" />
+    <Power definition="134b5d41-8db7-4173-a735-a94bb0176aaf" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="1" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA06_2">
+    <MasterPower>f4c81693-7c4d-45a1-8ef9-6917911d203d</MasterPower>
+    <Tag enumID="185" type="String">El mayordomo</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Invoca un Acólito despiertallamas 1/3.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="48" type="" value="2" />
+    <Power definition="f4c81693-7c4d-45a1-8ef9-6917911d203d">
+      <PlayRequirement reqID="12" param="1" />
+    </Power>
+  </Entity>
+  <Entity version="2" CardID="BRMA06_2H">
+    <MasterPower>12251dfc-74ef-4ff9-9c2e-7ae9d017d0d3</MasterPower>
+    <Tag enumID="185" type="String">El mayordomo</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="2" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Invoca un Acólito despiertallamas 3/3.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="12251dfc-74ef-4ff9-9c2e-7ae9d017d0d3">
+      <PlayRequirement reqID="12" param="1" />
+    </Power>
+  </Entity>
+  <Entity version="2" CardID="BRMA06_3">
+    <Tag enumID="185" type="String">Ragnaros el Señor del Fuego</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="8" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2319" />
+  </Entity>
+  <Entity version="2" CardID="BRMA06_3H">
+    <Tag enumID="185" type="String">Ragnaros el Señor del Fuego</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2448" />
+  </Entity>
+  <Entity version="2" CardID="BRMA06_4">
+    <Tag enumID="185" type="String">Acólito despiertallamas</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="2" />
+    <Tag enumID="47" type="" value="1" />
+    <Tag enumID="45" type="" value="3" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+  </Entity>
+  <Entity version="2" CardID="BRMA06_4H">
+    <Tag enumID="185" type="String">Acólito despiertallamas</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="2" />
+    <Tag enumID="47" type="" value="3" />
+    <Tag enumID="45" type="" value="3" />
+  </Entity>
+  <Entity version="2" CardID="BRMA07_1">
+    <MasterPower>7d79047d-fbed-40df-a194-6e46156778f9</MasterPower>
+    <Tag enumID="185" type="String">Alto señor Omokk</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+    <Tag enumID="380" type="" value="2338" />
+    <Power definition="7d79047d-fbed-40df-a194-6e46156778f9" />
+  </Entity>
+  <Entity version="2" CardID="BRMA07_1H">
+    <MasterPower>c8be0380-3f9b-4361-82f3-1284f7db2d2d</MasterPower>
+    <Tag enumID="185" type="String">Alto señor Omokk</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2451" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+    <Power definition="c8be0380-3f9b-4361-82f3-1284f7db2d2d" />
+    <Power definition="11518515-eace-4296-9454-29a2ad2f941b" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA07_2">
+    <MasterPower>fe01db75-4d40-43ce-9ab3-afe66a093f51</MasterPower>
+    <Tag enumID="185" type="String">¡YO APLASTAR!</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Destruye un esbirro enemigo dañado aleatorio.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="fe01db75-4d40-43ce-9ab3-afe66a093f51">
+      <PlayRequirement reqID="23" param="1" />
+    </Power>
+    <Power definition="d9d56cd7-7172-474a-a6a1-53b64ddb774a" />
+  </Entity>
+  <Entity version="2" CardID="BRMA07_2H">
+    <MasterPower>44102aa4-f170-48fa-b3e1-e0bb0fc6ae74</MasterPower>
+    <Tag enumID="185" type="String">¡YO APLASTAR!</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Destruye un esbirro enemigo dañado aleatorio.</Tag>
+    <Tag enumID="48" type="" value="0" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="367" type="" value="1" />
+    <Power definition="44102aa4-f170-48fa-b3e1-e0bb0fc6ae74" />
+    <Power definition="6e1146db-3ad8-4e0c-83cc-283d295a1577" />
+  </Entity>
+  <Entity version="2" CardID="BRMA07_3">
+    <MasterPower>dd39ab0e-7ac7-4eaf-af92-581f9871daa5</MasterPower>
+    <Tag enumID="185" type="String">HORA DE APLASTAR</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="48" type="" value="4" />
+    <Tag enumID="184" type="String">Inflige $5 de daño a un enemigo aleatorio. Obtiene 5 de Armadura.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="dd39ab0e-7ac7-4eaf-af92-581f9871daa5" />
+  </Entity>
+  <Entity version="2" CardID="BRMA08_1">
+    <MasterPower>b4413efa-09db-4e4c-b854-406d3e6c4673</MasterPower>
+    <Tag enumID="185" type="String">General Drakkisath</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="50" />
+    <Tag enumID="380" type="" value="2341" />
+    <Power definition="b4413efa-09db-4e4c-b854-406d3e6c4673" />
+  </Entity>
+  <Entity version="2" CardID="BRMA08_1H">
+    <MasterPower>98308fab-323c-4fd2-b08f-c901cc34df88</MasterPower>
+    <Tag enumID="185" type="String">General Drakkisath</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="45" type="" value="50" />
+    <Tag enumID="380" type="" value="2453" />
+    <Power definition="98308fab-323c-4fd2-b08f-c901cc34df88" />
+    <Power definition="0d4254ec-9d77-4330-86b8-f35e882f9f0b" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA08_2">
+    <Tag enumID="185" type="String">Mirada penetrante</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe pasivo&lt;/b&gt;
+Todas las cartas cuestan (1). Los jugadores no pueden tener más de 1 cristal de maná.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="402" type="" value="1" />
+    <Power definition="6c192450-44ec-4d8b-8003-bbe637051bf8" />
+  </Entity>
+  <Entity version="2" CardID="BRMA08_2H">
+    <Tag enumID="185" type="String">Mirada penetrante</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe pasivo&lt;/b&gt;
+Todas las cartas cuestan (1). Tú no puedes tener más de 2 cristales de maná, ni tu adversario más de 1.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="402" type="" value="1" />
+    <Power definition="2b138482-4530-46b7-a880-0dd05dfc1bc1" />
+  </Entity>
+  <Entity version="2" CardID="BRMA08_3">
+    <MasterPower>604e89d6-32b3-472a-aec0-bbb4fb7537f7</MasterPower>
+    <Tag enumID="185" type="String">Órdenes de Drakkisath</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="184" type="String">Destruye un esbirro. Obtienes 10 de Armadura.</Tag>
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="604e89d6-32b3-472a-aec0-bbb4fb7537f7">
+      <PlayRequirement reqID="11" param="" />
+      <PlayRequirement reqID="1" param="" />
+    </Power>
+  </Entity>
+  <Entity version="2" CardID="BRMA09_1">
+    <MasterPower>6bfe29cd-346b-4f54-9b21-c612756093c9</MasterPower>
+    <Tag enumID="185" type="String">Rend Puño Negro</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2345" />
+    <Power definition="6bfe29cd-346b-4f54-9b21-c612756093c9" />
+  </Entity>
+  <Entity version="2" CardID="BRMA09_1H">
+    <MasterPower>d64b3601-76df-450c-8fc3-684a964f944a</MasterPower>
+    <Tag enumID="185" type="String">Rend Puño Negro</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2530" />
+    <Power definition="d64b3601-76df-450c-8fc3-684a964f944a" />
+    <Power definition="1282e623-f997-44ce-bd87-d34f256a5a16" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA09_2">
+    <MasterPower>aa626ce8-ab2a-4a35-a092-57b2eb442ddf</MasterPower>
+    <Tag enumID="185" type="String">Abran las puertas</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="2" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Invoca tres Crías 1/1. Obtiene un nuevo Poder de héroe.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="aa626ce8-ab2a-4a35-a092-57b2eb442ddf">
+      <PlayRequirement reqID="12" param="1" />
+    </Power>
+    <EntourageCard cardID="00000011-6ae3-480e-a049-9802620cfc96" />
+    <EntourageCard cardID="00000011-c8fa-4133-b5c6-8d5f1eefa74c" />
+  </Entity>
+  <Entity version="2" CardID="BRMA09_2H">
+    <MasterPower>9fd797eb-fd9c-4340-87e2-9d6de647f3c9</MasterPower>
+    <Tag enumID="185" type="String">Abran las puertas</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="2" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Invoca tres Crías 2/2. Obtiene un nuevo Poder de héroe.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="9fd797eb-fd9c-4340-87e2-9d6de647f3c9" />
+    <EntourageCard cardID="00000011-d9d1-4f7b-8f99-8e581004ff62" />
+    <EntourageCard cardID="00000011-1326-4697-bb47-751add50f270" />
+  </Entity>
+  <Entity version="2" CardID="BRMA09_2Ht">
+    <Tag enumID="185" type="String">Cría</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="47" type="" value="2" />
+    <Tag enumID="45" type="" value="2" />
+    <Tag enumID="200" type="" value="24" />
+  </Entity>
+  <Entity version="2" CardID="BRMA09_2t">
+    <Tag enumID="185" type="String">Cría</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="47" type="" value="1" />
+    <Tag enumID="45" type="" value="1" />
+    <Tag enumID="200" type="" value="24" />
+  </Entity>
+  <Entity version="2" CardID="BRMA09_3">
+    <MasterPower>9fe0c819-ecaa-482a-9620-1d79d9c3704d</MasterPower>
+    <Tag enumID="185" type="String">Vieja Horda</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="2" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Invoca dos Orcos 1/1 con &lt;b&gt;Provocación&lt;/b&gt;. Obtiene un nuevo Poder de héroe.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="9fe0c819-ecaa-482a-9620-1d79d9c3704d">
+      <PlayRequirement reqID="12" param="1" />
+    </Power>
+    <EntourageCard cardID="00000011-f009-4990-a009-e9b5315299ad" />
+    <EntourageCard cardID="00000011-c8fa-4133-b5c6-8d5f1eefa74c" />
+    <EntourageCard cardID="00000011-ee10-4ea2-b8f3-961d2cda2430" />
+  </Entity>
+  <Entity version="2" CardID="BRMA09_3H">
+    <MasterPower>3b132f3e-934f-463a-a51f-2cd8da85a332</MasterPower>
+    <Tag enumID="185" type="String">Vieja Horda</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="2" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Invoca dos Orcos 2/2 con &lt;b&gt;Provocación&lt;/b&gt;. Obtiene un nuevo Poder de héroe.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="3b132f3e-934f-463a-a51f-2cd8da85a332" />
+    <EntourageCard cardID="00000011-cf1d-44df-ae7f-be88fbcb2ac4" />
+    <EntourageCard cardID="00000011-1326-4697-bb47-751add50f270" />
+    <EntourageCard cardID="00000011-d9f3-42d4-959b-db1774674fc2" />
+  </Entity>
+  <Entity version="2" CardID="BRMA09_3Ht">
+    <Tag enumID="185" type="String">Orco de la vieja Horda</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="47" type="" value="2" />
+    <Tag enumID="45" type="" value="2" />
+    <Tag enumID="184" type="String">&lt;b&gt;Provocación&lt;/b&gt;</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="190" type="" value="1" />
+    <Power definition="7b551f6c-de7d-4c63-8cf9-a75870dd3bd4" />
+  </Entity>
+  <Entity version="2" CardID="BRMA09_3t">
+    <Tag enumID="185" type="String">Orco de la vieja Horda</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="47" type="" value="1" />
+    <Tag enumID="45" type="" value="1" />
+    <Tag enumID="184" type="String">&lt;b&gt;Provocación&lt;/b&gt;</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="190" type="" value="1" />
+    <Power definition="fb40fb50-1de6-4537-a5f2-553693b92144" />
+  </Entity>
+  <Entity version="2" CardID="BRMA09_4">
+    <MasterPower>8bc6797a-9f59-4296-bb22-c83b39718b34</MasterPower>
+    <Tag enumID="185" type="String">Alanegra</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Invoca un Dragonante 3/1. Obtiene un nuevo Poder de héroe.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="8bc6797a-9f59-4296-bb22-c83b39718b34">
+      <PlayRequirement reqID="12" param="1" />
+    </Power>
+    <EntourageCard cardID="00000011-f009-4990-a009-e9b5315299ad" />
+    <EntourageCard cardID="00000011-6ae3-480e-a049-9802620cfc96" />
+    <EntourageCard cardID="00000011-ee10-4ea2-b8f3-961d2cda2430" />
+  </Entity>
+  <Entity version="2" CardID="BRMA09_4H">
+    <MasterPower>2011d103-a35d-4ead-814e-74216704d1d3</MasterPower>
+    <Tag enumID="185" type="String">Alanegra</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Invoca un Dragonante 5/4. Obtiene un nuevo Poder de héroe.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="2011d103-a35d-4ead-814e-74216704d1d3" />
+    <EntourageCard cardID="00000011-cf1d-44df-ae7f-be88fbcb2ac4" />
+    <EntourageCard cardID="00000011-d9d1-4f7b-8f99-8e581004ff62" />
+    <EntourageCard cardID="00000011-d9f3-42d4-959b-db1774674fc2" />
+  </Entity>
+  <Entity version="2" CardID="BRMA09_4Ht">
+    <Tag enumID="185" type="String">Dragonante</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="47" type="" value="5" />
+    <Tag enumID="45" type="" value="4" />
+    <Tag enumID="200" type="" value="24" />
+  </Entity>
+  <Entity version="2" CardID="BRMA09_4t">
+    <Tag enumID="185" type="String">Dragonante</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="47" type="" value="3" />
+    <Tag enumID="45" type="" value="1" />
+    <Tag enumID="200" type="" value="24" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+  </Entity>
+  <Entity version="2" CardID="BRMA09_5">
+    <MasterPower>0df65e31-a6ef-4c20-8e8d-6b0d0a605146</MasterPower>
+    <Tag enumID="185" type="String">Desmontar</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="4" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Invoca a Gyth. Obtiene un nuevo Poder de héroe.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="0df65e31-a6ef-4c20-8e8d-6b0d0a605146">
+      <PlayRequirement reqID="12" param="1" />
+    </Power>
+    <EntourageCard cardID="00000011-f009-4990-a009-e9b5315299ad" />
+    <EntourageCard cardID="00000011-6ae3-480e-a049-9802620cfc96" />
+    <EntourageCard cardID="00000011-c8fa-4133-b5c6-8d5f1eefa74c" />
+  </Entity>
+  <Entity version="2" CardID="BRMA09_5H">
+    <MasterPower>6ca746fe-d2cc-4b4d-8012-63a191f0db84</MasterPower>
+    <Tag enumID="185" type="String">Desmontar</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="4" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Invoca a Gyth. Obtiene un nuevo Poder de héroe.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="6ca746fe-d2cc-4b4d-8012-63a191f0db84" />
+    <EntourageCard cardID="00000011-cf1d-44df-ae7f-be88fbcb2ac4" />
+    <EntourageCard cardID="00000011-d9d1-4f7b-8f99-8e581004ff62" />
+    <EntourageCard cardID="00000011-1326-4697-bb47-751add50f270" />
+  </Entity>
+  <Entity version="2" CardID="BRMA09_5Ht">
+    <Tag enumID="185" type="String">Gyth</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="203" type="" value="5" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="3" />
+    <Tag enumID="47" type="" value="8" />
+    <Tag enumID="45" type="" value="8" />
+    <Tag enumID="200" type="" value="24" />
+    <Tag enumID="114" type="" value="1" />
+  </Entity>
+  <Entity version="2" CardID="BRMA09_5t">
+    <Tag enumID="185" type="String">Gyth</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="3" />
+    <Tag enumID="47" type="" value="8" />
+    <Tag enumID="45" type="" value="4" />
+    <Tag enumID="114" type="" value="1" />
+    <Tag enumID="203" type="" value="5" />
+    <Tag enumID="200" type="" value="24" />
+  </Entity>
+  <Entity version="2" CardID="BRMA09_6">
+    <MasterPower>37fea072-9df1-4f7f-8d6a-8f51a9f58e8b</MasterPower>
+    <Tag enumID="185" type="String">Jefe de Guerra verdadero</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="184" type="String">Destruye un esbirro legendario.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="37fea072-9df1-4f7f-8d6a-8f51a9f58e8b">
+      <PlayRequirement reqID="11" param="" />
+      <PlayRequirement reqID="52" param="" />
+      <PlayRequirement reqID="1" param="" />
+    </Power>
+    <Power definition="b550e591-d8ea-4684-abaf-506568dd958e" />
+  </Entity>
+  <Entity version="2" CardID="BRMA10_1">
+    <MasterPower>3fb1f31d-0438-42ae-883c-42dc8c1c023f</MasterPower>
+    <Tag enumID="185" type="String">Sangrevaja el Indomable</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2356" />
+    <Power definition="3fb1f31d-0438-42ae-883c-42dc8c1c023f" />
+    <Power definition="f63a95f1-a90a-4253-adad-3402ea0658a4" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA10_1H">
+    <MasterPower>ec759b8b-a558-4911-a585-9547d0acf521</MasterPower>
+    <Tag enumID="185" type="String">Sangrevaja el Indomable</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2475" />
+    <Tag enumID="45" type="" value="30" />
+    <Power definition="ec759b8b-a558-4911-a585-9547d0acf521" />
+    <Power definition="21d85b3d-77b7-46ca-a6d0-632421c99509" />
+    <Power definition="8b6f06fc-c6a3-4406-8a28-c6edfa5cdc48" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="1" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA10_3">
+    <MasterPower>350cc9eb-d144-40d0-8873-569295307a62</MasterPower>
+    <Tag enumID="185" type="String">El grajero</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Otorga +1 de Salud a todos los Huevos corrompidos y luego invoca uno.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="367" type="" value="1" />
+    <Power definition="350cc9eb-d144-40d0-8873-569295307a62" />
+  </Entity>
+  <Entity version="2" CardID="BRMA10_3e">
+    <Tag enumID="185" type="String">Incubación</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="6" />
+    <Tag enumID="184" type="String">Salud aumentada.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="0ae97036-480b-4860-97c7-340ead079328" />
+  </Entity>
+  <Entity version="2" CardID="BRMA10_3H">
+    <MasterPower>80ee41b9-c501-4fb4-9fba-cb9373865145</MasterPower>
+    <Tag enumID="185" type="String">El grajero</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Otorga +1 de Salud a todos los Huevos corrompidos y luego invoca uno.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="48" type="" value="0" />
+    <Tag enumID="367" type="" value="1" />
+    <Power definition="80ee41b9-c501-4fb4-9fba-cb9373865145" />
+  </Entity>
+  <Entity version="2" CardID="BRMA10_4">
+    <Tag enumID="185" type="String">Huevo corrompido</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="47" type="" value="0" />
+    <Tag enumID="45" type="" value="1" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="184" type="String">Cuando este esbirro tiene 4 o más de Salud, eclosiona.</Tag>
+    <Tag enumID="32" type="" value="1" />
+    <Tag enumID="32" type="" value="1" />
+    <Tag enumID="335" type="" value="1" />
+    <Power definition="c9e12498-9d46-4d6b-82b8-e01e90cb92b4" />
+    <Power definition="212e6cee-3003-43b3-a2fd-2222615c6561" />
+    <Power definition="8383dd33-e0a7-4d0f-bb2e-04e1173b4817" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="1" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="2" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA10_4H">
+    <Tag enumID="185" type="String">Huevo corrompido</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="47" type="" value="0" />
+    <Tag enumID="45" type="" value="3" />
+    <Tag enumID="184" type="String">Cuando este esbirro tiene 5 o más de Salud, eclosiona.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="32" type="" value="1" />
+    <Tag enumID="32" type="" value="1" />
+    <Tag enumID="335" type="" value="1" />
+    <Power definition="d8366c17-d7b7-46dd-a7b7-37a7ae66c50b" />
+    <Power definition="2a120f24-c4f1-43b4-80c8-ef4f6fee79e6" />
+    <Power definition="dcccff93-a2fe-4e21-a70a-1a4e8bf1b758" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="1" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="2" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA10_5">
+    <Tag enumID="185" type="String">Draco cromático</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="4" />
+    <Tag enumID="47" type="" value="7" />
+    <Tag enumID="45" type="" value="3" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+  </Entity>
+  <Entity version="2" CardID="BRMA10_5H">
+    <Tag enumID="185" type="String">Draco cromático</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="4" />
+    <Tag enumID="47" type="" value="7" />
+    <Tag enumID="45" type="" value="7" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+  </Entity>
+  <Entity version="2" CardID="BRMA10_6">
+    <Tag enumID="185" type="String">Garras de Sangrevaja</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="7" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="47" type="" value="1" />
+    <Tag enumID="187" type="" value="5" />
+    <Tag enumID="184" type="String">Cada vez que muere un Huevo corrompido, obtiene +1 de Ataque.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="cc91379b-9463-42e8-b4bb-de4da4354382" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA10_6e">
+    <Tag enumID="185" type="String">Ciego de ira</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="6" />
+    <Tag enumID="184" type="String">Ataque aumentado.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="18bfd4fc-65d0-450e-8eb1-333048e5001e" />
+  </Entity>
+  <Entity version="2" CardID="BRMA11_1">
+    <MasterPower>d1030573-ce30-42c8-bb5b-303d96755257</MasterPower>
+    <Tag enumID="185" type="String">Vaelastrasz el Corrupto</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2358" />
+    <Power definition="d1030573-ce30-42c8-bb5b-303d96755257" />
+    <Power definition="7958525b-1231-48f0-b0d7-f240b9dba482" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA11_1H">
+    <MasterPower>faf6af81-9d6b-44f0-b2f4-2d751d82ed4f</MasterPower>
+    <Tag enumID="185" type="String">Vaelastrasz el Corrupto</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2456" />
+    <Power definition="faf6af81-9d6b-44f0-b2f4-2d751d82ed4f" />
+    <Power definition="6463b1da-bff8-45ee-8749-2efc6c2d242b" />
+    <Power definition="2f61f124-a102-449b-a70c-863bff0b02df" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="1" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA11_2">
+    <MasterPower>7dced09a-4f67-486b-a5c3-b1ab9005acd2</MasterPower>
+    <Tag enumID="185" type="String">Esencia del Vuelo Rojo</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="0" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Cada jugador roba 2 cartas.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="367" type="" value="1" />
+    <Power definition="7dced09a-4f67-486b-a5c3-b1ab9005acd2" />
+  </Entity>
+  <Entity version="2" CardID="BRMA11_2H">
+    <MasterPower>1096e7c9-1be5-42b5-ac00-4eeb7b67cce3</MasterPower>
+    <Tag enumID="185" type="String">Esencia del Vuelo Rojo</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="0" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Cada jugador roba 3 cartas. Obtienes un cristal de maná.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="367" type="" value="1" />
+    <Power definition="1096e7c9-1be5-42b5-ac00-4eeb7b67cce3" />
+  </Entity>
+  <Entity version="2" CardID="BRMA11_3">
+    <MasterPower>b10fc00b-532b-4d32-b7cd-7b8e77ee81ae</MasterPower>
+    <Tag enumID="185" type="String">Adrenalina ardiente</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="48" type="" value="0" />
+    <Tag enumID="184" type="String">Inflige $2 de daño al héroe enemigo.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="b10fc00b-532b-4d32-b7cd-7b8e77ee81ae" />
+  </Entity>
+  <Entity version="2" CardID="BRMA12_1">
+    <MasterPower>0b8039a0-ce0e-452e-93f9-12b0b1d1127a</MasterPower>
+    <Tag enumID="185" type="String">Chromaggus</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2361" />
+    <Power definition="0b8039a0-ce0e-452e-93f9-12b0b1d1127a" />
+    <Power definition="13b95a89-6d17-41b8-a424-a124e0612a0a" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA12_10">
+    <MasterPower>a610db33-fafe-47c2-85c5-82f4fd460d08</MasterPower>
+    <Tag enumID="185" type="String">Mutación</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Descarta una carta aleatoria.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="a610db33-fafe-47c2-85c5-82f4fd460d08" />
+  </Entity>
+  <Entity version="2" CardID="BRMA12_1H">
+    <MasterPower>7bac0cab-af55-4e4a-b8a4-2a00d8f5cdfe</MasterPower>
+    <Tag enumID="185" type="String">Chromaggus</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="60" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2458" />
+    <Power definition="7bac0cab-af55-4e4a-b8a4-2a00d8f5cdfe" />
+  </Entity>
+  <Entity version="2" CardID="BRMA12_2">
+    <Tag enumID="185" type="String">Aflicción del linaje</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="0" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Al final de tu turno, agrega una carta de Aflicción del linaje a la mano de tu adversario.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="367" type="" value="1" />
+    <Power definition="546fcf5b-c6cd-4167-b18a-837951e6879a" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+    <EntourageCard cardID="00000011-b8a8-4d5f-a310-eecc32447e11" />
+    <EntourageCard cardID="00000011-bb60-4a75-8740-bd0fbeda1d99" />
+    <EntourageCard cardID="00000011-ce25-4488-bce8-e7fbcccbdf7a" />
+    <EntourageCard cardID="00000011-76a4-4ec1-855e-52359bd78204" />
+    <EntourageCard cardID="00000011-4b27-4deb-a980-4047a3fae920" />
+  </Entity>
+  <Entity version="2" CardID="BRMA12_2H">
+    <Tag enumID="185" type="String">Aflicción del linaje</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Al final de tu turno, agrega una carta de Aflicción del linaje a la mano de tu adversario.</Tag>
+    <Tag enumID="48" type="" value="0" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="367" type="" value="1" />
+    <Power definition="541a8e99-d361-45b7-b6d4-ece26a75eea3" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+    <EntourageCard cardID="00000011-b0fe-41ea-a610-545e6843de3d" />
+    <EntourageCard cardID="00000011-9fc6-4ecd-b762-03a446f229e6" />
+    <EntourageCard cardID="00000011-d917-4adb-8aa8-9d6cc9819591" />
+    <EntourageCard cardID="00000011-dc67-4876-9b3e-0d7665e09fa9" />
+    <EntourageCard cardID="00000011-29c9-4891-a602-012cad974203" />
+  </Entity>
+  <Entity version="2" CardID="BRMA12_3">
+    <Tag enumID="185" type="String">Aflicción del linaje: rojo</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="184" type="String">Mientras está en tu mano, recibes 1 de daño al comienzo de tu turno.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="349" type="" value="1" />
+    <Tag enumID="401" type="" value="1" />
+    <Power definition="2f315a9c-6de7-412a-a3bd-fa0fc0d5f9bd" />
+    <Power definition="65ce565d-b924-4b8d-9bce-2e570fa7d70b" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="True" />
+  </Entity>
+  <Entity version="2" CardID="BRMA12_3H">
+    <Tag enumID="185" type="String">Aflicción del linaje: rojo</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="184" type="String">Mientras está en tu mano, recibes 3 de daño al comienzo de tu turno.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="48" type="" value="3" />
+    <Tag enumID="349" type="" value="1" />
+    <Tag enumID="401" type="" value="1" />
+    <Power definition="08f4d79a-9f83-4688-8da4-68f810f03e51" />
+    <Power definition="943a336b-0835-4a0c-b99c-b30425616337" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="True" />
+  </Entity>
+  <Entity version="2" CardID="BRMA12_4">
+    <Tag enumID="185" type="String">Aflicción del linaje: verde</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="184" type="String">Mientras está en tu mano, restaura 2 de Salud al adversario al comienzo de tu turno.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="401" type="" value="1" />
+    <Power definition="a1a2e171-ecd6-4bd1-8739-a5ac6d5be9fa" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="True" />
+  </Entity>
+  <Entity version="2" CardID="BRMA12_4H">
+    <Tag enumID="185" type="String">Aflicción del linaje: verde</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="48" type="" value="3" />
+    <Tag enumID="184" type="String">Mientras está en tu mano, restaura 6 de Salud al adversario al comienzo de tu turno.</Tag>
+    <Tag enumID="401" type="" value="1" />
+    <Power definition="40ed1425-8cb8-4a5a-8802-83bffbb8aceb" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="True" />
+  </Entity>
+  <Entity version="2" CardID="BRMA12_5">
+    <Tag enumID="185" type="String">Aflicción del linaje: azul</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="184" type="String">Mientras está en tu mano, los hechizos de Chromaggus cuestan (1) menos.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="401" type="" value="1" />
+    <Power definition="b0c4015a-a0c4-4639-ab85-92480bd704f6" />
+  </Entity>
+  <Entity version="2" CardID="BRMA12_5H">
+    <Tag enumID="185" type="String">Aflicción del linaje: azul</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="184" type="String">Mientras está en tu mano, los hechizos de Chromaggus cuestan (3) menos.</Tag>
+    <Tag enumID="48" type="" value="3" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="401" type="" value="1" />
+    <Power definition="57a0499c-130c-4f1a-92c7-dd5ab0f6206e" />
+  </Entity>
+  <Entity version="2" CardID="BRMA12_6">
+    <Tag enumID="185" type="String">Aflicción del linaje: negro</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="184" type="String">Si esta carta está en tu mano, cada vez que Chromaggus roba una carta, obtiene otra igual.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="401" type="" value="1" />
+    <Power definition="613e4445-5876-4020-9e64-4af0e22e454e" />
+    <Power definition="7aa78377-ebdf-48e2-9b61-a21955113859" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA12_6H">
+    <Tag enumID="185" type="String">Aflicción del linaje: negro</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="48" type="" value="3" />
+    <Tag enumID="184" type="String">Si esta carta está en tu mano, cada vez que Chromaggus roba una carta, obtiene otra igual.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="401" type="" value="1" />
+    <Power definition="0dc558f7-59da-488f-a533-e807e4a4961d" />
+    <Power definition="d48ecdfa-d89b-43c6-82e6-6db709d4f229" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA12_7">
+    <Tag enumID="185" type="String">Aflicción del linaje: bronce</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="184" type="String">Mientras está en tu mano, los esbirros de Chromaggus cuestan (1) menos.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="401" type="" value="1" />
+    <Power definition="dda0c47f-0a85-43a1-b73c-366055b07864" />
+  </Entity>
+  <Entity version="2" CardID="BRMA12_7H">
+    <Tag enumID="185" type="String">Aflicción del linaje: bronce</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="48" type="" value="3" />
+    <Tag enumID="184" type="String">Mientras está en tu mano, los esbirros de Chromaggus cuestan (3) menos.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="401" type="" value="1" />
+    <Power definition="6fbe107f-b946-47b4-ba8c-696bff5a2714" />
+  </Entity>
+  <Entity version="2" CardID="BRMA12_8">
+    <MasterPower>e87a8ec4-473a-4955-841a-c59b4114db56</MasterPower>
+    <Tag enumID="185" type="String">Mutación cromática</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="48" type="" value="2" />
+    <Tag enumID="184" type="String">Transforma a un esbirro en un Dragonante cromático 2/2.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="e87a8ec4-473a-4955-841a-c59b4114db56">
+      <PlayRequirement reqID="11" param="" />
+      <PlayRequirement reqID="1" param="" />
+    </Power>
+  </Entity>
+  <Entity version="2" CardID="BRMA12_8t">
+    <Tag enumID="185" type="String">Dragonante cromático</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="2" />
+    <Tag enumID="47" type="" value="2" />
+    <Tag enumID="45" type="" value="3" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="184" type="String">Cada vez que tu adversario juega un hechizo, obtiene +2/+2.</Tag>
+    <Tag enumID="200" type="" value="24" />
+    <Tag enumID="32" type="" value="1" />
+    <Power definition="d19a8169-3e0a-4500-b6c7-8d2fd256daa4" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA12_9">
+    <Tag enumID="185" type="String">Dragonante cromático</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+  </Entity>
+  <Entity version="2" CardID="BRMA13_1">
+    <MasterPower>10cdad5b-beed-41c5-9f6d-42cdce64858e</MasterPower>
+    <Tag enumID="185" type="String">Lord Victor Nefarius</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2379" />
+    <Power definition="10cdad5b-beed-41c5-9f6d-42cdce64858e" />
+  </Entity>
+  <Entity version="2" CardID="BRMA13_1H">
+    <MasterPower>4682b0eb-f696-4647-a8ff-7e7dff9dee13</MasterPower>
+    <Tag enumID="185" type="String">Lord Victor Nefarius</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="45" type="" value="30" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="380" type="" value="2465" />
+    <Power definition="4682b0eb-f696-4647-a8ff-7e7dff9dee13" />
+  </Entity>
+  <Entity version="2" CardID="BRMA13_2">
+    <MasterPower>bee1bdc9-9540-4c1f-bcbd-972ea15027d8</MasterPower>
+    <Tag enumID="185" type="String">Forma verdadera</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+¡Que comiencen los juegos!</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="367" type="" value="1" />
+    <Power definition="bee1bdc9-9540-4c1f-bcbd-972ea15027d8" />
+    <EntourageCard cardID="00000011-bc13-4808-9258-0877f5c25361" />
+    <EntourageCard cardID="00000011-e34a-4738-9b7a-f8072696dda9" />
+    <EntourageCard cardID="00000011-c7d9-45f7-8d58-f140b89607b1" />
+    <EntourageCard cardID="00000011-5741-43cb-9bc3-04c2e03bd5f0" />
+  </Entity>
+  <Entity version="2" CardID="BRMA13_2H">
+    <MasterPower>fd31fe74-bfa2-4d76-97da-2e538c3e75a5</MasterPower>
+    <Tag enumID="185" type="String">Forma verdadera</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+¡Que comiencen los juegos!</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="367" type="" value="1" />
+    <Power definition="fd31fe74-bfa2-4d76-97da-2e538c3e75a5" />
+    <EntourageCard cardID="00000011-bc13-4808-9258-0877f5c25361" />
+    <EntourageCard cardID="00000011-e34a-4738-9b7a-f8072696dda9" />
+    <EntourageCard cardID="00000011-c7d9-45f7-8d58-f140b89607b1" />
+    <EntourageCard cardID="00000011-5741-43cb-9bc3-04c2e03bd5f0" />
+  </Entity>
+  <Entity version="2" CardID="BRMA13_3">
+    <Tag enumID="185" type="String">Nefarian</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2381" />
+    <Power definition="d11dc908-f556-4f8f-89c5-979c2e3d0fae" />
+    <Power definition="5cd8eba2-fbcf-49be-8ad7-b9020c0b49fb" />
+    <Power definition="257c457a-a55d-4c65-b644-94a7975622bc" />
+    <Power definition="1880a1fe-a04a-4915-b2bd-635f79caa21d" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="1" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="2" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="3" showInHistory="False" />
+    <EntourageCard cardID="00000011-e34a-4738-9b7a-f8072696dda9" />
+    <EntourageCard cardID="00000011-c7d9-45f7-8d58-f140b89607b1" />
+    <EntourageCard cardID="00000011-5741-43cb-9bc3-04c2e03bd5f0" />
+    <EntourageCard cardID="00000011-bc13-4808-9258-0877f5c25361" />
+  </Entity>
+  <Entity version="2" CardID="BRMA13_3H">
+    <Tag enumID="185" type="String">Nefarian</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2467" />
+    <Power definition="6071e005-98a4-47f9-90e2-250d097e6a06" />
+    <Power definition="1b972f52-28f8-4e19-beb6-dccc11ec8923" />
+    <Power definition="94c538dc-46e8-480c-94eb-6ffd7a6b7d29" />
+    <Power definition="819329e4-1eed-45b0-8968-80c166ca2572" />
+    <Power definition="495266f7-8b32-456e-958f-88f40fb78a70" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="1" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="2" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="3" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="4" showInHistory="False" />
+    <EntourageCard cardID="00000011-e34a-4738-9b7a-f8072696dda9" />
+    <EntourageCard cardID="00000011-c7d9-45f7-8d58-f140b89607b1" />
+    <EntourageCard cardID="00000011-bc13-4808-9258-0877f5c25361" />
+    <EntourageCard cardID="00000011-5741-43cb-9bc3-04c2e03bd5f0" />
+  </Entity>
+  <Entity version="2" CardID="BRMA13_4">
+    <MasterPower>1a6e8244-6019-496f-a357-42f4df3034d8</MasterPower>
+    <Tag enumID="185" type="String">Magia salvaje</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Coloca un hechizo aleatorio de la clase de tu adversario en tu mano.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="367" type="" value="1" />
+    <Power definition="1a6e8244-6019-496f-a357-42f4df3034d8" />
+  </Entity>
+  <Entity version="2" CardID="BRMA13_4H">
+    <MasterPower>0b4d639e-c33d-465b-9f6c-2757516be108</MasterPower>
+    <Tag enumID="185" type="String">Magia salvaje</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Coloca un hechizo aleatorio de la clase de tu adversario en tu mano.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="367" type="" value="1" />
+    <Power definition="0b4d639e-c33d-465b-9f6c-2757516be108" />
+  </Entity>
+  <Entity version="2" CardID="BRMA13_5">
+    <MasterPower>597eab8c-4e6f-4fb9-b930-494a0da85c15</MasterPower>
+    <Tag enumID="185" type="String">Hijo del fuego</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="0" />
+    <Tag enumID="47" type="" value="6" />
+    <Tag enumID="45" type="" value="3" />
+    <Tag enumID="184" type="String">&lt;b&gt;Grito de batalla:&lt;/b&gt; inflige 6 de daño.</Tag>
+    <Tag enumID="325" type="String">Inflige 6 de daño.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="218" type="" value="1" />
+    <Power definition="597eab8c-4e6f-4fb9-b930-494a0da85c15">
+      <PlayRequirement reqID="22" param="" />
+    </Power>
+  </Entity>
+  <Entity version="2" CardID="BRMA13_6">
+    <Tag enumID="185" type="String">Lava viviente</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="0" />
+    <Tag enumID="47" type="" value="6" />
+    <Tag enumID="45" type="" value="6" />
+    <Tag enumID="184" type="String">&lt;b&gt;Provocación&lt;/b&gt;</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="190" type="" value="1" />
+    <Power definition="4a1ddb89-679d-476f-ba66-6a52cf4e9414" />
+  </Entity>
+  <Entity version="2" CardID="BRMA13_7">
+    <Tag enumID="185" type="String">Remolino de cenizas</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="0" />
+    <Tag enumID="47" type="" value="4" />
+    <Tag enumID="45" type="" value="5" />
+    <Tag enumID="184" type="String">&lt;b&gt;Viento furioso&lt;/b&gt;</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="189" type="" value="1" />
+    <Power definition="3244adfa-636f-4e49-ac19-b8441b7ae384" />
+  </Entity>
+  <Entity version="2" CardID="BRMA13_8">
+    <MasterPower>65723ea7-1788-4e75-826a-86ea5f890191</MasterPower>
+    <Tag enumID="185" type="String">¡MUERE, INSECTO!</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="48" type="" value="0" />
+    <Tag enumID="184" type="String">Inflige $8 de daño a un enemigo aleatorio.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="370" type="" value="1" />
+    <Power definition="65723ea7-1788-4e75-826a-86ea5f890191" />
+  </Entity>
+  <Entity version="2" CardID="BRMA14_1">
+    <MasterPower>2513c534-19c6-4f07-82b5-b61dcdb8028e</MasterPower>
+    <Tag enumID="185" type="String">Sistema de Defensa de Omnitrón</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2388" />
+    <Power definition="2513c534-19c6-4f07-82b5-b61dcdb8028e" />
+  </Entity>
+  <Entity version="2" CardID="BRMA14_10">
+    <MasterPower>d858fa55-5f1c-4e51-a36a-94b364337800</MasterPower>
+    <Tag enumID="185" type="String">¡Activado!</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="4" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Activa un Tron aleatorio.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="d858fa55-5f1c-4e51-a36a-94b364337800" />
+    <EntourageCard cardID="00000011-03e3-4717-9860-fb4711682aec" />
+    <EntourageCard cardID="00000011-f10b-41cb-a949-24aaba5cad7c" />
+    <EntourageCard cardID="00000011-f7f4-49ce-a8d6-26bd6d84bd25" />
+    <EntourageCard cardID="00000011-47c6-4cd2-b3eb-cf0789052f9e" />
+  </Entity>
+  <Entity version="2" CardID="BRMA14_10H">
+    <MasterPower>8051c077-c344-4ec2-aa6f-6d8c8722c83f</MasterPower>
+    <Tag enumID="185" type="String">¡Activado!</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="2" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Activa un Tron aleatorio.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="8051c077-c344-4ec2-aa6f-6d8c8722c83f" />
+    <EntourageCard cardID="00000011-03e3-4717-9860-fb4711682aec" />
+    <EntourageCard cardID="00000011-b4e6-41c4-afe7-f34170c460c0" />
+    <EntourageCard cardID="00000011-4d80-4844-a1e8-cce6de66f60c" />
+    <EntourageCard cardID="00000011-592f-408c-b583-e437048dd36b" />
+  </Entity>
+  <Entity version="2" CardID="BRMA14_11">
+    <MasterPower>777fbb47-06e6-47d2-93a2-2fe8517f20c0</MasterPower>
+    <Tag enumID="185" type="String">Recarga</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="48" type="" value="0" />
+    <Tag enumID="184" type="String">Carga todos los cristales de maná vacíos.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="777fbb47-06e6-47d2-93a2-2fe8517f20c0" />
+  </Entity>
+  <Entity version="2" CardID="BRMA14_12">
+    <Tag enumID="185" type="String">Faucemagma</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="5" />
+    <Tag enumID="47" type="" value="10" />
+    <Tag enumID="45" type="" value="2" />
+    <Tag enumID="184" type="String">&lt;b&gt;Provocación&lt;/b&gt;</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="114" type="" value="1" />
+    <Tag enumID="203" type="" value="5" />
+    <Tag enumID="190" type="" value="1" />
+    <Power definition="013d4a52-401a-42de-8bc6-b04de179c494" />
+  </Entity>
+  <Entity version="2" CardID="BRMA14_1H">
+    <MasterPower>c34c83a3-93d9-4f36-80be-2a558b0f472d</MasterPower>
+    <Tag enumID="185" type="String">Sistema de Defensa de Omnitrón</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2469" />
+    <Power definition="c34c83a3-93d9-4f36-80be-2a558b0f472d" />
+    <Power definition="a32a4f7d-a124-4f1f-901b-5db6f7cc9fe4" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA14_2">
+    <MasterPower>660dbf43-c558-4f66-bb9a-d82c67d81462</MasterPower>
+    <Tag enumID="185" type="String">Activar Arcanotrón</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+¡Activa a Arcanotrón!</Tag>
+    <Tag enumID="48" type="" value="2" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="367" type="" value="1" />
+    <Power definition="660dbf43-c558-4f66-bb9a-d82c67d81462" />
+  </Entity>
+  <Entity version="2" CardID="BRMA14_2H">
+    <MasterPower>556b4d71-1430-444c-ae80-b03da48815b3</MasterPower>
+    <Tag enumID="185" type="String">Activar Arcanotrón</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="0" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+¡Activa a Arcanotrón!</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="367" type="" value="1" />
+    <Power definition="556b4d71-1430-444c-ae80-b03da48815b3" />
+  </Entity>
+  <Entity version="2" CardID="BRMA14_3">
+    <Tag enumID="185" type="String">Arcanotrón</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="0" />
+    <Tag enumID="47" type="" value="2" />
+    <Tag enumID="45" type="" value="2" />
+    <Tag enumID="114" type="" value="1" />
+    <Tag enumID="184" type="String">Ambos jugadores tienen &lt;b&gt;Daño de hechizo +2&lt;/b&gt;.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="200" type="" value="17" />
+    <Tag enumID="203" type="" value="5" />
+    <Tag enumID="192" type="" value="1" />
+    <Power definition="29649ada-5fa0-455e-abf7-6799f7f01ca7" />
+  </Entity>
+  <Entity version="2" CardID="BRMA14_4">
+    <MasterPower>edbbc200-9f54-4146-8c65-09227a2c562f</MasterPower>
+    <Tag enumID="185" type="String">Activar Toxitrón</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="4" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+¡Activa a Toxitrón!</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="367" type="" value="1" />
+    <Power definition="edbbc200-9f54-4146-8c65-09227a2c562f" />
+  </Entity>
+  <Entity version="2" CardID="BRMA14_4H">
+    <MasterPower>e31744fe-25bb-4ef2-9c40-c42e76f557ba</MasterPower>
+    <Tag enumID="185" type="String">Activar Toxitrón</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="2" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+¡Activa a Toxitrón!</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="367" type="" value="1" />
+    <Power definition="e31744fe-25bb-4ef2-9c40-c42e76f557ba" />
+  </Entity>
+  <Entity version="2" CardID="BRMA14_5">
+    <Tag enumID="185" type="String">Toxitrón</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="47" type="" value="3" />
+    <Tag enumID="45" type="" value="3" />
+    <Tag enumID="114" type="" value="1" />
+    <Tag enumID="184" type="String">Al comienzo de tu turno, inflige 1 de daño a todos los demás esbirros.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="200" type="" value="17" />
+    <Tag enumID="203" type="" value="5" />
+    <Tag enumID="32" type="" value="1" />
+    <Power definition="396cf12e-949d-484c-b36b-2b23b1de9ce6" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="True" />
+  </Entity>
+  <Entity version="2" CardID="BRMA14_5H">
+    <Tag enumID="185" type="String">Toxitrón</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="47" type="" value="4" />
+    <Tag enumID="45" type="" value="4" />
+    <Tag enumID="114" type="" value="1" />
+    <Tag enumID="184" type="String">Al comienzo de tu turno, inflige 1 de daño a todos los demás esbirros.</Tag>
+    <Tag enumID="200" type="" value="17" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="203" type="" value="5" />
+    <Tag enumID="32" type="" value="1" />
+    <Power definition="51933257-3980-47f1-8de0-e93955b7a916" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA14_6">
+    <MasterPower>4d6e8bc3-894b-484e-9f5f-7832a5c1aef7</MasterPower>
+    <Tag enumID="185" type="String">Activar Electrón</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="6" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+¡Activa a Electrón!</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="367" type="" value="1" />
+    <Power definition="4d6e8bc3-894b-484e-9f5f-7832a5c1aef7" />
+  </Entity>
+  <Entity version="2" CardID="BRMA14_6H">
+    <MasterPower>9f991fec-7855-4678-bc35-ca5d56890079</MasterPower>
+    <Tag enumID="185" type="String">Activar Electrón</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="4" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+¡Activa a Electrón!</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="367" type="" value="1" />
+    <Power definition="9f991fec-7855-4678-bc35-ca5d56890079" />
+  </Entity>
+  <Entity version="2" CardID="BRMA14_7">
+    <Tag enumID="185" type="String">Electrón</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="3" />
+    <Tag enumID="47" type="" value="5" />
+    <Tag enumID="45" type="" value="5" />
+    <Tag enumID="114" type="" value="1" />
+    <Tag enumID="184" type="String">Todos los hechizos cuestan (3) menos.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="200" type="" value="17" />
+    <Tag enumID="203" type="" value="5" />
+    <Tag enumID="362" type="" value="1" />
+    <Power definition="4acc25cc-93a3-4aa2-86e4-7022dfac1921" />
+  </Entity>
+  <Entity version="2" CardID="BRMA14_7H">
+    <Tag enumID="185" type="String">Electrón</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="3" />
+    <Tag enumID="47" type="" value="6" />
+    <Tag enumID="45" type="" value="6" />
+    <Tag enumID="184" type="String">Todos los hechizos cuestan (3) menos.</Tag>
+    <Tag enumID="114" type="" value="1" />
+    <Tag enumID="200" type="" value="17" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="203" type="" value="5" />
+    <Power definition="39f0ab30-246f-40d0-bdc3-466b52bd3cc6" />
+  </Entity>
+  <Entity version="2" CardID="BRMA14_8">
+    <MasterPower>32536bac-b190-4049-9680-5e61c29a97c6</MasterPower>
+    <Tag enumID="185" type="String">Activar Magmatrón</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="8" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+¡Activa a Magmatrón!</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="367" type="" value="1" />
+    <Power definition="32536bac-b190-4049-9680-5e61c29a97c6" />
+  </Entity>
+  <Entity version="2" CardID="BRMA14_8H">
+    <MasterPower>74309a43-a600-4173-8e00-83ff9f22c9b8</MasterPower>
+    <Tag enumID="185" type="String">Activar Magmatrón</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="6" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+¡Activa a Magmatrón!</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="367" type="" value="1" />
+    <Power definition="74309a43-a600-4173-8e00-83ff9f22c9b8" />
+  </Entity>
+  <Entity version="2" CardID="BRMA14_9">
+    <Tag enumID="185" type="String">Magmatrón</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="5" />
+    <Tag enumID="47" type="" value="7" />
+    <Tag enumID="45" type="" value="7" />
+    <Tag enumID="114" type="" value="1" />
+    <Tag enumID="184" type="String">Cada vez que un jugador juega una carta, Magmatrón le inflige 2 de daño al héroe.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="200" type="" value="17" />
+    <Tag enumID="203" type="" value="5" />
+    <Tag enumID="362" type="" value="1" />
+    <Tag enumID="32" type="" value="1" />
+    <Power definition="6fabf7fd-7a4d-42a8-920c-62105fae472e" />
+    <Power definition="71153e44-7372-4ad0-80e4-48c3b00e3d87" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="True" />
+  </Entity>
+  <Entity version="2" CardID="BRMA14_9H">
+    <Tag enumID="185" type="String">Magmatrón</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="5" />
+    <Tag enumID="47" type="" value="8" />
+    <Tag enumID="45" type="" value="8" />
+    <Tag enumID="114" type="" value="1" />
+    <Tag enumID="184" type="String">Cada vez que un jugador juega una carta, Magmatrón le inflige 2 de daño al héroe.</Tag>
+    <Tag enumID="200" type="" value="17" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="203" type="" value="5" />
+    <Tag enumID="32" type="" value="1" />
+    <Power definition="80231224-a80f-4594-8845-f955055f7456" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA15_1">
+    <MasterPower>0ebacc1c-f3de-446a-8dc7-47c0bc073568</MasterPower>
+    <Tag enumID="185" type="String">Maloriak</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2397" />
+    <Power definition="0ebacc1c-f3de-446a-8dc7-47c0bc073568" />
+  </Entity>
+  <Entity version="2" CardID="BRMA15_1H">
+    <MasterPower>7cf1084f-2297-47c8-8265-fe2a8b9f6f72</MasterPower>
+    <Tag enumID="185" type="String">Maloriak</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2592" />
+    <Power definition="7cf1084f-2297-47c8-8265-fe2a8b9f6f72" />
+    <Power definition="6eb67dc0-8061-4aa2-92b0-f3f1c0dd49ee" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA15_2">
+    <Tag enumID="185" type="String">El alquimista</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe pasivo&lt;/b&gt;
+Cada vez que se invoca un esbirro, intercambia su Ataque y Salud.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="32" type="" value="1" />
+    <Power definition="1f87d332-a20d-404e-84a6-85f824248ef1" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA15_2H">
+    <Tag enumID="185" type="String">El alquimista</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe pasivo&lt;/b&gt;
+Intercambia el Ataque y la Salud de los esbirros.
+Tus esbirros tienen +2/+2.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="32" type="" value="1" />
+    <Power definition="8e866019-f7e9-4bbb-943e-15eafe62b622" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA15_2He">
+    <Tag enumID="185" type="String">Poción de poderío</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="6" />
+    <Tag enumID="184" type="String">+2/+2.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="b8d4f318-73a9-4efe-a762-ec31e1c3d958" />
+  </Entity>
+  <Entity version="2" CardID="BRMA15_3">
+    <MasterPower>089955fc-c537-47c4-b637-8970b88f5624</MasterPower>
+    <Tag enumID="185" type="String">¡Liberen a las Aberraciones!</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="184" type="String">Invoca 3 Aberraciones.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="48" type="" value="2" />
+    <Power definition="089955fc-c537-47c4-b637-8970b88f5624">
+      <PlayRequirement reqID="12" param="1" />
+    </Power>
+  </Entity>
+  <Entity version="2" CardID="BRMA15_4">
+    <Tag enumID="185" type="String">Aberración</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="47" type="" value="1" />
+    <Tag enumID="45" type="" value="1" />
+    <Tag enumID="184" type="String">&lt;b&gt;Carga&lt;/b&gt;</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="197" type="" value="1" />
+    <Power definition="4738003c-6b00-4591-9a19-c64b49cb11c0" />
+  </Entity>
+  <Entity version="2" CardID="BRMA16_1">
+    <MasterPower>45567c70-465b-4b4d-a7ab-97738a16147f</MasterPower>
+    <Tag enumID="185" type="String">Atramedes</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2401" />
+    <Power definition="45567c70-465b-4b4d-a7ab-97738a16147f" />
+    <Power definition="85f9c8f4-3634-4f62-9806-eaff782af31a" />
+    <Power definition="bf61e202-9269-49fd-a6e0-a02800598a4b" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="1" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA16_1H">
+    <MasterPower>f80ca878-4d74-4e9a-a01e-af66f0bf3bb3</MasterPower>
+    <Tag enumID="185" type="String">Atramedes</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2489" />
+    <Power definition="f80ca878-4d74-4e9a-a01e-af66f0bf3bb3" />
+    <Power definition="c7bd7aec-57fb-4318-87c9-4124fb8722dc" />
+    <Power definition="4e3e245b-81cb-4462-9ffc-69f92c828ec8" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="1" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA16_2">
+    <MasterPower>d2d44bc1-d175-470b-a841-cde630f2370d</MasterPower>
+    <Tag enumID="185" type="String">Ecolocación</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Equipa un arma que crece a medida que tu adversario juega cartas.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="48" type="" value="1" />
+    <Power definition="d2d44bc1-d175-470b-a841-cde630f2370d" />
+    <Power definition="b1a513b0-c35e-4ae3-8cfd-03b0fd361e23" />
+  </Entity>
+  <Entity version="2" CardID="BRMA16_2H">
+    <MasterPower>02af5cf0-fc57-483c-82ea-b165e30252c0</MasterPower>
+    <Tag enumID="185" type="String">Ecolocación</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="0" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Equipa un arma que crece a medida que tu adversario juega cartas.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="02af5cf0-fc57-483c-82ea-b165e30252c0" />
+    <Power definition="3a1ad74b-9fbb-4dc0-a935-eb3e0426e39b" />
+  </Entity>
+  <Entity version="2" CardID="BRMA16_3">
+    <MasterPower>fd8a6c09-b8c8-4a0b-a5e4-eb3b61bc6a3d</MasterPower>
+    <Tag enumID="185" type="String">Aliento sónico</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="48" type="" value="4" />
+    <Tag enumID="184" type="String">Inflige $3 de daño a un esbirro. Le otorga a tu arma +3 de Ataque.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="fd8a6c09-b8c8-4a0b-a5e4-eb3b61bc6a3d">
+      <PlayRequirement reqID="11" param="" />
+      <PlayRequirement reqID="1" param="" />
+      <PlayRequirement reqID="13" param="" />
+    </Power>
+  </Entity>
+  <Entity version="2" CardID="BRMA16_3e">
+    <Tag enumID="185" type="String">Aliento sónico</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="6" />
+    <Tag enumID="184" type="String">+3 de Ataque.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="d368aaf5-e9c7-48d6-a2fe-4f2d6c59ead0" />
+  </Entity>
+  <Entity version="2" CardID="BRMA16_4">
+    <MasterPower>eb6493ff-a0e8-4634-a634-9a427740917d</MasterPower>
+    <Tag enumID="185" type="String">Gong reverberante</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="184" type="String">Destruye el arma de tu adversario.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="eb6493ff-a0e8-4634-a634-9a427740917d" />
+  </Entity>
+  <Entity version="2" CardID="BRMA16_5">
+    <Tag enumID="185" type="String">Dientes de dragón</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="7" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="47" type="" value="0" />
+    <Tag enumID="184" type="String">Cada vez que tu adversario juega una carta, obtiene +1 de Ataque.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="187" type="" value="6" />
+    <Tag enumID="32" type="" value="1" />
+    <Power definition="b54fc47d-a072-4720-86ec-00fcff2d483c" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA16_5e">
+    <Tag enumID="185" type="String">Te oigo...</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="6" />
+    <Tag enumID="184" type="String">Ataque aumentado.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="8f9f6d61-f7b0-4708-a3e0-aeb1266c527a" />
+  </Entity>
+  <Entity version="2" CardID="BRMA17_2">
+    <MasterPower>905b653f-8229-453e-9e00-d805568f73e0</MasterPower>
+    <Tag enumID="185" type="String">Nefarian</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2433" />
+    <Power definition="905b653f-8229-453e-9e00-d805568f73e0" />
+    <Power definition="d23c3b72-4617-404c-843a-c03b45dd5fd5" />
+    <Power definition="008e1f9f-7f8c-4641-8b32-0b038fd0888e" />
+    <Power definition="bd8508ee-85fe-410f-831c-f19932145a01" />
+    <Power definition="25ecbf68-5f45-4796-9a3e-4ec0585e2d84" />
+    <Power definition="1d386912-17eb-4f3a-8190-6eb31b4d1bbe" />
+    <Power definition="3d02aae8-757a-4a1b-be44-196e916cff8f" />
+    <Power definition="b3a99131-ea21-4fdb-a26e-b3b4dea9579b" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="1" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="2" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="3" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="4" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="5" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="6" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA17_2H">
+    <MasterPower>e5e3d51e-b8d5-4c5b-aa65-3f5303b977c5</MasterPower>
+    <Tag enumID="185" type="String">Nefarian</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2561" />
+    <Power definition="e5e3d51e-b8d5-4c5b-aa65-3f5303b977c5" />
+    <Power definition="c1ff1982-d378-46b8-8db4-6018ad7acb53" />
+    <Power definition="dba7214a-58f9-4801-bbca-c8c980e26811" />
+    <Power definition="74bd315e-4b1d-42cd-bb88-69e214f5d394" />
+    <Power definition="a3d200af-0a7a-4e5c-aed5-89f7e3335b5e" />
+    <Power definition="025126ec-13e7-42b0-882c-aac035d5a292" />
+    <Power definition="b5eab09a-3c22-49cd-b6be-258857ed69ba" />
+    <Power definition="c034a542-4245-4d16-ba7d-22c0b3e412bd" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="1" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="2" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="3" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="4" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="5" showInHistory="False" />
+    <TriggeredPowerHistoryInfo effectIndex="6" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA17_3">
+    <Tag enumID="185" type="String">Onyxia</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="15" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2548" />
+    <Power definition="e32d3d56-5dc7-4b2f-be5a-5b6f480678e0" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA17_3H">
+    <Tag enumID="185" type="String">Onyxia</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="380" type="" value="2559" />
+    <Power definition="266f9044-43c8-4176-a78d-641ae39d51c6" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA17_4">
+    <MasterPower>a9caf980-9937-4515-9ff6-8c36eabbdb55</MasterPower>
+    <Tag enumID="185" type="String">¡LAVA!</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="48" type="" value="2" />
+    <Tag enumID="184" type="String">Inflige $2 de daño a todos los esbirros.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="a9caf980-9937-4515-9ff6-8c36eabbdb55" />
+  </Entity>
+  <Entity version="2" CardID="BRMA17_5">
+    <MasterPower>3298364c-abcc-4613-ba1e-1ab4da0ed345</MasterPower>
+    <Tag enumID="185" type="String">Esbirros óseos</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="2" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Invoca dos Ensamblajes osarios 2/1.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="3298364c-abcc-4613-ba1e-1ab4da0ed345">
+      <PlayRequirement reqID="12" param="1" />
+    </Power>
+  </Entity>
+  <Entity version="2" CardID="BRMA17_5H">
+    <MasterPower>f5249391-0311-404a-9b7e-1a3b4b08e657</MasterPower>
+    <Tag enumID="185" type="String">Esbirros óseos</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="2" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Invoca dos Ensamblajes osarios 4/2.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="f5249391-0311-404a-9b7e-1a3b4b08e657" />
+  </Entity>
+  <Entity version="2" CardID="BRMA17_6">
+    <Tag enumID="185" type="String">Ensamblaje osario</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="47" type="" value="2" />
+    <Tag enumID="45" type="" value="1" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+  </Entity>
+  <Entity version="2" CardID="BRMA17_6H">
+    <Tag enumID="185" type="String">Ensamblaje osario</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="47" type="" value="4" />
+    <Tag enumID="45" type="" value="2" />
+  </Entity>
+  <Entity version="2" CardID="BRMA17_7">
+    <Tag enumID="185" type="String">Prototipo cromático</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="2" />
+    <Tag enumID="47" type="" value="1" />
+    <Tag enumID="45" type="" value="4" />
+    <Tag enumID="184" type="String">&lt;b&gt;Provocación&lt;/b&gt;</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="190" type="" value="1" />
+    <Power definition="aa14c15a-cf01-49e7-8151-c04c1e8ef1e3" />
+  </Entity>
+  <Entity version="2" CardID="BRMA17_8">
+    <MasterPower>6071a0fe-9295-4287-bf30-5d4220362c0b</MasterPower>
+    <Tag enumID="185" type="String">¡Nefarian quiere sangre!</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+¡Nefarian hace que llueva fuego!</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="48" type="" value="0" />
+    <Tag enumID="367" type="" value="1" />
+    <Power definition="6071a0fe-9295-4287-bf30-5d4220362c0b" />
+    <Power definition="0e64fac8-a80a-4fb4-98de-a5622a463b76" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRMA17_8H">
+    <MasterPower>2252cf25-2e72-48c8-bf8f-b535690fb82a</MasterPower>
+    <Tag enumID="185" type="String">¡Nefarian quiere sangre!</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="0" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+¡Nefarian hace que llueva fuego!</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="367" type="" value="1" />
+    <Power definition="2252cf25-2e72-48c8-bf8f-b535690fb82a" />
+  </Entity>
+  <Entity version="2" CardID="BRMA17_9">
+    <Tag enumID="185" type="String">Garra de Onyxia</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="7" />
+    <Tag enumID="48" type="" value="2" />
+    <Tag enumID="47" type="" value="2" />
+    <Tag enumID="187" type="" value="6" />
+  </Entity>
+  <Entity version="2" CardID="BRMA_01">
+    <MasterPower>102e2f97-d5e0-438b-9c17-ee104c65f346</MasterPower>
+    <Tag enumID="185" type="String">Corazón ígneo</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="48" type="" value="3" />
+    <Tag enumID="184" type="String">Roba 2 cartas.
+Obtienes 4 de Armadura.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="102e2f97-d5e0-438b-9c17-ee104c65f346" />
+  </Entity>
+  <Entity version="2" CardID="BRMC_01">
+    <Tag enumID="185" type="String">Ragnaros el Señor del Fuego</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+  </Entity>
+  <Entity version="2" CardID="BRMC_02">
+    <Tag enumID="185" type="String">Nefarian</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="30" />
+  </Entity>
+  <Entity version="2" CardID="BRM_001">
+    <MasterPower>d108222b-8e61-4b5c-8f39-085e495e3a0e</MasterPower>
+    <Tag enumID="185" type="String">Vigilia solemne</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="321" type="" value="1" />
+    <Tag enumID="203" type="" value="1" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="48" type="" value="5" />
+    <Tag enumID="199" type="" value="5" />
+    <Tag enumID="184" type="String">Roba 2 cartas. Cuesta (1) menos por cada esbirro que haya muerto en este turno.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="351" type="String">Todos los años, la gente se reúne frente a la Montaña Roca Negra para llorar a quienes cayeron a la lava, víctimas del control mental.</Tag>
+    <Tag enumID="342" type="String">Jaime Jones</Tag>
+    <Tag enumID="365" type="String">Se puede crear luego de completar el desafío de clase Paladín en Montaña Roca Negra.</Tag>
+    <Tag enumID="364" type="String">Desbloqueada por completar el desafío de clase Paladín en Montaña Roca Negra.</Tag>
+    <Power definition="d108222b-8e61-4b5c-8f39-085e495e3a0e" />
+    <Power definition="34bb39b6-1916-4e7a-be4c-9f3fde5ad1ac" />
+  </Entity>
+  <Entity version="2" CardID="BRM_001e">
+    <Tag enumID="185" type="String">Fundición</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="6" />
+    <Tag enumID="199" type="" value="6" />
+    <Tag enumID="184" type="String">Cambia el ataque a 0 por este turno.</Tag>
+    <Tag enumID="330" type="" value="2" />
+    <Tag enumID="331" type="" value="2" />
+    <Tag enumID="338" type="" value="1" />
+    <Power definition="bd862e86-87f5-4190-964b-0bc163d0c283" />
+    <Power definition="d8343733-075f-4dc3-a999-575df99845b3" />
+  </Entity>
+  <Entity version="2" CardID="BRM_002">
+    <Tag enumID="185" type="String">Despiertallamas</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="321" type="" value="1" />
+    <Tag enumID="203" type="" value="3" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="3" />
+    <Tag enumID="47" type="" value="2" />
+    <Tag enumID="45" type="" value="4" />
+    <Tag enumID="199" type="" value="4" />
+    <Tag enumID="184" type="String">Después de lanzar un hechizo, inflige 2 de daño dividido aleatoriamente entre todos los enemigos.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="351" type="String">Los despiertallamas ODIAN que los confundan con los caminallamas. Ellos despiertan al fuego. Andar pisando llamas sería una LOCURA.</Tag>
+    <Tag enumID="342" type="String">Alex Horley Orlandelli</Tag>
+    <Tag enumID="365" type="String">Se puede crear luego de derrotar a Vaelastrasz en la Guarida de Alanegra.</Tag>
+    <Tag enumID="364" type="String">Desbloqueada por derrotar a Vaelastrasz en la Guarida de Alanegra.</Tag>
+    <Tag enumID="32" type="" value="1" />
+    <Power definition="29edb729-aa77-4fa8-b280-e54b041955ab" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="True" />
+  </Entity>
+  <Entity version="2" CardID="BRM_003">
+    <Tag enumID="185" type="String">Aliento de dragón</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="321" type="" value="1" />
+    <Tag enumID="203" type="" value="1" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="48" type="" value="5" />
+    <Tag enumID="199" type="" value="4" />
+    <Tag enumID="184" type="String">Inflige $4 de daño. Cuesta (1) menos por cada esbirro que haya muerto en este turno.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="351" type="String">Sí, sí, los dragones lanzan llamas. Pero lo que nadie sabe es que también pueden lanzar algodón de azúcar. Solo hay que darles un buen motivo.</Tag>
+    <Tag enumID="342" type="String">Mauricio Herrera</Tag>
+    <Tag enumID="365" type="String">Se puede crear luego de completar el desafío de clase Mago en Montaña Roca Negra.</Tag>
+    <Tag enumID="364" type="String">Desbloqueada por completar el desafío de clase Mago en Montaña Roca Negra.</Tag>
+    <Power definition="f3c8fe7e-06f0-489b-9735-610ee2daf6c5" />
+    <Power definition="6788395a-36ff-4705-8b96-b86a56aea5ab">
+      <PlayRequirement reqID="11" param="" />
+    </Power>
+  </Entity>
+  <Entity version="2" CardID="BRM_003e">
+    <Tag enumID="185" type="String">Poderío de dragón</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="6" />
+    <Tag enumID="199" type="" value="4" />
+    <Tag enumID="184" type="String">Cuesta (3) menos en este turno.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="338" type="" value="1" />
+    <Power definition="a5e56c9a-8d0b-4fc5-905b-b524dca791dd" />
+    <Power definition="eede8fbe-b231-4da7-9570-adf4013a148f" />
+  </Entity>
+  <Entity version="2" CardID="BRM_004">
+    <MasterPower>77f9c4bd-752c-434d-a7a1-8a4cc05a269d</MasterPower>
+    <Tag enumID="185" type="String">Cría crepuscular</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="321" type="" value="1" />
+    <Tag enumID="203" type="" value="1" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="47" type="" value="2" />
+    <Tag enumID="45" type="" value="1" />
+    <Tag enumID="199" type="" value="6" />
+    <Tag enumID="184" type="String">&lt;b&gt;Grito de batalla:&lt;/b&gt; si tienes un Dragón en tu mano, obtiene +2 de Salud.</Tag>
+    <Tag enumID="200" type="" value="24" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="351" type="String">Las crías crepusculares son básicamente vampiros mágicos. ¿Que son una referencia a cierta serie de novelas de moda? ¡De ninguna manera!</Tag>
+    <Tag enumID="342" type="String">Sam Nielson</Tag>
+    <Tag enumID="365" type="String">Se puede crear luego de completar el desafío de clase Sacerdote en Montaña Roca Negra.</Tag>
+    <Tag enumID="364" type="String">Desbloqueada por completar el desafío de clase Sacerdote en Montaña Roca Negra.</Tag>
+    <Tag enumID="218" type="" value="1" />
+    <Power definition="77f9c4bd-752c-434d-a7a1-8a4cc05a269d" />
+    <Power definition="f47b7464-df94-40db-abad-6f65df155d92" />
+  </Entity>
+  <Entity version="2" CardID="BRM_004e">
+    <Tag enumID="185" type="String">Resistencia crepuscular</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="6" />
+    <Tag enumID="184" type="String">Salud aumentada.</Tag>
+    <Tag enumID="330" type="" value="1" />
+    <Tag enumID="331" type="" value="1" />
+    <Power definition="ca3ab858-83f4-4c5b-ab65-138d0452100a" />
+  </Entity>
+  <Entity version="2" CardID="BRM_004t">
+    <Tag enumID="185" type="String">Cría</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="47" type="" value="1" />
+    <Tag enumID="45" type="" value="1" />
+  </Entity>
+  <Entity version="2" CardID="BRM_005">
+    <MasterPower>c06cfe2a-7e57-44ae-b876-b82fda0598c9</MasterPower>
+    <Tag enumID="185" type="String">Cólera demoníaca</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="321" type="" value="1" />
+    <Tag enumID="203" type="" value="3" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="48" type="" value="3" />
+    <Tag enumID="199" type="" value="9" />
+    <Tag enumID="184" type="String">Inflige $2 de daño a todos los esbirros que no son Demonios.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="351" type="String">En realidad los demonios tienen un carácter divino. Si quieres verlos enojados, esta es tu carta.</Tag>
+    <Tag enumID="342" type="String">Raymond Swanland</Tag>
+    <Tag enumID="365" type="String">Se puede crear luego de completar el desafío de clase Brujo en Montaña Roca Negra.</Tag>
+    <Tag enumID="364" type="String">Desbloqueada por completar el desafío de clase Brujo en Montaña Roca Negra.</Tag>
+    <Tag enumID="370" type="" value="1" />
+    <Power definition="c06cfe2a-7e57-44ae-b876-b82fda0598c9" />
+  </Entity>
+  <Entity version="2" CardID="BRM_006">
+    <Tag enumID="185" type="String">Diablillo pandillero</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="321" type="" value="1" />
+    <Tag enumID="203" type="" value="1" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="3" />
+    <Tag enumID="47" type="" value="2" />
+    <Tag enumID="45" type="" value="4" />
+    <Tag enumID="199" type="" value="9" />
+    <Tag enumID="184" type="String">Cada vez que este esbirro recibe daño, invoca un Diablillo 1/1.</Tag>
+    <Tag enumID="200" type="" value="15" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="351" type="String">Con su pandilla de diablillos, se meten en Ventormenta para pintar grafitis de "Ragnaros por siempre" en la Torre de los Magos.</Tag>
+    <Tag enumID="342" type="String">Steve Prescott</Tag>
+    <Tag enumID="365" type="String">Se puede crear luego de derrotar al Mayordomo Executus en el Núcleo de magma.</Tag>
+    <Tag enumID="364" type="String">Desbloqueada por derrotar al Mayordomo Executus en el Núcleo de magma.</Tag>
+    <Tag enumID="32" type="" value="1" />
+    <Power definition="b382470d-1906-4502-ad82-84ebc29c3d89" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRM_006t">
+    <Tag enumID="185" type="String">Diablillo</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="47" type="" value="1" />
+    <Tag enumID="45" type="" value="1" />
+    <Tag enumID="199" type="" value="9" />
+    <Tag enumID="200" type="" value="15" />
+    <Tag enumID="202" type="" value="4" />
+  </Entity>
+  <Entity version="2" CardID="BRM_007">
+    <MasterPower>30e432f2-6a20-43ff-920c-c6b49b3ed261</MasterPower>
+    <Tag enumID="185" type="String">En grupo</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="321" type="" value="1" />
+    <Tag enumID="203" type="" value="1" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="48" type="" value="2" />
+    <Tag enumID="199" type="" value="7" />
+    <Tag enumID="184" type="String">Elige un esbirro. Coloca 3 copias de él en tu mazo.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="351" type="String">Si pensabas visitar Arroyo de la Luna, será mejor que lleves compañía.</Tag>
+    <Tag enumID="342" type="String">Jim Nelson</Tag>
+    <Tag enumID="365" type="String">Se puede crear luego de superar la Arena Hierro Negro en las Profundidades de Roca Negra.</Tag>
+    <Tag enumID="364" type="String">Desbloqueada por superar la Arena Hierro Negro en las Profundidades de Roca Negra.</Tag>
+    <Power definition="30e432f2-6a20-43ff-920c-c6b49b3ed261">
+      <PlayRequirement reqID="11" param="" />
+      <PlayRequirement reqID="1" param="" />
+    </Power>
+  </Entity>
+  <Entity version="2" CardID="BRM_008">
+    <MasterPower>f8986e64-348f-477e-988f-180c1697150e</MasterPower>
+    <Tag enumID="185" type="String">Vagador Hierro Negro</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="321" type="" value="1" />
+    <Tag enumID="203" type="" value="3" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="5" />
+    <Tag enumID="47" type="" value="4" />
+    <Tag enumID="45" type="" value="3" />
+    <Tag enumID="199" type="" value="7" />
+    <Tag enumID="184" type="String">&lt;b&gt;Grito de batalla:&lt;/b&gt; inflige 2 de daño a todos los esbirros enemigos que no hayan recibido daño.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="351" type="String">Le encanta vagar por ahí. Se queda vagando después de hora solo por diversión, pero sus amigos están preocupados de que termine con un pico de estrés.</Tag>
+    <Tag enumID="342" type="String">Eric Braddock</Tag>
+    <Tag enumID="365" type="String">Se puede crear luego de completar el desafío de clase Pícaro en Montaña Roca Negra.</Tag>
+    <Tag enumID="364" type="String">Desbloqueada por completar el desafío de clase Pícaro en Montaña Roca Negra.</Tag>
+    <Tag enumID="218" type="" value="1" />
+    <Power definition="f8986e64-348f-477e-988f-180c1697150e" />
+  </Entity>
+  <Entity version="2" CardID="BRM_009">
+    <MasterPower>a89e833a-4236-485d-918e-e47d13e9b1b3</MasterPower>
+    <Tag enumID="185" type="String">Antárbol volcánico</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="321" type="" value="1" />
+    <Tag enumID="203" type="" value="3" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="9" />
+    <Tag enumID="199" type="" value="2" />
+    <Tag enumID="184" type="String">&lt;b&gt;Provocación&lt;/b&gt;
+Cuesta (1) menos por cada esbirro que haya muerto en este turno.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="47" type="" value="7" />
+    <Tag enumID="45" type="" value="8" />
+    <Tag enumID="351" type="String">Qué-madera, qué-maciza... ¡Quema, quema, quema...!</Tag>
+    <Tag enumID="342" type="String">Trent Kaniuga</Tag>
+    <Tag enumID="365" type="String">Se puede crear luego de completar el desafío de clase Druida en Montaña Roca Negra.</Tag>
+    <Tag enumID="364" type="String">Desbloqueada por completar el desafío de clase Druida en Montaña Roca Negra.</Tag>
+    <Tag enumID="190" type="" value="1" />
+    <Power definition="a89e833a-4236-485d-918e-e47d13e9b1b3" />
+    <Power definition="1c31a5f6-317a-4bda-af8a-96fec8c5d506" />
+    <Power definition="eba3c0af-234d-45c7-86a2-630fa89569f0" />
+  </Entity>
+  <Entity version="2" CardID="BRM_010">
+    <Tag enumID="185" type="String">Druida de la Llama</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="321" type="" value="1" />
+    <Tag enumID="203" type="" value="1" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="3" />
+    <Tag enumID="47" type="" value="2" />
+    <Tag enumID="45" type="" value="2" />
+    <Tag enumID="199" type="" value="2" />
+    <Tag enumID="184" type="String">&lt;b&gt;Elige una opción:&lt;/b&gt; Transfórmala en un esbirro 5/2 o un esbirro 2/5.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="351" type="String">Los druidas que pelearon largo tiempo en Rasganorte cayeron fácilmente en las garras de Ragnaros... Una taza de chocolate caliente y todos vendidos.</Tag>
+    <Tag enumID="342" type="String">Stanley Lau</Tag>
+    <Tag enumID="365" type="String">Se puede crear luego de derrotar a Garr en el Núcleo de magma.</Tag>
+    <Tag enumID="364" type="String">Desbloqueada por derrotar a Garr en el Núcleo de magma.</Tag>
+  </Entity>
+  <Entity version="2" CardID="BRM_010a">
+    <MasterPower>029c40d0-0087-4dc6-93cd-d9ee871c04ea</MasterPower>
+    <Tag enumID="185" type="String">Forma de felino de fuego</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="203" type="" value="1" />
+    <Tag enumID="199" type="" value="2" />
+    <Tag enumID="184" type="String">Se transforma en un esbirro 5/2.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="200" type="" value="20" />
+    <Power definition="029c40d0-0087-4dc6-93cd-d9ee871c04ea" />
+  </Entity>
+  <Entity version="2" CardID="BRM_010b">
+    <MasterPower>21261a4a-b830-42d1-b02f-b003820815dc</MasterPower>
+    <Tag enumID="185" type="String">Forma de halcón de fuego</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="203" type="" value="1" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="199" type="" value="2" />
+    <Tag enumID="184" type="String">Se transforma en un esbirro 2/5.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="200" type="" value="20" />
+    <Power definition="21261a4a-b830-42d1-b02f-b003820815dc" />
+  </Entity>
+  <Entity version="2" CardID="BRM_010t">
+    <Tag enumID="185" type="String">Druida de la Llama</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="203" type="" value="1" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="3" />
+    <Tag enumID="47" type="" value="5" />
+    <Tag enumID="45" type="" value="2" />
+    <Tag enumID="199" type="" value="2" />
+    <Tag enumID="200" type="" value="20" />
+    <Tag enumID="342" type="String">Ben Zhang</Tag>
+  </Entity>
+  <Entity version="2" CardID="BRM_010t2">
+    <Tag enumID="185" type="String">Druida de la Llama</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="203" type="" value="1" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="3" />
+    <Tag enumID="47" type="" value="2" />
+    <Tag enumID="45" type="" value="5" />
+    <Tag enumID="199" type="" value="2" />
+    <Tag enumID="200" type="" value="20" />
+    <Tag enumID="342" type="String">Hideaki Takamura</Tag>
+  </Entity>
+  <Entity version="2" CardID="BRM_011">
+    <MasterPower>c2f09ca9-5327-4123-80cf-93ab98b3c4cd</MasterPower>
+    <Tag enumID="185" type="String">Choque de lava</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="321" type="" value="1" />
+    <Tag enumID="203" type="" value="3" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="48" type="" value="2" />
+    <Tag enumID="199" type="" value="8" />
+    <Tag enumID="184" type="String">Inflige $2 de daño.
+Desbloquea tus cristales de maná &lt;b&gt;Sobrecargados&lt;/b&gt;.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="351" type="String">La especialidad de la casa es el volcán de chocolate.</Tag>
+    <Tag enumID="342" type="String">Zoltan Boros</Tag>
+    <Tag enumID="365" type="String">Se puede crear luego de completar el desafío de clase Chamán en Montaña Roca Negra.</Tag>
+    <Tag enumID="364" type="String">Desbloqueada por completar el desafío de clase Chamán en Montaña Roca Negra.</Tag>
+    <ReferencedTag name="Recall" enumID="215" type="Number" value="1" />
+    <Power definition="c2f09ca9-5327-4123-80cf-93ab98b3c4cd">
+      <PlayRequirement reqID="11" param="" />
+    </Power>
+  </Entity>
+  <Entity version="2" CardID="BRM_011t">
+    <Tag enumID="185" type="String">Choque de lava</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="6" />
+    <Tag enumID="199" type="" value="8" />
+    <Tag enumID="184" type="String">Las cartas que juegas este turno no provocan &lt;b&gt;Sobrecarga&lt;/b&gt;.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="338" type="" value="1" />
+    <Power definition="1e713ba1-89a0-4467-9185-0f78ebd772bb" />
+    <Power definition="924c5052-6a6d-484c-8caf-bc3f37db1fee" />
+  </Entity>
+  <Entity version="2" CardID="BRM_012">
+    <MasterPower>8e9b14dc-7937-49ba-a14c-cd7075c32aa1</MasterPower>
+    <Tag enumID="185" type="String">Destructor guardia de fuego</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="321" type="" value="1" />
+    <Tag enumID="203" type="" value="1" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="4" />
+    <Tag enumID="47" type="" value="3" />
+    <Tag enumID="45" type="" value="6" />
+    <Tag enumID="199" type="" value="8" />
+    <Tag enumID="184" type="String">&lt;b&gt;Grito de batalla:&lt;/b&gt; Obtiene 1-4 de Ataque. &lt;b&gt;Sobrecarga:&lt;/b&gt; (1)</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="351" type="String">Ragnaros entrevista a cientos de Elementales de fuego por semana para el puesto de "Destructor", pero solo unos pocos tiene la chispa necesaria.</Tag>
+    <Tag enumID="342" type="String">Paul Mafayon</Tag>
+    <Tag enumID="365" type="String">Puede crearse luego de derrotar a Lord Victor Nefarius en la Guarida de Alanegra.</Tag>
+    <Tag enumID="364" type="String">Desbloqueada por derrotar a Lord Victor Nefarius en la Guarida de Alanegra.</Tag>
+    <Tag enumID="218" type="" value="1" />
+    <Tag enumID="215" type="" value="1" />
+    <Power definition="8e9b14dc-7937-49ba-a14c-cd7075c32aa1" />
+    <Power definition="ee676058-4563-49b3-8273-c0e7ed6ba098" />
+  </Entity>
+  <Entity version="2" CardID="BRM_012e">
+    <Tag enumID="185" type="String">¡En llamas!</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="202" type="" value="6" />
+    <Tag enumID="184" type="String">Ataque aumentado.</Tag>
+    <Power definition="bf6e83f0-859d-4134-b173-bea417cf857e" />
+  </Entity>
+  <Entity version="2" CardID="BRM_013">
+    <MasterPower>bb198bde-42b9-4831-a6af-73be0e748aa8</MasterPower>
+    <Tag enumID="185" type="String">Disparo presuroso</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="321" type="" value="1" />
+    <Tag enumID="203" type="" value="1" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="48" type="" value="2" />
+    <Tag enumID="199" type="" value="3" />
+    <Tag enumID="184" type="String">Inflige $3 de daño.
+Si tu mano está vacía, roba una carta.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="351" type="String">Han disparó primero.</Tag>
+    <Tag enumID="342" type="String">Jonboy Meyers</Tag>
+    <Tag enumID="365" type="String">Se puede crear luego de completar el desafío de clase Cazador en Montaña Roca Negra.</Tag>
+    <Tag enumID="364" type="String">Desbloqueada por completar el desafío de clase Cazador en Montaña Roca Negra.</Tag>
+    <Tag enumID="370" type="" value="1" />
+    <Power definition="bb198bde-42b9-4831-a6af-73be0e748aa8">
+      <PlayRequirement reqID="11" param="" />
+    </Power>
+    <Power definition="7468ccaa-cdc1-4085-9ff8-a01793981316" />
+  </Entity>
+  <Entity version="2" CardID="BRM_014">
+    <MasterPower>50e2844d-425b-43df-8927-b06066dd65a4</MasterPower>
+    <Tag enumID="185" type="String">Furibundo del Núcleo</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="321" type="" value="1" />
+    <Tag enumID="203" type="" value="3" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="4" />
+    <Tag enumID="47" type="" value="4" />
+    <Tag enumID="45" type="" value="4" />
+    <Tag enumID="199" type="" value="3" />
+    <Tag enumID="184" type="String">&lt;b&gt;Grito de batalla:&lt;/b&gt; Si tu mano está vacía, obtiene +3/+3.</Tag>
+    <Tag enumID="200" type="" value="20" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="351" type="String">No cualquier cazador se aventura a las profundidades de un foso de lava ardiente y convence al monstruo que vive allí para que se mude con él y sea su perrito faldero.</Tag>
+    <Tag enumID="342" type="String">Jomaro Kindred</Tag>
+    <Tag enumID="365" type="String">Se puede crear luego de derrotar al Alto señor Omokk en la Cumbre de Roca Negra.</Tag>
+    <Tag enumID="364" type="String">Desbloqueada por derrotar al Alto señor Omokk en la Cumbre de Roca Negra.</Tag>
+    <Tag enumID="218" type="" value="1" />
+    <Power definition="50e2844d-425b-43df-8927-b06066dd65a4" />
+    <Power definition="10eaff0e-740d-4860-b512-cb6d5631c6c5" />
+  </Entity>
+  <Entity version="2" CardID="BRM_014e">
+    <Tag enumID="185" type="String">Furibundo de poder</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="6" />
+    <Tag enumID="184" type="String">+3/+3</Tag>
+    <Tag enumID="199" type="" value="3" />
+    <Tag enumID="330" type="" value="1" />
+    <Tag enumID="331" type="" value="1" />
+    <Power definition="364b17f9-44a5-43b6-a97f-759ac7f9a05b" />
+  </Entity>
+  <Entity version="2" CardID="BRM_015">
+    <MasterPower>8723c146-b0ef-49ca-8d4e-8bed192ccc09</MasterPower>
+    <Tag enumID="185" type="String">Revancha</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="321" type="" value="1" />
+    <Tag enumID="203" type="" value="3" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="199" type="" value="10" />
+    <Tag enumID="184" type="String">Inflige $1 de daño a todos los esbirros. Si tienes 12 o menos de Salud, inflige $3 de daño.</Tag>
+    <Tag enumID="48" type="" value="2" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="351" type="String">¡Esto es mejor que Deflagración arcana! Parece que por fin los guerreros les están cobrando a los magos la imperdonable traición de que Golpe mortal fuera peor que Bola de fuego.</Tag>
+    <Tag enumID="342" type="String">Ben Olson</Tag>
+    <Tag enumID="365" type="String">Se puede crear luego de derrotar a Sangrevaja en la Guarida de Alanegra.</Tag>
+    <Tag enumID="364" type="String">Desbloqueada por derrotar a Sangrevaja en la Guarida de Alanegra.</Tag>
+    <Power definition="8723c146-b0ef-49ca-8d4e-8bed192ccc09" />
+    <Power definition="3c731c27-c509-4723-8adf-2da0129b74d3" />
+  </Entity>
+  <Entity version="2" CardID="BRM_016">
+    <Tag enumID="185" type="String">Lanzador de hachas</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="321" type="" value="1" />
+    <Tag enumID="203" type="" value="1" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="4" />
+    <Tag enumID="47" type="" value="2" />
+    <Tag enumID="45" type="" value="5" />
+    <Tag enumID="199" type="" value="10" />
+    <Tag enumID="184" type="String">Cada vez que este esbirro recibe daño, inflige 2 de daño al héroe enemigo.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="351" type="String">Antes no era más que un simple "Lanzador de ramas", pero ahora nada lo detendrá hasta lograr su sueño: "Lanzador de Tauren".</Tag>
+    <Tag enumID="342" type="String">Efrem Palacios</Tag>
+    <Tag enumID="365" type="String">Se puede crear luego de completar el desafío de clase Guerrero en Montaña Roca Negra.</Tag>
+    <Tag enumID="364" type="String">Desbloqueada por completar el desafío de clase Guerrero en Montaña Roca Negra.</Tag>
+    <Tag enumID="32" type="" value="1" />
+    <Power definition="c2f68c55-8797-4208-ae78-f790665689ea" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="True" />
+  </Entity>
+  <Entity version="2" CardID="BRM_017">
+    <MasterPower>307341a9-9e63-422b-b3e0-64520504ee7f</MasterPower>
+    <Tag enumID="185" type="String">Resurrección</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="321" type="" value="1" />
+    <Tag enumID="203" type="" value="3" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="48" type="" value="2" />
+    <Tag enumID="199" type="" value="6" />
+    <Tag enumID="184" type="String">Invoca a un esbirro aliado aleatorio que haya muerto en esta partida.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="351" type="String">Entré al calabozo y vi a un aventurero muerto. Con sus últimas fuerzas, garabateó un mensaje en el polvo de la pared a su lado. Dos palabras: "rez porfa".</Tag>
+    <Tag enumID="342" type="String">Luke Mancini</Tag>
+    <Tag enumID="365" type="String">Se puede crear luego de derrotar al Emperador Thaurissan en las Profundidades de Roca Negra.</Tag>
+    <Tag enumID="364" type="String">Desbloqueada por derrotar al Emperador Thaurissan en las Profundidades de Roca Negra.</Tag>
+    <Power definition="307341a9-9e63-422b-b3e0-64520504ee7f">
+      <PlayRequirement reqID="12" param="1" />
+    </Power>
+  </Entity>
+  <Entity version="2" CardID="BRM_018">
+    <MasterPower>cb922037-0640-489f-a62c-5f00a606f6d9</MasterPower>
+    <Tag enumID="185" type="String">Consorte dragón</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="321" type="" value="1" />
+    <Tag enumID="203" type="" value="3" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="5" />
+    <Tag enumID="47" type="" value="5" />
+    <Tag enumID="45" type="" value="5" />
+    <Tag enumID="199" type="" value="5" />
+    <Tag enumID="184" type="String">&lt;b&gt;Grito de batalla:&lt;/b&gt; El próximo Dragón que juegues cuesta (2) menos.</Tag>
+    <Tag enumID="200" type="" value="24" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="351" type="String">Todos quieren a alguien para abrazar... Hasta las enormes bestias draconianas con armadura de escamas diseñadas para destruirlo todo.</Tag>
+    <Tag enumID="342" type="String">Raymond Swanland</Tag>
+    <Tag enumID="365" type="String">Se puede crear luego de derrotar al General Drakkisath en la Cumbre de Roca Negra.</Tag>
+    <Tag enumID="364" type="String">Desbloqueada por derrotar al General Drakkisath en la Cumbre de Roca Negra.</Tag>
+    <Tag enumID="218" type="" value="1" />
+    <Power definition="cb922037-0640-489f-a62c-5f00a606f6d9" />
+  </Entity>
+  <Entity version="2" CardID="BRM_018e">
+    <Tag enumID="185" type="String">¡Desencadenado!</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="6" />
+    <Tag enumID="199" type="" value="5" />
+    <Tag enumID="184" type="String">Tu próximo Dragón cuesta (2) menos.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="f42aa4ac-d9ee-474c-a160-a7ad81a5e295" />
+    <Power definition="1f42c581-7140-4208-99c1-fcc72272be11" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRM_019">
+    <Tag enumID="185" type="String">Parroquiano lúgubre</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="321" type="" value="1" />
+    <Tag enumID="203" type="" value="3" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="5" />
+    <Tag enumID="47" type="" value="3" />
+    <Tag enumID="45" type="" value="3" />
+    <Tag enumID="184" type="String">Cada vez que este esbirro sobrevive al daño recibido, invoca a otro Parroquiano lúgubre.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="351" type="String">Si te gusta recibir golpes en la cara, ¡ven al Tragapenas!</Tag>
+    <Tag enumID="342" type="String">Bobby Chiu</Tag>
+    <Tag enumID="365" type="String">Se puede crear luego de superar al Tragapenas en las Profundidades de Roca Negra.</Tag>
+    <Tag enumID="364" type="String">Desbloqueada por superar el Tragapenas en las Profundidades de Roca Negra.</Tag>
+    <Tag enumID="32" type="" value="1" />
+    <Power definition="2f688989-28f2-4e13-8c73-c51d960256a3" />
+    <Power definition="838c52ff-a769-43a8-8338-14618ddd8aa9" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="True" />
+  </Entity>
+  <Entity version="2" CardID="BRM_020">
+    <Tag enumID="185" type="String">Hechicero dragonante</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="203" type="" value="1" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="4" />
+    <Tag enumID="47" type="" value="3" />
+    <Tag enumID="45" type="" value="5" />
+    <Tag enumID="184" type="String">Cada vez que usas un hechizo en este esbirro, obtiene +1/+1.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="200" type="" value="24" />
+    <Tag enumID="321" type="" value="1" />
+    <Tag enumID="351" type="String">Los hechiceros dragonantes, ¿eran dragón antes?</Tag>
+    <Tag enumID="342" type="String">Edouard Guiton &amp; Stuido HIVE</Tag>
+    <Tag enumID="365" type="String">Se puede crear luego de derrotar a Nefarian en el Laboratorio oculto.</Tag>
+    <Tag enumID="364" type="String">Desbloqueada por derrotar a Nefarian en el Laboratorio oculto.</Tag>
+    <Tag enumID="32" type="" value="1" />
+    <Power definition="6ed10337-6784-4627-aa1e-d09998306b6c" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRM_020e">
+    <Tag enumID="185" type="String">Poder dracónico</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="6" />
+    <Tag enumID="184" type="String">Estadísticas aumentadas.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="d0c4554b-f730-4b15-8c2d-741d2cb34c03" />
+  </Entity>
+  <Entity version="2" CardID="BRM_022">
+    <Tag enumID="185" type="String">Huevo de dragón</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="321" type="" value="1" />
+    <Tag enumID="203" type="" value="3" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="47" type="" value="0" />
+    <Tag enumID="45" type="" value="2" />
+    <Tag enumID="184" type="String">Cada vez que este esbirro recibe daño, invoca una Cría 2/1.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="351" type="String">Considéralos municiones para tu pistola de dragón.</Tag>
+    <Tag enumID="342" type="String">Jaemin Kim</Tag>
+    <Tag enumID="365" type="String">Se puede crear luego de derrotar a Rend Puño Negro en la Cumbre de Roca Negra.</Tag>
+    <Tag enumID="364" type="String">Desbloqueada por derrotar a Rend Puño Negro en la Cumbre de Roca Negra.</Tag>
+    <Tag enumID="32" type="" value="1" />
+    <Power definition="8c385f8c-3063-44f8-9ce9-b9f39c677fb0" />
+    <Power definition="4e2af0df-689f-439b-96ab-df719f12d6a9" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRM_022t">
+    <Tag enumID="185" type="String">Cría negra</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="203" type="" value="1" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="1" />
+    <Tag enumID="47" type="" value="2" />
+    <Tag enumID="45" type="" value="1" />
+    <Tag enumID="200" type="" value="24" />
+    <Tag enumID="342" type="String">Jaemin Kim</Tag>
+  </Entity>
+  <Entity version="2" CardID="BRM_024">
+    <Tag enumID="185" type="String">Triturador dracónido</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="321" type="" value="1" />
+    <Tag enumID="203" type="" value="1" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="6" />
+    <Tag enumID="47" type="" value="6" />
+    <Tag enumID="45" type="" value="6" />
+    <Tag enumID="184" type="String">&lt;b&gt;Grito de batalla:&lt;/b&gt; si tu adversario tiene 15 o menos de Salud, obtiene +3/+3.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="200" type="" value="24" />
+    <Tag enumID="351" type="String">Cuando se creó a los dracónidos, se puso todo lo malo de los dragones en la forma de un humanoide. Nunca se supo bien por qué...</Tag>
+    <Tag enumID="342" type="String">Slawomir Maniak</Tag>
+    <Tag enumID="365" type="String">Se puede crear luego de derrotar a Atramedes en el Laboratorio oculto.</Tag>
+    <Tag enumID="364" type="String">Desbloqueada por derrotar a Atramedes en el Laboratorio oculto.</Tag>
+    <Tag enumID="218" type="" value="1" />
+    <Power definition="e42a93cb-5e2c-4a03-a412-f7c558666910" />
+    <Power definition="c2968bcd-05d4-48e1-8485-c0c33274083c" />
+  </Entity>
+  <Entity version="2" CardID="BRM_024e">
+    <Tag enumID="185" type="String">Garras afiladas</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="184" type="String">+3/+3.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="202" type="" value="6" />
+    <Power definition="526eceb0-554f-4c72-a5dd-b50809c065ad" />
+  </Entity>
+  <Entity version="2" CardID="BRM_025">
+    <Tag enumID="185" type="String">Draco volcánico</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="321" type="" value="1" />
+    <Tag enumID="203" type="" value="1" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="6" />
+    <Tag enumID="47" type="" value="6" />
+    <Tag enumID="45" type="" value="4" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="200" type="" value="24" />
+    <Tag enumID="184" type="String">Cuesta (1) menos por cada esbirro que haya muerto en este turno.</Tag>
+    <Tag enumID="351" type="String">Los Dracos volcánicos lanzan lava en lugar de fuego. En el Puesto del Torio, el vendedor de antiácidos amasó una pequeña fortuna gracias a ellos.</Tag>
+    <Tag enumID="342" type="String">Lucas Graciano</Tag>
+    <Tag enumID="364" type="String">Desbloqueada por derrotar al Sistema de Defensa de Omnitrón en el Laboratorio oculto.</Tag>
+    <Tag enumID="365" type="String">Se puede crear luego de derrotar al Sistema de Defensa de Omnitrón en el Laboratorio oculto.</Tag>
+    <Power definition="7765d650-0a64-42a1-b9e8-64e8b7eee7cd" />
+  </Entity>
+  <Entity version="2" CardID="BRM_026">
+    <MasterPower>b4fdb4df-17ae-45fd-a77a-31ea2cbf9169</MasterPower>
+    <Tag enumID="185" type="String">Dragón hambriento</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="203" type="" value="1" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="4" />
+    <Tag enumID="47" type="" value="5" />
+    <Tag enumID="45" type="" value="6" />
+    <Tag enumID="184" type="String">&lt;b&gt;Grito de batalla:&lt;/b&gt; invoca aleatoriamente un esbirro que cueste 1 de maná para tu adversario.</Tag>
+    <Tag enumID="200" type="" value="24" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="321" type="" value="1" />
+    <Tag enumID="351" type="String">No te conviene molestarlo... hace semanas que está a dieta.</Tag>
+    <Tag enumID="342" type="String">John Polidora</Tag>
+    <Tag enumID="365" type="String">Se puede crear luego de derrotar a Chromaggus en la Guarida de Alanegra.</Tag>
+    <Tag enumID="364" type="String">Desbloqueada por derrotar a Chromaggus en la Guarida de Alanegra.</Tag>
+    <Tag enumID="218" type="" value="1" />
+    <Power definition="b4fdb4df-17ae-45fd-a77a-31ea2cbf9169" />
+  </Entity>
+  <Entity version="2" CardID="BRM_027">
+    <Tag enumID="185" type="String">Mayordomo Executus</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="321" type="" value="1" />
+    <Tag enumID="203" type="" value="5" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="9" />
+    <Tag enumID="47" type="" value="9" />
+    <Tag enumID="45" type="" value="7" />
+    <Tag enumID="114" type="" value="1" />
+    <Tag enumID="184" type="String">&lt;b&gt;Estertor:&lt;/b&gt; reemplaza a tu héroe con Ragnaros, el Señor del Fuego.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="351" type="String">Creíste que Executus te había transformado en Ragnaros, pero en realidad Ragnaros siempre estuvo en tu interior.</Tag>
+    <Tag enumID="342" type="String">Alex Horley Orlandelli</Tag>
+    <Tag enumID="365" type="String">Se puede crear luego de completar el Núcleo de magma.</Tag>
+    <Tag enumID="364" type="String">Desbloqueada por completar el Núcleo de magma.</Tag>
+    <Tag enumID="217" type="" value="1" />
+    <Power definition="c796fb00-9c91-4e0f-8881-e36dd2c13952" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRM_027h">
+    <Tag enumID="185" type="String">Ragnaros el Señor del Fuego</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="3" />
+    <Tag enumID="45" type="" value="8" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+  </Entity>
+  <Entity version="2" CardID="BRM_027p">
+    <MasterPower>cd017d6f-ce26-4684-8084-2d20f6206b26</MasterPower>
+    <Tag enumID="185" type="String">¡MUERE, INSECTO!</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="2" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Inflige 8 de daño a un enemigo aleatorio.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="cd017d6f-ce26-4684-8084-2d20f6206b26" />
+  </Entity>
+  <Entity version="2" CardID="BRM_027pH">
+    <MasterPower>b3116152-764c-46b9-a42a-5f9b5861aa15</MasterPower>
+    <Tag enumID="185" type="String">¡MUERAN, INSECTOS!</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="10" />
+    <Tag enumID="48" type="" value="2" />
+    <Tag enumID="184" type="String">&lt;b&gt;Poder de héroe&lt;/b&gt;
+Inflige 8 de daño a un enemigo aleatorio. DOS VECES.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="b3116152-764c-46b9-a42a-5f9b5861aa15" />
+  </Entity>
+  <Entity version="2" CardID="BRM_028">
+    <Tag enumID="185" type="String">Emperador Thaurissan</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="321" type="" value="1" />
+    <Tag enumID="203" type="" value="5" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="6" />
+    <Tag enumID="47" type="" value="5" />
+    <Tag enumID="45" type="" value="5" />
+    <Tag enumID="114" type="" value="1" />
+    <Tag enumID="184" type="String">Al final de tu turno, reduce en (1) el costo de las cartas en tu mano.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="351" type="String">Su segundo mayor arrepentimiento es haber invocado a un malvado Señor del Fuego que esclavizó a todo su pueblo.</Tag>
+    <Tag enumID="342" type="String">Wayne Reynolds</Tag>
+    <Tag enumID="365" type="String">Se puede crear luego de completar las Profundidades de Roca Negra.</Tag>
+    <Tag enumID="364" type="String">Desbloqueada por completar las Profundidades de Roca Negra.</Tag>
+    <Power definition="61826561-9d9d-4565-8e6e-6bac9c578cc5" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRM_028e">
+    <Tag enumID="185" type="String">Favor imperial</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="6" />
+    <Tag enumID="184" type="String">Cuesta (1) menos.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="83c5012c-47df-4d74-8f62-eedc48821ca4" />
+  </Entity>
+  <Entity version="2" CardID="BRM_029">
+    <MasterPower>b73f789f-49d4-4ce7-9575-7dac07d943c5</MasterPower>
+    <Tag enumID="185" type="String">Rend Puño Negro</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="321" type="" value="1" />
+    <Tag enumID="203" type="" value="5" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="47" type="" value="8" />
+    <Tag enumID="114" type="" value="1" />
+    <Tag enumID="184" type="String">&lt;b&gt;Grito de batalla:&lt;/b&gt; si tienes un Dragón en tu mano, destruye un esbirro &lt;b&gt;Legendario&lt;/b&gt;.</Tag>
+    <Tag enumID="325" type="String">Destruye una Leyenda.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="48" type="" value="7" />
+    <Tag enumID="45" type="" value="4" />
+    <Tag enumID="351" type="String">Rend cree que es el verdadero Jefe de guerra de la Horda y vive editando la página de wikipedia de "Jefe de guerra de la Horda" para que muestre su imagen.</Tag>
+    <Tag enumID="342" type="String">Alex Horley</Tag>
+    <Tag enumID="365" type="String">Se puede crear luego de completar la Cumbre de Roca Negra.</Tag>
+    <Tag enumID="364" type="String">Desbloqueada por completar la Cumbre de Roca Negra.</Tag>
+    <Tag enumID="218" type="" value="1" />
+    <Power definition="b73f789f-49d4-4ce7-9575-7dac07d943c5">
+      <PlayRequirement reqID="51" param="" />
+      <PlayRequirement reqID="52" param="" />
+      <PlayRequirement reqID="1" param="" />
+    </Power>
+    <Power definition="fd2a7882-ee03-4244-89bc-9de9cbdaae9a" />
+  </Entity>
+  <Entity version="2" CardID="BRM_030">
+    <MasterPower>53314cea-d1cd-4427-b81f-3656d2483a6a</MasterPower>
+    <Tag enumID="185" type="String">Nefarian</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="321" type="" value="1" />
+    <Tag enumID="203" type="" value="5" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="9" />
+    <Tag enumID="47" type="" value="8" />
+    <Tag enumID="45" type="" value="8" />
+    <Tag enumID="114" type="" value="1" />
+    <Tag enumID="184" type="String">&lt;b&gt;Grito de batalla:&lt;/b&gt; agrega 2 hechizos aleatorios a tu mano &lt;i&gt;(de la clase de tu adversario)&lt;/i&gt;.</Tag>
+    <Tag enumID="200" type="" value="24" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="351" type="String">Lo llaman "Alanegra" porque es un gran dragón negro... y tiene alas.</Tag>
+    <Tag enumID="342" type="String">Ruan Jia</Tag>
+    <Tag enumID="365" type="String">Se puede crear luego de completar el Laboratorio oculto.</Tag>
+    <Tag enumID="364" type="String">¡Desbloqueada por derrotar a todos los jefes de Montaña Roca Negra!</Tag>
+    <Tag enumID="218" type="" value="1" />
+    <Power definition="53314cea-d1cd-4427-b81f-3656d2483a6a" />
+  </Entity>
+  <Entity version="2" CardID="BRM_030t">
+    <MasterPower>08f9c982-ce76-4607-811e-8be046b930d8</MasterPower>
+    <Tag enumID="185" type="String">Coletazo</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="5" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="48" type="" value="4" />
+    <Tag enumID="184" type="String">Inflige $4 de daño.</Tag>
+    <Power definition="08f9c982-ce76-4607-811e-8be046b930d8">
+      <PlayRequirement reqID="11" param="" />
+    </Power>
+  </Entity>
+  <Entity version="2" CardID="BRM_031">
+    <Tag enumID="185" type="String">Chromaggus</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="321" type="" value="1" />
+    <Tag enumID="203" type="" value="5" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="8" />
+    <Tag enumID="47" type="" value="6" />
+    <Tag enumID="45" type="" value="8" />
+    <Tag enumID="114" type="" value="1" />
+    <Tag enumID="184" type="String">Cada vez que robas una carta, pone otra igual en tu mano.</Tag>
+    <Tag enumID="200" type="" value="24" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="351" type="String">Todas las noches, la cabeza izquierda y la derecha pelean durante horas sobre qué elegir para la cena... y siempre terminan comiendo arroz.</Tag>
+    <Tag enumID="342" type="String">Todd Lockwood</Tag>
+    <Tag enumID="365" type="String">Se puede crear luego de completar la Guarida de Alanegra.</Tag>
+    <Tag enumID="364" type="String">Desbloqueada por completar la Guarida de Alanegra.</Tag>
+    <Tag enumID="32" type="" value="1" />
+    <Power definition="1e34bafa-8083-4223-a031-2c5b0ffdcbad" />
+    <TriggeredPowerHistoryInfo effectIndex="0" showInHistory="False" />
+  </Entity>
+  <Entity version="2" CardID="BRM_033">
+    <MasterPower>26d8ee9b-29bd-4623-a247-a9ca4febbabe</MasterPower>
+    <Tag enumID="185" type="String">Técnica de Alanegra</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="321" type="" value="1" />
+    <Tag enumID="184" type="String">&lt;b&gt;Grito de batalla:&lt;/b&gt; si tienes un Dragón en tu mano, obtiene +1/+1. </Tag>
+    <Tag enumID="48" type="" value="3" />
+    <Tag enumID="47" type="" value="2" />
+    <Tag enumID="45" type="" value="4" />
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="203" type="" value="1" />
+    <Tag enumID="201" type="" value="3" />
+    <Tag enumID="351" type="String">Ella es la persona indicada cuando tu Alanegra necesita algún ajuste. ¡Que no te engañen con repuestos baratos de mala calidad!</Tag>
+    <Tag enumID="342" type="String">Matt Dixon</Tag>
+    <Tag enumID="365" type="String">Se puede crear luego de derrotar al Barón Geddon en el Núcleo de magma.</Tag>
+    <Tag enumID="364" type="String">Desbloqueada por derrotar al Barón Geddon en el Núcleo de magma.</Tag>
+    <Tag enumID="218" type="" value="1" />
+    <Power definition="26d8ee9b-29bd-4623-a247-a9ca4febbabe" />
+    <Power definition="8f248cb1-3f5f-44fa-936c-9abbac311881" />
+  </Entity>
+  <Entity version="2" CardID="BRM_033e">
+    <Tag enumID="185" type="String">Sangre de dragón</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="202" type="" value="6" />
+    <Tag enumID="184" type="String">+1/+1</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Power definition="9fd62683-996c-4d4d-b563-70e30eaaa051" />
+  </Entity>
+  <Entity version="2" CardID="BRM_034">
+    <MasterPower>a86449fe-3ea4-4fee-97cb-ea8df777e2b1</MasterPower>
+    <Tag enumID="185" type="String">Corruptor de Alanegra</Tag>
+    <Tag enumID="183" type="" value="14" />
+    <Tag enumID="321" type="" value="1" />
+    <Tag enumID="203" type="" value="1" />
+    <Tag enumID="202" type="" value="4" />
+    <Tag enumID="48" type="" value="5" />
+    <Tag enumID="47" type="" value="5" />
+    <Tag enumID="45" type="" value="4" />
+    <Tag enumID="184" type="String">&lt;b&gt;Grito de batalla&lt;/b&gt;: si tienes un Dragón en tu mano, inflige 3 de daño.</Tag>
+    <Tag enumID="330" type="" value="0" />
+    <Tag enumID="331" type="" value="0" />
+    <Tag enumID="201" type="" value="3" />
+    <Tag enumID="351" type="String">Se ganó su nombre cuando le prestó algunos cómics y discos de rock &amp; roll a Alanegra.</Tag>
+    <Tag enumID="342" type="String">Greg Staples</Tag>
+    <Tag enumID="325" type="String">Inflige 3 de daño.</Tag>
+    <Tag enumID="365" type="String">Se puede crear luego de derrotar a Maloriak en el Laboratorio oculto.</Tag>
+    <Tag enumID="364" type="String">Desbloqueada por derrotar a Maloriak en el Laboratorio oculto.</Tag>
+    <Tag enumID="218" type="" value="1" />
+    <Power definition="a86449fe-3ea4-4fee-97cb-ea8df777e2b1">
+      <PlayRequirement reqID="51" param="" />
+    </Power>
+    <Power definition="c290df70-1f57-419a-b1b4-6f9c6ec1cc06" />
   </Entity>
   <Entity version="1" CardID="PlaceholderCard">
     <Tag enumID="185" type="String">
