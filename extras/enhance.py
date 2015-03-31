@@ -11,6 +11,7 @@ import auras
 import buffs
 import chooseone
 import enrage
+import entourage
 import missing_cards
 import powerups
 
@@ -40,6 +41,19 @@ def add_enrage_definition(card, tags):
 		e = _create_tag(tag, value)
 		definition.append(e)
 	card.xml.append(definition)
+
+
+def remove_entourage_data(card):
+	for e in card.xml.findall("EntourageCard"):
+		card.xml.remove(e)
+
+
+def add_entourage_data(card, entourage):
+	for id in entourage:
+		e = ElementTree.Element("EntourageCard")
+		e.attrib["cardID"] = id
+		card.xml.append(e)
+	print("%s: Setting entourage to %r" % (card.name, entourage))
 
 
 def add_powerup_requirements(card, race):
@@ -123,6 +137,10 @@ def main():
 
 		if hasattr(enrage, id):
 			add_enrage_definition(card, getattr(enrage, id))
+
+		if hasattr(entourage, id):
+			remove_entourage_data(card)
+			add_entourage_data(card, getattr(entourage, id))
 
 		if hasattr(powerups, id):
 			add_powerup_requirements(card, getattr(powerups, id))
