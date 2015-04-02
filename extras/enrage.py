@@ -7,7 +7,7 @@ from fireplace.enums import GameTag
 
 # Spiteful Smith
 CS2_221 = {
-	GameTag.AURA: "CS2_221e",
+	GameTag.AURA: True,
 }
 
 # Angry Chicken
