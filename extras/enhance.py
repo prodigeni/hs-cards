@@ -16,15 +16,24 @@ import missing_cards
 import powerups
 
 
-def add_aura_id(card, id):
-	aura = card._findTag(GameTag.AURA)
-	if not aura:
-		e = set_tag(card, GameTag.AURA, id)
-	else:
-		e = aura[0]
-		e.attrib["value"] = id
-		e.attrib["type"] = "Card"
-	print("%s: Setting aura card ID to %r" % (card.name, id))
+def add_aura(card, auras):
+	for aura in auras:
+		reqs = aura.get("requirements", {})
+		id = aura.get("id")
+		zone = aura.get("zone")
+
+		e = ElementTree.Element("Aura")
+		e.attrib["cardID"] = id
+		if zone:
+			e.attrib["zone"] = str(int(zone))
+
+		for requirement, param in reqs.items():
+			req = ElementTree.Element("ActiveRequirement")
+			req.attrib["reqID"] = str(int(requirement))
+			req.attrib["param"] = str(int(param)) if param is not True else ""
+			e.append(req)
+		card.xml.append(e)
+		print("%s: Adding aura data %r" % (card.name, aura))
 
 
 def add_chooseone_tags(card, ids):
@@ -133,7 +142,7 @@ def main():
 			add_chooseone_tags(card, getattr(chooseone, id))
 
 		if hasattr(auras, id):
-			add_aura_id(card, getattr(auras, id))
+			add_aura(card, getattr(auras, id))
 
 		if hasattr(enrage, id):
 			add_enrage_definition(card, getattr(enrage, id))
