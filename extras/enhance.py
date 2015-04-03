@@ -162,6 +162,7 @@ def main():
 
 		if "Can't be targeted by spells or Hero Powers." in card.description:
 			set_tag(card, GameTag.CANT_BE_TARGETED_BY_ABILITIES, True)
+			set_tag(card, GameTag.CANT_BE_TARGETED_BY_HERO_POWERS, True)
 
 		if id == "EX1_283":
 			# Remove Freeze from Frost Elemental
