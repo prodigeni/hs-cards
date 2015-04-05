@@ -21,11 +21,15 @@ def add_aura(card, auras):
 		reqs = aura.get("requirements", {})
 		id = aura.get("id")
 		zone = aura.get("zone")
+		player = aura.get("player")
 
 		e = ElementTree.Element("Aura")
 		e.attrib["cardID"] = id
 		if zone:
 			e.attrib["zone"] = str(int(zone))
+
+		if aura.get("player"):
+			e.attrib["player"] = "true"
 
 		for requirement, param in reqs.items():
 			req = ElementTree.Element("ActiveRequirement")
