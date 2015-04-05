@@ -108,6 +108,12 @@ EX1_565 = [{
 	"id": "EX1_565o",
 }]
 
+# Auchenai Soulpriest
+EX1_591 = [{
+	"id": "EX1_591a",
+	"player": True,
+}]
+
 # Sorcerer's Apprentice
 EX1_608 = [{
 	"id": "EX1_608a",
