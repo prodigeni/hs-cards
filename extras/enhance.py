@@ -12,6 +12,7 @@ import buffs
 import chooseone
 import enrage
 import entourage
+import heropowers
 import missing_cards
 import powerups
 
@@ -67,6 +68,13 @@ def add_entourage_data(card, entourage):
 		e.attrib["cardID"] = id
 		card.xml.append(e)
 	print("%s: Setting entourage to %r" % (card.name, entourage))
+
+
+def add_hero_power(card, id):
+	e = ElementTree.Element("HeroPower")
+	e.attrib["cardID"] = id
+	card.xml.append(e)
+	print("%s: Adding hero power %r" % (card, id))
 
 
 def add_powerup_requirements(card, race):
@@ -151,6 +159,9 @@ def main():
 		if hasattr(entourage, id):
 			remove_entourage_data(card)
 			add_entourage_data(card, getattr(entourage, id))
+
+		if hasattr(heropowers, id):
+			add_hero_power(card, getattr(heropowers, id))
 
 		if hasattr(powerups, id):
 			add_powerup_requirements(card, getattr(powerups, id))
