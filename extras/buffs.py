@@ -22,6 +22,11 @@ def buff(atk=0, health=0):
 # Claws
 CS2_017o = buff(atk=1)
 
+# Soul of the Forest
+EX1_158e = {
+	GameTag.DEATHRATTLE: True,
+}
+
 # Rooted (Ancient of War)
 EX1_178ae = {
 	GameTag.HEALTH: 5,
