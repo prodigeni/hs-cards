@@ -184,6 +184,11 @@ CS2_045e = buff(atk=3)
 # Bloodlust
 CS2_046e = buff(atk=3)
 
+# Far Sight
+CS2_053e = {
+	GameTag.COST: -3,
+}
+
 # Totemic Might
 EX1_244e = buff(health=2)
 
