@@ -374,7 +374,26 @@ FP1_028e = buff(atk=1)
 #
 
 ##
+# Druid
+
+# Attack Mode (Anodized Robo Cub)
+GVG_030ae = buff(atk=1)
+
+# Tank Mode (Anodized Robo Cub)
+GVG_030be = buff(health=1)
+
+# Dark Wispers
+GVG_041c = {
+	GameTag.ATK: 5,
+	GameTag.HEALTH: 5,
+	GameTag.TAUNT: True,
+}
+
+##
 # Hunter
+
+# The King (King of Beasts)
+GVG_046e = buff(atk=1)
 
 # Metal Teeth (Metaltooth Leaper)
 GVG_048e = buff(atk=2)
@@ -386,12 +405,21 @@ GVG_043e = buff(atk=1)
 ##
 # Paladin
 
+# Well Equipped (Quartermaster)
+GVG_060e = buff(+2, +2)
+
 # Retribution (Bolvar Fordragon)
 GVG_063a = buff(atk=1)
+
+# Seal of Light
+GVG_057a = buff(atk=2)
 
 
 ##
 # Priest
+
+# Repairs! (Upgraded Repair Bot)
+GVG_069a = buff(health=4)
 
 # Velen's Chosen
 GVG_010b = {
@@ -402,6 +430,47 @@ GVG_010b = {
 
 # Shrink Ray (Shrinkmeister)
 GVG_011a = buff(atk=-2)
+
+
+##
+# Rogue
+
+# Tinker's Sharpsword Oil
+GVG_022a = buff(atk=3) # Weapon
+GVG_022b = buff(atk=3) # Minion
+
+# Extra Sharp (Goblin Auto-Barber)
+GVG_023a = buff(atk=1)
+
+# Ironed Out (Iron Sensei)
+GVG_027 = buff(+2, +2)
+
+
+##
+# Shaman
+
+# Powered (Powermace)
+GVG_036e = buff(+2, +2)
+
+
+##
+# Warlock
+
+# Demonheart
+GVG_019e = buff(+5, +5)
+
+# Grasp of Mal'Ganis (Mal'Ganis)
+GVG_021e = buff(+2, +2)
+
+# Brow Furrow (Floating Watcher)
+GVG_100e = buff(+2, +2)
+
+
+##
+# Warrior
+
+# Armor Plated (Siege Engine)
+GVG_086e = buff(atk=1)
 
 
 ##
@@ -416,12 +485,27 @@ GVG_068a = buff(atk=2)
 # Pistons (Micro Machine)
 GVG_076a = buff(atk=1)
 
+# Might of Tinkertown (Tinkertown Technician)
+GVG_102e = buff(+1, +1)
+
+##
+# Neutral rare
+
+# Screwy Jank (Screwjank Clunker)
+GVG_055e = buff(+2, +2)
+
+# Pure (Lil' Exorcist)
+GVG_101e = buff(+1, +1)
+
 
 ##
 # Neutral epic
 
 # HERE, TAKE BUFF. (Hobgoblin)
 GVG_104a = buff(+2, +2)
+
+# Junked Up (Junkbot)
+GVG_106e = buff(+2, +2)
 
 
 ##

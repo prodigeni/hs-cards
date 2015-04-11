@@ -2,7 +2,7 @@ from fireplace.enums import CardType, GameTag
 
 
 __all__ = [
-	"GVG_003e",
+	"GVG_003e", "GVG_017e",
 	"EX1_144e",
 	"CS2_227a",
 	"EX1_076a", "EX1_315a", "EX1_591a", "EX1_608a", "EX1_616a",
@@ -18,6 +18,12 @@ GVG_003e = {
 	GameTag.CARDNAME: "Unstable Portal Buff",
 	GameTag.CARDTYPE: CardType.ENCHANTMENT,
 	GameTag.COST: -3,
+}
+
+GVG_017e = {
+	GameTag.CARDNAME: "Call Pet Buff",
+	GameTag.CARDTYPE: CardType.ENCHANTMENT,
+	GameTag.COST: -4,
 }
 
 EX1_144e = {
