@@ -156,10 +156,7 @@ FP1_030e = [{
 # Baron Rivendare
 FP1_031 = [{
 	"id": "FP1_031a",
-	"requirements": {
-		PlayReq.REQ_FRIENDLY_TARGET: True,
-		PlayReq.REQ_NONSELF_TARGET: True,
-	},
+	"type": AuraType.PLAYER_AURA,
 }]
 
 # Mechwarper
