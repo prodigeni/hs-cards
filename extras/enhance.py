@@ -6,7 +6,7 @@ import sys; sys.path.append(os.path.join(os.path.dirname(__file__), "../.."))
 print(sys.path)
 from xml.dom import minidom
 from xml.etree import ElementTree
-from fireplace.enums import GameTag
+from fireplace.enums import AuraType, GameTag
 import auras
 import buffs
 import chooseone
@@ -21,16 +21,11 @@ def add_aura(card, auras):
 	for aura in auras:
 		reqs = aura.get("requirements", {})
 		id = aura.get("id")
-		zone = aura.get("zone")
-		player = aura.get("player")
+		type = aura.get("type", AuraType.PLAY_AURA)
 
 		e = ElementTree.Element("Aura")
 		e.attrib["cardID"] = id
-		if zone:
-			e.attrib["zone"] = str(int(zone))
-
-		if aura.get("player"):
-			e.attrib["player"] = "true"
+		e.attrib["type"] = str(int(type))
 
 		for requirement, param in reqs.items():
 			req = ElementTree.Element("ActiveRequirement")

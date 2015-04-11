@@ -1,7 +1,7 @@
 """
 Aura card definitions
 """
-from fireplace.enums import PlayReq, Race, GameTag, Zone
+from fireplace.enums import AuraType, PlayReq, Race, GameTag
 
 
 # Raid Leader
@@ -37,7 +37,7 @@ CS2_227 = [{
 	"requirements": {
 		PlayReq.REQ_MINION_TARGET: True,
 	},
-	"zone": Zone.HAND,
+	"type": AuraType.HAND_AURA,
 }]
 
 # Timber Wolf
@@ -66,7 +66,7 @@ EX1_076 = [{
 		PlayReq.REQ_FRIENDLY_TARGET: True,
 		PlayReq.REQ_NO_MINIONS_PLAYED_THIS_TURN: True,
 	},
-	"zone": Zone.HAND,
+	"type": AuraType.HAND_AURA,
 }]
 
 # Dire Wolf Alpha
@@ -81,7 +81,7 @@ EX1_315 = [{
 		PlayReq.REQ_FRIENDLY_TARGET: True,
 		PlayReq.REQ_MINION_TARGET: True,
 	},
-	"zone": Zone.HAND,
+	"type": AuraType.HAND_AURA,
 }]
 
 # Murloc Warleader
@@ -111,7 +111,7 @@ EX1_565 = [{
 # Auchenai Soulpriest
 EX1_591 = [{
 	"id": "EX1_591a",
-	"player": True,
+	"type": AuraType.PLAYER_AURA,
 }]
 
 # Sorcerer's Apprentice
@@ -121,7 +121,7 @@ EX1_608 = [{
 		PlayReq.REQ_FRIENDLY_TARGET: True,
 		PlayReq.REQ_SPELL_TARGET: True,
 	},
-	"zone": Zone.HAND,
+	"type": AuraType.HAND_AURA,
 }]
 
 # Mana Wraith
@@ -130,7 +130,7 @@ EX1_616 = [{
 	"requirements": {
 		PlayReq.REQ_MINION_TARGET: True,
 	},
-	"zone": Zone.HAND,
+	"type": AuraType.HAND_AURA,
 }]
 
 # Nerub'ar Weblord
@@ -140,7 +140,7 @@ FP1_017 = [{
 		PlayReq.REQ_MINION_TARGET: True,
 		PlayReq.REQ_TARGET_HAS_BATTLECRY: True,
 	},
-	"zone": Zone.HAND,
+	"type": AuraType.HAND_AURA,
 }]
 
 # Necrotic Aura (Loatheb)
@@ -150,7 +150,7 @@ FP1_030e = [{
 		PlayReq.REQ_ENEMY_TARGET: True,
 		PlayReq.REQ_SPELL_TARGET: True,
 	},
-	"zone": Zone.HAND,
+	"type": AuraType.HAND_AURA,
 }]
 
 # Baron Rivendare
@@ -170,7 +170,7 @@ GVG_006 = [{
 		PlayReq.REQ_FRIENDLY_TARGET: True,
 		PlayReq.REQ_TARGET_WITH_RACE: Race.MECHANICAL,
 	},
-	"zone": Zone.HAND,
+	"type": AuraType.HAND_AURA,
 }]
 
 # Mal'Ganis
@@ -206,7 +206,7 @@ NEW1_029t = [{
 		PlayReq.REQ_ENEMY_TARGET: True,
 		PlayReq.REQ_SPELL_TARGET: True,
 	},
-	"zone": Zone.HAND,
+	"type": AuraType.HAND_AURA,
 }]
 
 # Leokk
