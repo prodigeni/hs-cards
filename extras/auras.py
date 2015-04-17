@@ -97,7 +97,6 @@ EX1_507 = [{
 EX1_508 = [{
 	"id": "EX1_508o",
 	"requirements": {
-		PlayReq.REQ_FRIENDLY_TARGET: True,
 		PlayReq.REQ_NONSELF_TARGET: True,
 		PlayReq.REQ_TARGET_WITH_RACE: Race.MURLOC,
 	},
