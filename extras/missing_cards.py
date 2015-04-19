@@ -99,6 +99,13 @@ GVG_021e2 = {
 	GameTag.CANT_BE_DAMAGED: True,
 }
 
+GVG_122a = {
+	GameTag.CARDNAME: "Wee Spellstopper Aura",
+	GameTag.CARDTYPE: CardType.ENCHANTMENT,
+	GameTag.CANT_BE_TARGETED_BY_ABILITIES: True,
+	GameTag.CANT_BE_TARGETED_BY_HERO_POWERS: True,
+}
+
 NEW1_029ta = {
 	GameTag.CARDNAME: "Kill Millhouse! (Millhouse Aura)",
 	GameTag.CARDTYPE: CardType.ENCHANTMENT,

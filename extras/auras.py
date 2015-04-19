@@ -185,6 +185,11 @@ GVG_021 = [{
 	},
 }]
 
+# Wee Spellstopper
+GVG_122 = [{
+	"id": "GVG_122a",
+}]
+
 # Southsea Captain
 NEW1_027 = [{
 	"id": "NEW1_027e",
