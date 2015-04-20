@@ -178,6 +178,11 @@ EX1_258e = buff(+1, +1)
 # Flametongue (Flametongue Totem)
 EX1_565o = buff(atk=2)
 
+# Ancestral Spirit
+CS2_038e = {
+	GameTag.DEATHRATTLE: True,
+}
+
 # Ancestral Infusion (Ancestral Healing)
 CS2_041e = {
 	GameTag.TAUNT: True,
