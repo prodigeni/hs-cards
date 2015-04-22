@@ -152,6 +152,17 @@ FP1_030e = [{
 	"type": AuraType.HAND_AURA,
 }]
 
+
+# Preparation
+EX1_145o = [{
+	"id": "EX1_145oa",
+	"requirements": {
+		PlayReq.REQ_FRIENDLY_TARGET: True,
+		PlayReq.REQ_SPELL_TARGET: True,
+	},
+	"type": AuraType.HAND_AURA,
+}]
+
 # Baron Rivendare
 FP1_031 = [{
 	"id": "FP1_031a",
