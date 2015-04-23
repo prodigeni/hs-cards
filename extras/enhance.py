@@ -174,10 +174,6 @@ def main():
 			set_tag(card, GameTag.CANT_BE_TARGETED_BY_ABILITIES, True)
 			set_tag(card, GameTag.CANT_BE_TARGETED_BY_HERO_POWERS, True)
 
-		if id == "EX1_283":
-			# Remove Freeze from Frost Elemental
-			remove_tag(card, GameTag.FREEZE)
-
 	# xml = db[next(db.__iter__())].xml
 	with open(sys.argv[2], "w") as f:
 		root = ElementTree.Element("CardDefs")
