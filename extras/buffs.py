@@ -64,6 +64,9 @@ EX1_160be = buff(+1, +1)
 # Bite
 EX1_570e = buff(atk=4)
 
+# Demigod's Favor (Cenarius)
+EX1_573ae = buff(+2, +2)
+
 
 ##
 # Hunter
