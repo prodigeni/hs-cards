@@ -123,6 +123,16 @@ EX1_608 = [{
 	"type": AuraType.HAND_AURA,
 }]
 
+# Power of the Kirin Tor (Kirin Tor Mage)
+EX1_612oa = [{
+	"id": "EX1_612o",
+	"requirements": {
+		PlayReq.REQ_FRIENDLY_TARGET: True,
+		PlayReq.REQ_SECRET_TARGET: True,
+	},
+	"type": AuraType.HAND_AURA,
+}]
+
 # Mana Wraith
 EX1_616 = [{
 	"id": "EX1_616a",

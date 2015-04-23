@@ -5,7 +5,7 @@ __all__ = [
 	"GVG_003e", "GVG_017e",
 	"EX1_144e",
 	"CS2_227a",
-	"EX1_076a", "EX1_145oa", "EX1_315a", "EX1_591a", "EX1_608a", "EX1_616a",
+	"EX1_076a", "EX1_145oa", "EX1_315a", "EX1_591a", "EX1_608a", "EX1_612oa", "EX1_616a",
 	"FP1_017a", "FP1_030ea", "FP1_031a",
 	"GVG_006a", "GVG_021e2",
 	"NEW1_029ta",
@@ -68,6 +68,11 @@ EX1_608a = {
 	GameTag.CARDNAME: "Sorcerer's Apprentice (Aura)",
 	GameTag.CARDTYPE: CardType.ENCHANTMENT,
 	GameTag.COST: -1,
+}
+
+EX1_612oa = {
+	GameTag.CARDNAME: "Power of the Kirin Tor (Kirin Tor Mage Aura)",
+	GameTag.CARDTYPE: CardType.ENCHANTMENT,
 }
 
 EX1_616a = {
