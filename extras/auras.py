@@ -64,6 +64,7 @@ EX1_076 = [{
 	"id": "EX1_076a",
 	"requirements": {
 		PlayReq.REQ_FRIENDLY_TARGET: True,
+		PlayReq.REQ_MINION_TARGET: True,
 		PlayReq.REQ_NO_MINIONS_PLAYED_THIS_TURN: True,
 	},
 	"type": AuraType.HAND_AURA,
