@@ -175,7 +175,7 @@ def main():
 			set_tag(card, GameTag.CANT_BE_TARGETED_BY_HERO_POWERS, True)
 
 	# xml = db[next(db.__iter__())].xml
-	with open(sys.argv[2], "w") as f:
+	with open(sys.argv[2], "w", encoding="utf8") as f:
 		root = ElementTree.Element("CardDefs")
 		for e in xml.findall("Entity"):
 			# We want to retain the order so we can't just use db.keys()
