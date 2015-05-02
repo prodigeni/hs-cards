@@ -159,6 +159,7 @@ FP1_030e = [{
 	"requirements": {
 		PlayReq.REQ_ENEMY_TARGET: True,
 		PlayReq.REQ_SPELL_TARGET: True,
+		PlayReq.REQ_YOUR_TURN: True,
 	},
 	"type": AuraType.HAND_AURA,
 }]
