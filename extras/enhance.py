@@ -115,7 +115,7 @@ def _create_tag(tag, value):
 		e.text = value
 		e.attrib["type"] = "String"
 	else:
-		raise NotImplementedError
+		raise NotImplementedError(value)
 	e.attrib["enumID"] = str(int(tag))
 	return e
 
