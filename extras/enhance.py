@@ -183,8 +183,11 @@ def main():
 			card = db[id]
 			root.append(card.xml)
 
-		for id in missing_cards.__all__:
-			e = create_card(id, getattr(missing_cards, id))
+		for id, obj in missing_cards.__dict__.items():
+			if id.startswith("_") or not isinstance(obj, dict):
+				# skip the imports
+				continue
+			e = create_card(id, obj)
 			root.append(e)
 
 		outstr = ElementTree.tostring(root)
