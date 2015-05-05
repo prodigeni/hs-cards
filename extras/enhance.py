@@ -3,7 +3,6 @@
 import os
 import re
 import sys; sys.path.append(os.path.join(os.path.dirname(__file__), "../.."))
-print(sys.path)
 from xml.dom import minidom
 from xml.etree import ElementTree
 from fireplace.enums import AuraType, GameTag
